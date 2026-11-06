@@ -1,0 +1,25 @@
+{
+  "client_id": 0,
+  "total_samples": 333603,
+  "n_benign": 331285,
+  "n_malicious": 2318,
+  "benign_pct": 99.3052,
+  "split_sizes": {
+    "train": 233522,
+    "val": 50041,
+    "test": 50040
+  },
+  "benign_train_samples": 231899,
+  "attack_distribution": {
+    "Analysis": 43,
+    "Backdoor": 51,
+    "Benign": 331285,
+    "DoS": 149,
+    "Exploits": 820,
+    "Fuzzers": 530,
+    "Generic": 399,
+    "Reconnaissance": 301,
+    "Shellcode": 22,
+    "Worms": 3
+  }
+}

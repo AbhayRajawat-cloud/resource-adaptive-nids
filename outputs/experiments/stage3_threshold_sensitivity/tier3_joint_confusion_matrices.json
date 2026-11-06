@@ -1,0 +1,818 @@
+{
+  "per_client": {
+    "client_00": {
+      "Q99": {
+        "both_trigger": 246,
+        "ae_only": 212,
+        "gate_only": 144,
+        "neither": 6739,
+        "benign": {
+          "both_trigger": 231,
+          "ae_only": 153,
+          "gate_only": 142,
+          "neither": 6567
+        },
+        "attack": {
+          "both_trigger": 15,
+          "ae_only": 59,
+          "gate_only": 2,
+          "neither": 172
+        }
+      },
+      "Q95": {
+        "both_trigger": 1153,
+        "ae_only": 192,
+        "gate_only": 57,
+        "neither": 5939,
+        "benign": {
+          "both_trigger": 997,
+          "ae_only": 105,
+          "gate_only": 57,
+          "neither": 5934
+        },
+        "attack": {
+          "both_trigger": 156,
+          "ae_only": 87,
+          "gate_only": 0,
+          "neither": 5
+        }
+      },
+      "Q90": {
+        "both_trigger": 1371,
+        "ae_only": 161,
+        "gate_only": 42,
+        "neither": 5767,
+        "benign": {
+          "both_trigger": 1175,
+          "ae_only": 109,
+          "gate_only": 42,
+          "neither": 5767
+        },
+        "attack": {
+          "both_trigger": 196,
+          "ae_only": 52,
+          "gate_only": 0,
+          "neither": 0
+        }
+      },
+      "Q80": {
+        "both_trigger": 1651,
+        "ae_only": 115,
+        "gate_only": 60,
+        "neither": 5515,
+        "benign": {
+          "both_trigger": 1441,
+          "ae_only": 77,
+          "gate_only": 60,
+          "neither": 5515
+        },
+        "attack": {
+          "both_trigger": 210,
+          "ae_only": 38,
+          "gate_only": 0,
+          "neither": 0
+        }
+      }
+    },
+    "client_01": {
+      "Q99": {
+        "both_trigger": 498,
+        "ae_only": 295,
+        "gate_only": 163,
+        "neither": 9389,
+        "benign": {
+          "both_trigger": 451,
+          "ae_only": 138,
+          "gate_only": 101,
+          "neither": 8903
+        },
+        "attack": {
+          "both_trigger": 47,
+          "ae_only": 157,
+          "gate_only": 62,
+          "neither": 486
+        }
+      },
+      "Q95": {
+        "both_trigger": 1986,
+        "ae_only": 371,
+        "gate_only": 87,
+        "neither": 7901,
+        "benign": {
+          "both_trigger": 1479,
+          "ae_only": 143,
+          "gate_only": 87,
+          "neither": 7884
+        },
+        "attack": {
+          "both_trigger": 507,
+          "ae_only": 228,
+          "gate_only": 0,
+          "neither": 17
+        }
+      },
+      "Q90": {
+        "both_trigger": 2391,
+        "ae_only": 282,
+        "gate_only": 42,
+        "neither": 7630,
+        "benign": {
+          "both_trigger": 1796,
+          "ae_only": 125,
+          "gate_only": 42,
+          "neither": 7630
+        },
+        "attack": {
+          "both_trigger": 595,
+          "ae_only": 157,
+          "gate_only": 0,
+          "neither": 0
+        }
+      },
+      "Q80": {
+        "both_trigger": 2757,
+        "ae_only": 141,
+        "gate_only": 74,
+        "neither": 7373,
+        "benign": {
+          "both_trigger": 2023,
+          "ae_only": 123,
+          "gate_only": 74,
+          "neither": 7373
+        },
+        "attack": {
+          "both_trigger": 734,
+          "ae_only": 18,
+          "gate_only": 0,
+          "neither": 0
+        }
+      }
+    },
+    "client_02": {
+      "Q99": {
+        "both_trigger": 16,
+        "ae_only": 8,
+        "gate_only": 7,
+        "neither": 732,
+        "benign": {
+          "both_trigger": 4,
+          "ae_only": 3,
+          "gate_only": 0,
+          "neither": 192
+        },
+        "attack": {
+          "both_trigger": 12,
+          "ae_only": 5,
+          "gate_only": 7,
+          "neither": 540
+        }
+      },
+      "Q95": {
+        "both_trigger": 96,
+        "ae_only": 153,
+        "gate_only": 35,
+        "neither": 479,
+        "benign": {
+          "both_trigger": 12,
+          "ae_only": 5,
+          "gate_only": 1,
+          "neither": 181
+        },
+        "attack": {
+          "both_trigger": 84,
+          "ae_only": 148,
+          "gate_only": 34,
+          "neither": 298
+        }
+      },
+      "Q90": {
+        "both_trigger": 172,
+        "ae_only": 168,
+        "gate_only": 10,
+        "neither": 413,
+        "benign": {
+          "both_trigger": 26,
+          "ae_only": 12,
+          "gate_only": 1,
+          "neither": 160
+        },
+        "attack": {
+          "both_trigger": 146,
+          "ae_only": 156,
+          "gate_only": 9,
+          "neither": 253
+        }
+      },
+      "Q80": {
+        "both_trigger": 367,
+        "ae_only": 93,
+        "gate_only": 111,
+        "neither": 192,
+        "benign": {
+          "both_trigger": 46,
+          "ae_only": 12,
+          "gate_only": 1,
+          "neither": 140
+        },
+        "attack": {
+          "both_trigger": 321,
+          "ae_only": 81,
+          "gate_only": 110,
+          "neither": 52
+        }
+      }
+    },
+    "client_03": {
+      "Q99": {
+        "both_trigger": 291,
+        "ae_only": 436,
+        "gate_only": 187,
+        "neither": 7452,
+        "benign": {
+          "both_trigger": 182,
+          "ae_only": 174,
+          "gate_only": 105,
+          "neither": 6335
+        },
+        "attack": {
+          "both_trigger": 109,
+          "ae_only": 262,
+          "gate_only": 82,
+          "neither": 1117
+        }
+      },
+      "Q95": {
+        "both_trigger": 1980,
+        "ae_only": 469,
+        "gate_only": 126,
+        "neither": 5791,
+        "benign": {
+          "both_trigger": 836,
+          "ae_only": 126,
+          "gate_only": 85,
+          "neither": 5749
+        },
+        "attack": {
+          "both_trigger": 1144,
+          "ae_only": 343,
+          "gate_only": 41,
+          "neither": 42
+        }
+      },
+      "Q90": {
+        "both_trigger": 2401,
+        "ae_only": 333,
+        "gate_only": 82,
+        "neither": 5550,
+        "benign": {
+          "both_trigger": 1096,
+          "ae_only": 90,
+          "gate_only": 79,
+          "neither": 5531
+        },
+        "attack": {
+          "both_trigger": 1305,
+          "ae_only": 243,
+          "gate_only": 3,
+          "neither": 19
+        }
+      },
+      "Q80": {
+        "both_trigger": 2784,
+        "ae_only": 264,
+        "gate_only": 33,
+        "neither": 5285,
+        "benign": {
+          "both_trigger": 1385,
+          "ae_only": 93,
+          "gate_only": 33,
+          "neither": 5285
+        },
+        "attack": {
+          "both_trigger": 1399,
+          "ae_only": 171,
+          "gate_only": 0,
+          "neither": 0
+        }
+      }
+    },
+    "client_04": {
+      "Q99": {
+        "both_trigger": 68,
+        "ae_only": 198,
+        "gate_only": 37,
+        "neither": 1793,
+        "benign": {
+          "both_trigger": 4,
+          "ae_only": 5,
+          "gate_only": 4,
+          "neither": 302
+        },
+        "attack": {
+          "both_trigger": 64,
+          "ae_only": 193,
+          "gate_only": 33,
+          "neither": 1491
+        }
+      },
+      "Q95": {
+        "both_trigger": 254,
+        "ae_only": 332,
+        "gate_only": 80,
+        "neither": 1430,
+        "benign": {
+          "both_trigger": 29,
+          "ae_only": 16,
+          "gate_only": 6,
+          "neither": 264
+        },
+        "attack": {
+          "both_trigger": 225,
+          "ae_only": 316,
+          "gate_only": 74,
+          "neither": 1166
+        }
+      },
+      "Q90": {
+        "both_trigger": 524,
+        "ae_only": 291,
+        "gate_only": 64,
+        "neither": 1217,
+        "benign": {
+          "both_trigger": 53,
+          "ae_only": 21,
+          "gate_only": 4,
+          "neither": 237
+        },
+        "attack": {
+          "both_trigger": 471,
+          "ae_only": 270,
+          "gate_only": 60,
+          "neither": 980
+        }
+      },
+      "Q80": {
+        "both_trigger": 714,
+        "ae_only": 337,
+        "gate_only": 34,
+        "neither": 1011,
+        "benign": {
+          "both_trigger": 88,
+          "ae_only": 15,
+          "gate_only": 14,
+          "neither": 198
+        },
+        "attack": {
+          "both_trigger": 626,
+          "ae_only": 322,
+          "gate_only": 20,
+          "neither": 813
+        }
+      }
+    },
+    "client_05": {
+      "Q99": {
+        "both_trigger": 50,
+        "ae_only": 66,
+        "gate_only": 35,
+        "neither": 1673,
+        "benign": {
+          "both_trigger": 43,
+          "ae_only": 31,
+          "gate_only": 32,
+          "neither": 1576
+        },
+        "attack": {
+          "both_trigger": 7,
+          "ae_only": 35,
+          "gate_only": 3,
+          "neither": 97
+        }
+      },
+      "Q95": {
+        "both_trigger": 292,
+        "ae_only": 86,
+        "gate_only": 18,
+        "neither": 1428,
+        "benign": {
+          "both_trigger": 211,
+          "ae_only": 30,
+          "gate_only": 18,
+          "neither": 1423
+        },
+        "attack": {
+          "both_trigger": 81,
+          "ae_only": 56,
+          "gate_only": 0,
+          "neither": 5
+        }
+      },
+      "Q90": {
+        "both_trigger": 390,
+        "ae_only": 73,
+        "gate_only": 12,
+        "neither": 1349,
+        "benign": {
+          "both_trigger": 282,
+          "ae_only": 40,
+          "gate_only": 12,
+          "neither": 1348
+        },
+        "attack": {
+          "both_trigger": 108,
+          "ae_only": 33,
+          "gate_only": 0,
+          "neither": 1
+        }
+      },
+      "Q80": {
+        "both_trigger": 447,
+        "ae_only": 52,
+        "gate_only": 10,
+        "neither": 1315,
+        "benign": {
+          "both_trigger": 335,
+          "ae_only": 22,
+          "gate_only": 10,
+          "neither": 1315
+        },
+        "attack": {
+          "both_trigger": 112,
+          "ae_only": 30,
+          "gate_only": 0,
+          "neither": 0
+        }
+      }
+    },
+    "client_06": {
+      "Q99": {
+        "both_trigger": 196,
+        "ae_only": 183,
+        "gate_only": 103,
+        "neither": 4559,
+        "benign": {
+          "both_trigger": 167,
+          "ae_only": 70,
+          "gate_only": 86,
+          "neither": 4229
+        },
+        "attack": {
+          "both_trigger": 29,
+          "ae_only": 113,
+          "gate_only": 17,
+          "neither": 330
+        }
+      },
+      "Q95": {
+        "both_trigger": 960,
+        "ae_only": 266,
+        "gate_only": 31,
+        "neither": 3784,
+        "benign": {
+          "both_trigger": 629,
+          "ae_only": 120,
+          "gate_only": 31,
+          "neither": 3772
+        },
+        "attack": {
+          "both_trigger": 331,
+          "ae_only": 146,
+          "gate_only": 0,
+          "neither": 12
+        }
+      },
+      "Q90": {
+        "both_trigger": 1193,
+        "ae_only": 165,
+        "gate_only": 58,
+        "neither": 3625,
+        "benign": {
+          "both_trigger": 806,
+          "ae_only": 70,
+          "gate_only": 58,
+          "neither": 3618
+        },
+        "attack": {
+          "both_trigger": 387,
+          "ae_only": 95,
+          "gate_only": 0,
+          "neither": 7
+        }
+      },
+      "Q80": {
+        "both_trigger": 1439,
+        "ae_only": 64,
+        "gate_only": 9,
+        "neither": 3529,
+        "benign": {
+          "both_trigger": 966,
+          "ae_only": 49,
+          "gate_only": 9,
+          "neither": 3528
+        },
+        "attack": {
+          "both_trigger": 473,
+          "ae_only": 15,
+          "gate_only": 0,
+          "neither": 1
+        }
+      }
+    },
+    "client_07": {
+      "Q99": {
+        "both_trigger": 102,
+        "ae_only": 98,
+        "gate_only": 79,
+        "neither": 3305,
+        "benign": {
+          "both_trigger": 93,
+          "ae_only": 64,
+          "gate_only": 74,
+          "neither": 3233
+        },
+        "attack": {
+          "both_trigger": 9,
+          "ae_only": 34,
+          "gate_only": 5,
+          "neither": 72
+        }
+      },
+      "Q95": {
+        "both_trigger": 556,
+        "ae_only": 91,
+        "gate_only": 26,
+        "neither": 2911,
+        "benign": {
+          "both_trigger": 475,
+          "ae_only": 53,
+          "gate_only": 26,
+          "neither": 2910
+        },
+        "attack": {
+          "both_trigger": 81,
+          "ae_only": 38,
+          "gate_only": 0,
+          "neither": 1
+        }
+      },
+      "Q90": {
+        "both_trigger": 656,
+        "ae_only": 78,
+        "gate_only": 28,
+        "neither": 2822,
+        "benign": {
+          "both_trigger": 563,
+          "ae_only": 51,
+          "gate_only": 28,
+          "neither": 2822
+        },
+        "attack": {
+          "both_trigger": 93,
+          "ae_only": 27,
+          "gate_only": 0,
+          "neither": 0
+        }
+      },
+      "Q80": {
+        "both_trigger": 826,
+        "ae_only": 74,
+        "gate_only": 14,
+        "neither": 2670,
+        "benign": {
+          "both_trigger": 727,
+          "ae_only": 53,
+          "gate_only": 14,
+          "neither": 2670
+        },
+        "attack": {
+          "both_trigger": 99,
+          "ae_only": 21,
+          "gate_only": 0,
+          "neither": 0
+        }
+      }
+    },
+    "client_08": {
+      "Q99": {
+        "both_trigger": 342,
+        "ae_only": 327,
+        "gate_only": 237,
+        "neither": 8456,
+        "benign": {
+          "both_trigger": 270,
+          "ae_only": 147,
+          "gate_only": 187,
+          "neither": 7904
+        },
+        "attack": {
+          "both_trigger": 72,
+          "ae_only": 180,
+          "gate_only": 50,
+          "neither": 552
+        }
+      },
+      "Q95": {
+        "both_trigger": 1809,
+        "ae_only": 397,
+        "gate_only": 77,
+        "neither": 7079,
+        "benign": {
+          "both_trigger": 1202,
+          "ae_only": 169,
+          "gate_only": 77,
+          "neither": 7060
+        },
+        "attack": {
+          "both_trigger": 607,
+          "ae_only": 228,
+          "gate_only": 0,
+          "neither": 19
+        }
+      },
+      "Q90": {
+        "both_trigger": 2114,
+        "ae_only": 290,
+        "gate_only": 69,
+        "neither": 6889,
+        "benign": {
+          "both_trigger": 1420,
+          "ae_only": 130,
+          "gate_only": 69,
+          "neither": 6889
+        },
+        "attack": {
+          "both_trigger": 694,
+          "ae_only": 160,
+          "gate_only": 0,
+          "neither": 0
+        }
+      },
+      "Q80": {
+        "both_trigger": 2552,
+        "ae_only": 107,
+        "gate_only": 55,
+        "neither": 6648,
+        "benign": {
+          "both_trigger": 1723,
+          "ae_only": 82,
+          "gate_only": 55,
+          "neither": 6648
+        },
+        "attack": {
+          "both_trigger": 829,
+          "ae_only": 25,
+          "gate_only": 0,
+          "neither": 0
+        }
+      }
+    },
+    "client_09": {
+      "Q99": {
+        "both_trigger": 255,
+        "ae_only": 212,
+        "gate_only": 123,
+        "neither": 6585,
+        "benign": {
+          "both_trigger": 224,
+          "ae_only": 92,
+          "gate_only": 109,
+          "neither": 6253
+        },
+        "attack": {
+          "both_trigger": 31,
+          "ae_only": 120,
+          "gate_only": 14,
+          "neither": 332
+        }
+      },
+      "Q95": {
+        "both_trigger": 1163,
+        "ae_only": 303,
+        "gate_only": 93,
+        "neither": 5616,
+        "benign": {
+          "both_trigger": 912,
+          "ae_only": 148,
+          "gate_only": 62,
+          "neither": 5556
+        },
+        "attack": {
+          "both_trigger": 251,
+          "ae_only": 155,
+          "gate_only": 31,
+          "neither": 60
+        }
+      },
+      "Q90": {
+        "both_trigger": 1440,
+        "ae_only": 278,
+        "gate_only": 36,
+        "neither": 5421,
+        "benign": {
+          "both_trigger": 1107,
+          "ae_only": 128,
+          "gate_only": 36,
+          "neither": 5407
+        },
+        "attack": {
+          "both_trigger": 333,
+          "ae_only": 150,
+          "gate_only": 0,
+          "neither": 14
+        }
+      },
+      "Q80": {
+        "both_trigger": 1829,
+        "ae_only": 137,
+        "gate_only": 19,
+        "neither": 5190,
+        "benign": {
+          "both_trigger": 1396,
+          "ae_only": 75,
+          "gate_only": 19,
+          "neither": 5188
+        },
+        "attack": {
+          "both_trigger": 433,
+          "ae_only": 62,
+          "gate_only": 0,
+          "neither": 2
+        }
+      }
+    }
+  },
+  "pooled": {
+    "Q99": {
+      "both_trigger": 2064,
+      "ae_only": 2035,
+      "gate_only": 1115,
+      "neither": 50683,
+      "benign": {
+        "both_trigger": 1669,
+        "ae_only": 877,
+        "gate_only": 840,
+        "neither": 45494
+      },
+      "attack": {
+        "both_trigger": 395,
+        "ae_only": 1158,
+        "gate_only": 275,
+        "neither": 5189
+      }
+    },
+    "Q95": {
+      "both_trigger": 10249,
+      "ae_only": 2660,
+      "gate_only": 630,
+      "neither": 42358,
+      "benign": {
+        "both_trigger": 6782,
+        "ae_only": 915,
+        "gate_only": 450,
+        "neither": 40733
+      },
+      "attack": {
+        "both_trigger": 3467,
+        "ae_only": 1745,
+        "gate_only": 180,
+        "neither": 1625
+      }
+    },
+    "Q90": {
+      "both_trigger": 12652,
+      "ae_only": 2119,
+      "gate_only": 443,
+      "neither": 40683,
+      "benign": {
+        "both_trigger": 8324,
+        "ae_only": 776,
+        "gate_only": 371,
+        "neither": 39409
+      },
+      "attack": {
+        "both_trigger": 4328,
+        "ae_only": 1343,
+        "gate_only": 72,
+        "neither": 1274
+      }
+    },
+    "Q80": {
+      "both_trigger": 15366,
+      "ae_only": 1384,
+      "gate_only": 419,
+      "neither": 38728,
+      "benign": {
+        "both_trigger": 10130,
+        "ae_only": 601,
+        "gate_only": 289,
+        "neither": 37860
+      },
+      "attack": {
+        "both_trigger": 5236,
+        "ae_only": 783,
+        "gate_only": 130,
+        "neither": 868
+      }
+    }
+  }
+}

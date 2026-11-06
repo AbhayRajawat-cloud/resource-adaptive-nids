@@ -1,0 +1,39 @@
+{
+  "sample_weighted_local_thresholding": {
+    "total_samples": 358538,
+    "total_benign": 344282,
+    "total_attack": 14256,
+    "ae": {
+      "confusion_matrix": {
+        "tp": 3981,
+        "fp": 3419,
+        "tn": 340863,
+        "fn": 10275
+      },
+      "recall": 0.27925084175084175,
+      "fpr": 0.009930812531587478
+    },
+    "gate": {
+      "confusion_matrix": {
+        "tp": 938,
+        "fp": 3491,
+        "tn": 340791,
+        "fn": 13318
+      },
+      "passage_recall": 0.06579685746352414,
+      "benign_trigger_rate_fpr": 0.010139943418476714
+    },
+    "agreement": {
+      "overall_pct": 98.14385086099661,
+      "benign_pct": 99.16986656287578,
+      "attack_pct": 73.36560044893379
+    }
+  },
+  "client_averaged_macro": {
+    "ae_recall_macro": 0.3182011769295857,
+    "ae_fpr_macro": 0.010176773639951002,
+    "gate_passage_recall_macro": 0.06728467224276458,
+    "gate_fpr_macro": 0.009766836770925474,
+    "gate_ae_agreement_macro": 97.21756057849015
+  }
+}

@@ -1,0 +1,1002 @@
+{
+  "metadata": {
+    "source_simulation_runs": 332,
+    "total_clients": 10,
+    "baseline_quantile": "Q99",
+    "candidate_quantile": "Q95"
+  },
+  "single_server_stability_analysis": {
+    "derivation": {
+      "stability_condition": "rho_queue = (p_Gate * lambda_arrival) / mu_heavy < 1.0",
+      "normalized_arrival_rate_definition": "lambda_tilde = lambda_arrival / mu_heavy = rho_offered",
+      "critical_stability_boundary": "lambda_crit_tilde = 1.0 / p_Gate",
+      "formal_classification": "Analytical stability boundary under simplifying single-server queueing assumptions"
+    },
+    "empirical_p_gate": {
+      "Q99_mean": 0.01422488888888889,
+      "Q95_mean": 0.074584
+    },
+    "critical_stability_limits": {
+      "Q99_lambda_crit_tilde": 70.29931887771043,
+      "Q95_lambda_crit_tilde": 13.407701383674784,
+      "analytical_transition_region": [
+        13.407701383674784,
+        70.29931887771043
+      ]
+    },
+    "simulation_domain_note": "Empirical simulations evaluated within stable operational envelope rho_offered in [0.1, 3.0]. Analytical stability limits represent theoretical asymptotic upper bounds."
+  },
+  "scenarios": {
+    "S1": {
+      "scenario_id": "S1",
+      "scenario_name": "Nominal Operating Baseline",
+      "num_runs": 30,
+      "quantiles": [
+        "Q99"
+      ],
+      "by_quantile": {
+        "Q99": {
+          "num_runs": 30,
+          "total_flows": 600000,
+          "heavy_admitted_pct": {
+            "macro_mean": 1.406,
+            "macro_std": 0.5460207145243258,
+            "weighted_mean": 1.406,
+            "ci_95_low": 1.2364625,
+            "ci_95_high": 1.6051874999999998
+          },
+          "gate_reject_ae_pct": {
+            "macro_mean": 98.594,
+            "macro_std": 0.5460207145243269,
+            "weighted_mean": 98.594,
+            "ci_95_low": 98.39481249999999,
+            "ci_95_high": 98.76353750000003
+          },
+          "load_shed_ae_pct": {
+            "macro_mean": 0.0,
+            "macro_std": 0.0,
+            "weighted_mean": 0.0,
+            "ci_95_low": 0.0,
+            "ci_95_high": 0.0
+          },
+          "frontend_drop_pct": {
+            "macro_mean": 0.0,
+            "macro_std": 0.0,
+            "weighted_mean": 0.0,
+            "ci_95_low": 0.0,
+            "ci_95_high": 0.0
+          },
+          "effective_heavy_passage_recall": {
+            "macro_mean": 0.0696020120982045,
+            "macro_std": 0.03661041415499943,
+            "weighted_mean": 0.06960201209820449,
+            "ci_95_low": 0.05705991272657601,
+            "ci_95_high": 0.08295882272872787
+          },
+          "effective_heavy_benign_fpr": {
+            "macro_mean": 0.009744148147987715,
+            "macro_std": 0.0015035253117190463,
+            "weighted_mean": 0.009744148147987719,
+            "ci_95_low": 0.009227318058480658,
+            "ci_95_high": 0.010251478312201514
+          },
+          "ae_fallback_recall": {
+            "macro_mean": 0.27416186375568224,
+            "macro_std": 0.12107983885685554,
+            "weighted_mean": 0.2741618637556823,
+            "ci_95_low": 0.23021403049260447,
+            "ci_95_high": 0.3161747040129928
+          },
+          "ae_fallback_fpr": {
+            "macro_mean": 0.004259498369521963,
+            "macro_std": 0.0009852781107993,
+            "weighted_mean": 0.004259498369521963,
+            "ci_95_low": 0.003925614307711894,
+            "ci_95_high": 0.004588828867720516
+          },
+          "ideal_routing_yield": {
+            "macro_mean": 0.34376387585388674,
+            "macro_std": 0.14141143054719538,
+            "weighted_mean": 0.3437638758538868,
+            "ci_95_low": 0.2915925676869757,
+            "ci_95_high": 0.3930824843538478
+          },
+          "mean_waiting_time_ms": {
+            "macro_mean": 0.00021961483588080796,
+            "macro_std": 0.0002848167547754254,
+            "weighted_mean": 0.00021961483588080796,
+            "ci_95_low": 0.000123101039860816,
+            "ci_95_high": 0.00032182568913597797
+          },
+          "p95_waiting_time_ms": {
+            "macro_mean": 0.0,
+            "macro_std": 0.0,
+            "weighted_mean": 0.0,
+            "ci_95_low": 0.0,
+            "ci_95_high": 0.0
+          },
+          "max_waiting_time_ms": {
+            "macro_mean": 0.0467299440404236,
+            "macro_std": 0.05915312894031083,
+            "weighted_mean": 0.04672994404042359,
+            "ci_95_low": 0.026410851303461286,
+            "ci_95_high": 0.06828439804595333
+          },
+          "mean_queue_length": {
+            "macro_mean": 4.9999999999999996e-06,
+            "macro_std": 2.7386127875258303e-05,
+            "weighted_mean": 4.9999999999999996e-06,
+            "ci_95_low": 0.0,
+            "ci_95_high": 1.5e-05
+          }
+        }
+      }
+    },
+    "S2": {
+      "scenario_id": "S2",
+      "scenario_name": "Offered Load Sweep",
+      "num_runs": 150,
+      "quantiles": [
+        "Q99"
+      ],
+      "by_quantile": {
+        "Q99": {
+          "num_runs": 150,
+          "total_flows": 2250000,
+          "heavy_admitted_pct": {
+            "macro_mean": 1.422488888888889,
+            "macro_std": 0.5654979640131411,
+            "weighted_mean": 1.422488888888889,
+            "ci_95_low": 1.3310222222222223,
+            "ci_95_high": 1.5103199999999999
+          },
+          "gate_reject_ae_pct": {
+            "macro_mean": 98.57751111111111,
+            "macro_std": 0.565497964013141,
+            "weighted_mean": 98.57751111111111,
+            "ci_95_low": 98.48968,
+            "ci_95_high": 98.66897777777777
+          },
+          "load_shed_ae_pct": {
+            "macro_mean": 0.0,
+            "macro_std": 0.0,
+            "weighted_mean": 0.0,
+            "ci_95_low": 0.0,
+            "ci_95_high": 0.0
+          },
+          "frontend_drop_pct": {
+            "macro_mean": 0.0,
+            "macro_std": 0.0,
+            "weighted_mean": 0.0,
+            "ci_95_low": 0.0,
+            "ci_95_high": 0.0
+          },
+          "effective_heavy_passage_recall": {
+            "macro_mean": 0.06810171775845433,
+            "macro_std": 0.03208457814574054,
+            "weighted_mean": 0.0681017177584543,
+            "ci_95_low": 0.06288770640566604,
+            "ci_95_high": 0.07333171363010191
+          },
+          "effective_heavy_benign_fpr": {
+            "macro_mean": 0.009827485346433068,
+            "macro_std": 0.001522152047240499,
+            "weighted_mean": 0.00982748534643307,
+            "ci_95_low": 0.009579318695481148,
+            "ci_95_high": 0.01008092350336069
+          },
+          "ae_fallback_recall": {
+            "macro_mean": 0.2782395848827785,
+            "macro_std": 0.12359661059019555,
+            "weighted_mean": 0.2782395848827785,
+            "ci_95_low": 0.25863071673081706,
+            "ci_95_high": 0.29757307926448273
+          },
+          "ae_fallback_fpr": {
+            "macro_mean": 0.004340554526990603,
+            "macro_std": 0.0011917293268481044,
+            "weighted_mean": 0.004340554526990603,
+            "ci_95_low": 0.004180317922322835,
+            "ci_95_high": 0.0045375081392373855
+          },
+          "ideal_routing_yield": {
+            "macro_mean": 0.3463413026412328,
+            "macro_std": 0.14020742818824602,
+            "weighted_mean": 0.3463413026412328,
+            "ci_95_low": 0.32389911269752847,
+            "ci_95_high": 0.36808468145286777
+          },
+          "mean_waiting_time_ms": {
+            "macro_mean": 0.0020903532174184206,
+            "macro_std": 0.002051942049617776,
+            "weighted_mean": 0.00209035321741842,
+            "ci_95_low": 0.0017823933658973206,
+            "ci_95_high": 0.002428463763430775
+          },
+          "p95_waiting_time_ms": {
+            "macro_mean": 0.0037190611390861186,
+            "macro_std": 0.015804572997557297,
+            "weighted_mean": 0.003719061139086119,
+            "ci_95_low": 0.0013300205271715132,
+            "ci_95_high": 0.006749695242283828
+          },
+          "max_waiting_time_ms": {
+            "macro_mean": 0.1260591430356063,
+            "macro_std": 0.07786015765559065,
+            "weighted_mean": 0.12605914303560634,
+            "ci_95_low": 0.11356518115083436,
+            "ci_95_high": 0.1383286554033069
+          },
+          "mean_queue_length": {
+            "macro_mean": 0.00041422222222222224,
+            "macro_std": 0.0007324414615897502,
+            "weighted_mean": 0.00041422222222222224,
+            "ci_95_low": 0.0003039888888888889,
+            "ci_95_high": 0.0005484888888888888
+          }
+        }
+      }
+    },
+    "S3": {
+      "scenario_id": "S3",
+      "scenario_name": "Transient Surge Burst",
+      "num_runs": 10,
+      "quantiles": [
+        "Q99"
+      ],
+      "by_quantile": {
+        "Q99": {
+          "num_runs": 10,
+          "total_flows": 2935880,
+          "heavy_admitted_pct": {
+            "macro_mean": 1.3984563401773913,
+            "macro_std": 0.5611022538594115,
+            "weighted_mean": 1.3984563401773915,
+            "ci_95_low": 1.1459553864599372,
+            "ci_95_high": 1.7953765140264593
+          },
+          "gate_reject_ae_pct": {
+            "macro_mean": 98.60154365982261,
+            "macro_std": 0.5611022538594126,
+            "weighted_mean": 98.60154365982261,
+            "ci_95_low": 98.20462348597354,
+            "ci_95_high": 98.85404461354005
+          },
+          "load_shed_ae_pct": {
+            "macro_mean": 0.0,
+            "macro_std": 0.0,
+            "weighted_mean": 0.0,
+            "ci_95_low": 0.0,
+            "ci_95_high": 0.0
+          },
+          "frontend_drop_pct": {
+            "macro_mean": 0.0,
+            "macro_std": 0.0,
+            "weighted_mean": 0.0,
+            "ci_95_low": 0.0,
+            "ci_95_high": 0.0
+          },
+          "effective_heavy_passage_recall": {
+            "macro_mean": 0.0665504498185423,
+            "macro_std": 0.030399538104432515,
+            "weighted_mean": 0.0665504498185423,
+            "ci_95_low": 0.04784873926622936,
+            "ci_95_high": 0.08487763773887527
+          },
+          "effective_heavy_benign_fpr": {
+            "macro_mean": 0.00983633167979547,
+            "macro_std": 0.0011428814475482132,
+            "weighted_mean": 0.00983633167979547,
+            "ci_95_low": 0.00918198648552419,
+            "ci_95_high": 0.0104774352282012
+          },
+          "ae_fallback_recall": {
+            "macro_mean": 0.2766478765018209,
+            "macro_std": 0.12552054611379995,
+            "weighted_mean": 0.2766478765018209,
+            "ci_95_low": 0.1986870173116339,
+            "ci_95_high": 0.342749973600532
+          },
+          "ae_fallback_fpr": {
+            "macro_mean": 0.0043683317511491425,
+            "macro_std": 0.0008834071252083731,
+            "weighted_mean": 0.004368331751149142,
+            "ci_95_low": 0.003809684537582279,
+            "ci_95_high": 0.004876293855808155
+          },
+          "ideal_routing_yield": {
+            "macro_mean": 0.3431983263203632,
+            "macro_std": 0.14366542321122275,
+            "weighted_mean": 0.3431983263203632,
+            "ci_95_low": 0.2489507892823112,
+            "ci_95_high": 0.4185275250718238
+          },
+          "mean_waiting_time_ms": {
+            "macro_mean": 0.006585733505164655,
+            "macro_std": 0.002945291142104344,
+            "weighted_mean": 0.0065857335051646565,
+            "ci_95_low": 0.005283233503361203,
+            "ci_95_high": 0.008662614813450266
+          },
+          "p95_waiting_time_ms": {
+            "macro_mean": 0.035009367455271834,
+            "macro_std": 0.038672262726428826,
+            "weighted_mean": 0.035009367455271834,
+            "ci_95_low": 0.01559249787898406,
+            "ci_95_high": 0.06138886714589628
+          },
+          "max_waiting_time_ms": {
+            "macro_mean": 0.3320001028991548,
+            "macro_std": 0.05703624660711375,
+            "weighted_mean": 0.3320001028991548,
+            "ci_95_low": 0.30364969759057336,
+            "ci_95_high": 0.3719270522066753
+          },
+          "mean_queue_length": {
+            "macro_mean": 0.0029534585882256765,
+            "macro_std": 0.003120414915522514,
+            "weighted_mean": 0.002953458588225677,
+            "ci_95_low": 0.0017024878401024563,
+            "ci_95_high": 0.005079226671389838
+          }
+        }
+      }
+    },
+    "S4": {
+      "scenario_id": "S4",
+      "scenario_name": "Pareto Microbursts",
+      "num_runs": 10,
+      "quantiles": [
+        "Q99"
+      ],
+      "by_quantile": {
+        "Q99": {
+          "num_runs": 10,
+          "total_flows": 250000,
+          "heavy_admitted_pct": {
+            "macro_mean": 1.4712,
+            "macro_std": 0.6018986256468406,
+            "weighted_mean": 1.4712,
+            "ci_95_low": 1.20758,
+            "ci_95_high": 1.88527
+          },
+          "gate_reject_ae_pct": {
+            "macro_mean": 98.5288,
+            "macro_std": 0.6018986256468388,
+            "weighted_mean": 98.5288,
+            "ci_95_low": 98.11473,
+            "ci_95_high": 98.79241999999999
+          },
+          "load_shed_ae_pct": {
+            "macro_mean": 0.0,
+            "macro_std": 0.0,
+            "weighted_mean": 0.0,
+            "ci_95_low": 0.0,
+            "ci_95_high": 0.0
+          },
+          "frontend_drop_pct": {
+            "macro_mean": 0.0,
+            "macro_std": 0.0,
+            "weighted_mean": 0.0,
+            "ci_95_low": 0.0,
+            "ci_95_high": 0.0
+          },
+          "effective_heavy_passage_recall": {
+            "macro_mean": 0.06920815082915052,
+            "macro_std": 0.03285248759911634,
+            "weighted_mean": 0.06920815082915052,
+            "ci_95_low": 0.049493002430653715,
+            "ci_95_high": 0.08829565224385306
+          },
+          "effective_heavy_benign_fpr": {
+            "macro_mean": 0.010363313519032328,
+            "macro_std": 0.001029446422368606,
+            "weighted_mean": 0.010363313519032327,
+            "ci_95_low": 0.009764310051930231,
+            "ci_95_high": 0.010937144923475622
+          },
+          "ae_fallback_recall": {
+            "macro_mean": 0.2831179248664809,
+            "macro_std": 0.12691703190776654,
+            "weighted_mean": 0.28311792486648085,
+            "ci_95_low": 0.20440798476124333,
+            "ci_95_high": 0.34955045053360356
+          },
+          "ae_fallback_fpr": {
+            "macro_mean": 0.004349953780962143,
+            "macro_std": 0.0011313467491571069,
+            "weighted_mean": 0.004349953780962143,
+            "ci_95_low": 0.0035935641907562112,
+            "ci_95_high": 0.004973879840622742
+          },
+          "ideal_routing_yield": {
+            "macro_mean": 0.35232607569563135,
+            "macro_std": 0.14799934034619058,
+            "weighted_mean": 0.35232607569563146,
+            "ci_95_low": 0.255935645217975,
+            "ci_95_high": 0.4300862724892323
+          },
+          "mean_waiting_time_ms": {
+            "macro_mean": 0.0008296510999554549,
+            "macro_std": 0.000725424463084329,
+            "weighted_mean": 0.0008296510999554549,
+            "ci_95_low": 0.00043083447763207056,
+            "ci_95_high": 0.0013028860996879468
+          },
+          "p95_waiting_time_ms": {
+            "macro_mean": 0.0,
+            "macro_std": 0.0,
+            "weighted_mean": 0.0,
+            "ci_95_low": 0.0,
+            "ci_95_high": 0.0
+          },
+          "max_waiting_time_ms": {
+            "macro_mean": 0.11540140626256079,
+            "macro_std": 0.04584119338748463,
+            "weighted_mean": 0.11540140626256078,
+            "ci_95_low": 0.0881871205529633,
+            "ci_95_high": 0.14445808620763279
+          },
+          "mean_queue_length": {
+            "macro_mean": 6.000000000000001e-05,
+            "macro_std": 0.00010873004286866729,
+            "weighted_mean": 6e-05,
+            "ci_95_low": 1.2000000000000002e-05,
+            "ci_95_high": 0.000136
+          }
+        }
+      }
+    },
+    "S5": {
+      "scenario_id": "S5",
+      "scenario_name": "SLA Delay Sweep",
+      "num_runs": 60,
+      "quantiles": [
+        "Q99"
+      ],
+      "by_quantile": {
+        "Q99": {
+          "num_runs": 60,
+          "total_flows": 1200000,
+          "heavy_admitted_pct": {
+            "macro_mean": 1.3915000000000004,
+            "macro_std": 0.5316199260399406,
+            "weighted_mean": 1.3915,
+            "ci_95_low": 1.2657125,
+            "ci_95_high": 1.5393374999999998
+          },
+          "gate_reject_ae_pct": {
+            "macro_mean": 98.60849999999999,
+            "macro_std": 0.5316199260399408,
+            "weighted_mean": 98.6085,
+            "ci_95_low": 98.46066249999998,
+            "ci_95_high": 98.73428750000001
+          },
+          "load_shed_ae_pct": {
+            "macro_mean": 0.0,
+            "macro_std": 0.0,
+            "weighted_mean": 0.0,
+            "ci_95_low": 0.0,
+            "ci_95_high": 0.0
+          },
+          "frontend_drop_pct": {
+            "macro_mean": 0.0,
+            "macro_std": 0.0,
+            "weighted_mean": 0.0,
+            "ci_95_low": 0.0,
+            "ci_95_high": 0.0
+          },
+          "effective_heavy_passage_recall": {
+            "macro_mean": 0.06870761901723739,
+            "macro_std": 0.03051300547928739,
+            "weighted_mean": 0.0687076190172374,
+            "ci_95_low": 0.0609158991380853,
+            "ci_95_high": 0.07654101515696084
+          },
+          "effective_heavy_benign_fpr": {
+            "macro_mean": 0.009718894581545272,
+            "macro_std": 0.0015094784701373903,
+            "weighted_mean": 0.009718894581545272,
+            "ci_95_low": 0.009351906445511284,
+            "ci_95_high": 0.01007737501788422
+          },
+          "ae_fallback_recall": {
+            "macro_mean": 0.27598063376213416,
+            "macro_std": 0.11977365845884486,
+            "weighted_mean": 0.27598063376213416,
+            "ci_95_low": 0.2463976262601129,
+            "ci_95_high": 0.30809523385330995
+          },
+          "ae_fallback_fpr": {
+            "macro_mean": 0.004247416035016912,
+            "macro_std": 0.0010171535577010794,
+            "weighted_mean": 0.0042474160350169125,
+            "ci_95_low": 0.00397692217749337,
+            "ci_95_high": 0.00450584159378381
+          },
+          "ideal_routing_yield": {
+            "macro_mean": 0.34468825277937154,
+            "macro_std": 0.13886833060501746,
+            "weighted_mean": 0.3446882527793715,
+            "ci_95_low": 0.3095386489268104,
+            "ci_95_high": 0.3813471994214914
+          },
+          "mean_waiting_time_ms": {
+            "macro_mean": 0.0029743968711530306,
+            "macro_std": 0.0017067303309000375,
+            "weighted_mean": 0.00297439687115303,
+            "ci_95_low": 0.002559652162165682,
+            "ci_95_high": 0.003420679565193789
+          },
+          "p95_waiting_time_ms": {
+            "macro_mean": 0.00508523286944762,
+            "macro_std": 0.01670910848254279,
+            "weighted_mean": 0.00508523286944762,
+            "ci_95_low": 0.0012326760585804348,
+            "ci_95_high": 0.00937605457088038
+          },
+          "max_waiting_time_ms": {
+            "macro_mean": 0.17657576493484525,
+            "macro_std": 0.0476663570989072,
+            "weighted_mean": 0.17657576493484525,
+            "ci_95_low": 0.16528745718766472,
+            "ci_95_high": 0.18990506997264694
+          },
+          "mean_queue_length": {
+            "macro_mean": 0.0005216666666666668,
+            "macro_std": 0.0005761772522312041,
+            "weighted_mean": 0.0005216666666666667,
+            "ci_95_low": 0.00038583333333333335,
+            "ci_95_high": 0.0006749999999999999
+          }
+        }
+      }
+    },
+    "S6": {
+      "scenario_id": "S6",
+      "scenario_name": "Threshold Comparison Q99 vs Q95",
+      "num_runs": 60,
+      "quantiles": [
+        "Q99",
+        "Q95"
+      ],
+      "by_quantile": {
+        "Q99": {
+          "num_runs": 30,
+          "total_flows": 750000,
+          "heavy_admitted_pct": {
+            "macro_mean": 1.402,
+            "macro_std": 0.5125705334138297,
+            "weighted_mean": 1.402,
+            "ci_95_low": 1.2399266666666664,
+            "ci_95_high": 1.5908000000000002
+          },
+          "gate_reject_ae_pct": {
+            "macro_mean": 98.598,
+            "macro_std": 0.5125705334138292,
+            "weighted_mean": 98.598,
+            "ci_95_low": 98.40920000000001,
+            "ci_95_high": 98.76007333333334
+          },
+          "load_shed_ae_pct": {
+            "macro_mean": 0.0,
+            "macro_std": 0.0,
+            "weighted_mean": 0.0,
+            "ci_95_low": 0.0,
+            "ci_95_high": 0.0
+          },
+          "frontend_drop_pct": {
+            "macro_mean": 0.0,
+            "macro_std": 0.0,
+            "weighted_mean": 0.0,
+            "ci_95_low": 0.0,
+            "ci_95_high": 0.0
+          },
+          "effective_heavy_passage_recall": {
+            "macro_mean": 0.06694185945532209,
+            "macro_std": 0.03161881118825557,
+            "weighted_mean": 0.06694185945532209,
+            "ci_95_low": 0.05621012727726071,
+            "ci_95_high": 0.07852350317255087
+          },
+          "effective_heavy_benign_fpr": {
+            "macro_mean": 0.009848097017884342,
+            "macro_std": 0.0013808888085283476,
+            "weighted_mean": 0.00984809701788434,
+            "ci_95_low": 0.009352645637930378,
+            "ci_95_high": 0.010323838160499522
+          },
+          "ae_fallback_recall": {
+            "macro_mean": 0.27340462712413366,
+            "macro_std": 0.12292270120766155,
+            "weighted_mean": 0.27340462712413366,
+            "ci_95_low": 0.22883141946834365,
+            "ci_95_high": 0.31803948086477574
+          },
+          "ae_fallback_fpr": {
+            "macro_mean": 0.004566252142447354,
+            "macro_std": 0.001176470974729934,
+            "weighted_mean": 0.004566252142447356,
+            "ci_95_low": 0.004161047718974875,
+            "ci_95_high": 0.004964863939317825
+          },
+          "ideal_routing_yield": {
+            "macro_mean": 0.3403464865794558,
+            "macro_std": 0.14082151177282962,
+            "weighted_mean": 0.34034648657945576,
+            "ci_95_low": 0.29020271188301094,
+            "ci_95_high": 0.3913399699846937
+          },
+          "mean_waiting_time_ms": {
+            "macro_mean": 0.0012216454643822008,
+            "macro_std": 0.0010052491232527899,
+            "weighted_mean": 0.0012216454643822008,
+            "ci_95_low": 0.0008792079184509036,
+            "ci_95_high": 0.001573553530938833
+          },
+          "p95_waiting_time_ms": {
+            "macro_mean": 8.941086723963752e-05,
+            "macro_std": 0.0004897234887324913,
+            "weighted_mean": 8.941086723963752e-05,
+            "ci_95_low": 0.0,
+            "ci_95_high": 0.0002682326017189126
+          },
+          "max_waiting_time_ms": {
+            "macro_mean": 0.13359339090784997,
+            "macro_std": 0.058581311857443634,
+            "weighted_mean": 0.13359339090784997,
+            "ci_95_low": 0.11084611806595847,
+            "ci_95_high": 0.15260676396312853
+          },
+          "mean_queue_length": {
+            "macro_mean": 0.000128,
+            "macro_std": 0.00023238493630330182,
+            "weighted_mean": 0.000128,
+            "ci_95_low": 6.130000000000001e-05,
+            "ci_95_high": 0.00021603333333333326
+          }
+        },
+        "Q95": {
+          "num_runs": 30,
+          "total_flows": 750000,
+          "heavy_admitted_pct": {
+            "macro_mean": 7.458399999999999,
+            "macro_std": 2.3778851455689027,
+            "weighted_mean": 7.4584,
+            "ci_95_low": 6.687016666666666,
+            "ci_95_high": 8.371253333333334
+          },
+          "gate_reject_ae_pct": {
+            "macro_mean": 92.5416,
+            "macro_std": 2.3778851455689023,
+            "weighted_mean": 92.5416,
+            "ci_95_low": 91.62874666666666,
+            "ci_95_high": 93.3129833333333
+          },
+          "load_shed_ae_pct": {
+            "macro_mean": 0.0,
+            "macro_std": 0.0,
+            "weighted_mean": 0.0,
+            "ci_95_low": 0.0,
+            "ci_95_high": 0.0
+          },
+          "frontend_drop_pct": {
+            "macro_mean": 0.0,
+            "macro_std": 0.0,
+            "weighted_mean": 0.0,
+            "ci_95_low": 0.0,
+            "ci_95_high": 0.0
+          },
+          "effective_heavy_passage_recall": {
+            "macro_mean": 0.5399930642654998,
+            "macro_std": 0.21585095336567803,
+            "weighted_mean": 0.5399930642654999,
+            "ci_95_low": 0.4655770663192839,
+            "ci_95_high": 0.6148113221513581
+          },
+          "effective_heavy_benign_fpr": {
+            "macro_mean": 0.05050453518103022,
+            "macro_std": 0.0043291284569855855,
+            "weighted_mean": 0.05050453518103022,
+            "ci_95_low": 0.049129376729680256,
+            "ci_95_high": 0.05212667762107112
+          },
+          "ae_fallback_recall": {
+            "macro_mean": 0.3064857852828019,
+            "macro_std": 0.06873659513667657,
+            "weighted_mean": 0.3064857852828019,
+            "ci_95_low": 0.2804215583982854,
+            "ci_95_high": 0.33117848209577055
+          },
+          "ae_fallback_fpr": {
+            "macro_mean": 0.010335647482716153,
+            "macro_std": 0.007955166266824274,
+            "weighted_mean": 0.010335647482716153,
+            "ci_95_low": 0.00754904881220195,
+            "ci_95_high": 0.013208877488112676
+          },
+          "ideal_routing_yield": {
+            "macro_mean": 0.8464788495483018,
+            "macro_std": 0.18345679894042466,
+            "weighted_mean": 0.8464788495483018,
+            "ci_95_low": 0.7827510446368928,
+            "ci_95_high": 0.9080327365006748
+          },
+          "mean_waiting_time_ms": {
+            "macro_mean": 0.007344655381418611,
+            "macro_std": 0.004132477289972281,
+            "weighted_mean": 0.0073446553814186105,
+            "ci_95_low": 0.005928102519400294,
+            "ci_95_high": 0.008864481984493964
+          },
+          "p95_waiting_time_ms": {
+            "macro_mean": 0.052787230921342694,
+            "macro_std": 0.04539704274577933,
+            "weighted_mean": 0.052787230921342694,
+            "ci_95_low": 0.036283811135335575,
+            "ci_95_high": 0.06904335240868847
+          },
+          "max_waiting_time_ms": {
+            "macro_mean": 0.30292399085142246,
+            "macro_std": 0.07394356595933894,
+            "weighted_mean": 0.3029239908514225,
+            "ci_95_low": 0.2759085061209086,
+            "ci_95_high": 0.33118938370805495
+          },
+          "mean_queue_length": {
+            "macro_mean": 0.0039239999999999995,
+            "macro_std": 0.004260372009011937,
+            "weighted_mean": 0.003924,
+            "ci_95_low": 0.002535866666666667,
+            "ci_95_high": 0.005509333333333332
+          }
+        }
+      }
+    },
+    "S7": {
+      "scenario_id": "S7",
+      "scenario_name": "Non-IID Client Stress Test",
+      "num_runs": 12,
+      "quantiles": [
+        "Q99",
+        "Q95"
+      ],
+      "by_quantile": {
+        "Q99": {
+          "num_runs": 6,
+          "total_flows": 180000,
+          "heavy_admitted_pct": {
+            "macro_mean": 2.2966666666666664,
+            "macro_std": 0.7830112813150695,
+            "weighted_mean": 2.296666666666667,
+            "ci_95_low": 1.8094027777777775,
+            "ci_95_high": 2.779444444444444
+          },
+          "gate_reject_ae_pct": {
+            "macro_mean": 97.70333333333333,
+            "macro_std": 0.783011281315071,
+            "weighted_mean": 97.70333333333333,
+            "ci_95_low": 97.22055555555556,
+            "ci_95_high": 98.19059722222221
+          },
+          "load_shed_ae_pct": {
+            "macro_mean": 0.0,
+            "macro_std": 0.0,
+            "weighted_mean": 0.0,
+            "ci_95_low": 0.0,
+            "ci_95_high": 0.0
+          },
+          "frontend_drop_pct": {
+            "macro_mean": 0.0,
+            "macro_std": 0.0,
+            "weighted_mean": 0.0,
+            "ci_95_low": 0.0,
+            "ci_95_high": 0.0
+          },
+          "effective_heavy_passage_recall": {
+            "macro_mean": 0.027715618830575908,
+            "macro_std": 0.0077551628581933995,
+            "weighted_mean": 0.027715618830575908,
+            "ci_95_low": 0.022794718991877464,
+            "ci_95_high": 0.03258689336655302
+          },
+          "effective_heavy_benign_fpr": {
+            "macro_mean": 0.008577387131833624,
+            "macro_std": 0.0019375580732613278,
+            "weighted_mean": 0.008577387131833626,
+            "ci_95_low": 0.00709020388759173,
+            "ci_95_high": 0.00986692791647627
+          },
+          "ae_fallback_recall": {
+            "macro_mean": 0.07314601551519477,
+            "macro_std": 0.07279492715281947,
+            "weighted_mean": 0.07314601551519477,
+            "ci_95_low": 0.028338454758762774,
+            "ci_95_high": 0.11806113450418852
+          },
+          "ae_fallback_fpr": {
+            "macro_mean": 0.004985526404510364,
+            "macro_std": 0.001562560671762893,
+            "weighted_mean": 0.004985526404510364,
+            "ci_95_low": 0.0038667397538025114,
+            "ci_95_high": 0.006138019494105984
+          },
+          "ideal_routing_yield": {
+            "macro_mean": 0.10086163434577067,
+            "macro_std": 0.08053439927635017,
+            "weighted_mean": 0.10086163434577065,
+            "ci_95_low": 0.051350466416295294,
+            "ci_95_high": 0.15038157355939058
+          },
+          "mean_waiting_time_ms": {
+            "macro_mean": 0.004800922435185575,
+            "macro_std": 0.0015010670757400022,
+            "weighted_mean": 0.004800922435185575,
+            "ci_95_low": 0.003748089833655278,
+            "ci_95_high": 0.005927437016796481
+          },
+          "p95_waiting_time_ms": {
+            "macro_mean": 0.019783024974732482,
+            "macro_std": 0.02629681527524194,
+            "weighted_mean": 0.019783024974732482,
+            "ci_95_low": 0.0030659129883573743,
+            "ci_95_high": 0.041428029939731
+          },
+          "max_waiting_time_ms": {
+            "macro_mean": 0.21705671184209704,
+            "macro_std": 0.026558938271369514,
+            "weighted_mean": 0.21705671184209702,
+            "ci_95_low": 0.19840654215549,
+            "ci_95_high": 0.23728614518188826
+          },
+          "mean_queue_length": {
+            "macro_mean": 0.0015555555555555557,
+            "macro_std": 0.0009289579984923769,
+            "weighted_mean": 0.0015555555555555555,
+            "ci_95_low": 0.00095,
+            "ci_95_high": 0.0022833333333333334
+          }
+        },
+        "Q95": {
+          "num_runs": 6,
+          "total_flows": 180000,
+          "heavy_admitted_pct": {
+            "macro_mean": 11.177777777777777,
+            "macro_std": 1.8938633843333368,
+            "weighted_mean": 11.177777777777777,
+            "ci_95_low": 9.970541666666666,
+            "ci_95_high": 12.374444444444444
+          },
+          "gate_reject_ae_pct": {
+            "macro_mean": 88.82222222222221,
+            "macro_std": 1.89386338433334,
+            "weighted_mean": 88.82222222222222,
+            "ci_95_low": 87.62555555555555,
+            "ci_95_high": 90.02945833333334
+          },
+          "load_shed_ae_pct": {
+            "macro_mean": 0.0,
+            "macro_std": 0.0,
+            "weighted_mean": 0.0,
+            "ci_95_low": 0.0,
+            "ci_95_high": 0.0
+          },
+          "frontend_drop_pct": {
+            "macro_mean": 0.0,
+            "macro_std": 0.0,
+            "weighted_mean": 0.0,
+            "ci_95_low": 0.0,
+            "ci_95_high": 0.0
+          },
+          "effective_heavy_passage_recall": {
+            "macro_mean": 0.13767058887099046,
+            "macro_std": 0.03463365415348401,
+            "weighted_mean": 0.13767058887099043,
+            "ci_95_low": 0.11604315864941155,
+            "ci_95_high": 0.15967167893508113
+          },
+          "effective_heavy_benign_fpr": {
+            "macro_mean": 0.05139371073336064,
+            "macro_std": 0.00812726247948901,
+            "weighted_mean": 0.05139371073336063,
+            "ci_95_low": 0.04568584668049645,
+            "ci_95_high": 0.0567928241099526
+          },
+          "ae_fallback_recall": {
+            "macro_mean": 0.3613606092750543,
+            "macro_std": 0.01580122496594327,
+            "weighted_mean": 0.3613606092750543,
+            "ci_95_low": 0.35017592487196314,
+            "ci_95_high": 0.37201675803185213
+          },
+          "ae_fallback_fpr": {
+            "macro_mean": 0.024084497192688997,
+            "macro_std": 0.0024612546723648777,
+            "weighted_mean": 0.024084497192688993,
+            "ci_95_low": 0.022360683876603952,
+            "ci_95_high": 0.02586173036656963
+          },
+          "ideal_routing_yield": {
+            "macro_mean": 0.49903119814604474,
+            "macro_std": 0.049847957724769215,
+            "weighted_mean": 0.4990311981460448,
+            "ci_95_low": 0.46714719870871924,
+            "ci_95_high": 0.5303589520754756
+          },
+          "mean_waiting_time_ms": {
+            "macro_mean": 0.03091298694742976,
+            "macro_std": 0.008636154330924935,
+            "weighted_mean": 0.030912986947429763,
+            "ci_95_low": 0.025159874409339797,
+            "ci_95_high": 0.036722389430173294
+          },
+          "p95_waiting_time_ms": {
+            "macro_mean": 0.1850778979465264,
+            "macro_std": 0.03312956728523657,
+            "weighted_mean": 0.18507789794652635,
+            "ci_95_low": 0.1618008847419398,
+            "ci_95_high": 0.20835491115111301
+          },
+          "max_waiting_time_ms": {
+            "macro_mean": 0.611572291696579,
+            "macro_std": 0.16185114452562477,
+            "weighted_mean": 0.611572291696579,
+            "ci_95_low": 0.4980333875160836,
+            "ci_95_high": 0.72758083855728
+          },
+          "mean_queue_length": {
+            "macro_mean": 0.049577777777777776,
+            "macro_std": 0.020853943583000384,
+            "weighted_mean": 0.049577777777777776,
+            "ci_95_low": 0.035305555555555555,
+            "ci_95_high": 0.06380555555555556
+          }
+        }
+      }
+    }
+  },
+  "heterogeneity_deep_dive": {
+    "client_02": {
+      "client_type": "Threshold-limited (sparse benign validation, concentrated attacks)",
+      "total_evaluations": 38,
+      "S7_MMPP_results": {
+        "Q99": {
+          "heavy_admitted_pct": 1.582222222222222,
+          "effective_heavy_recall": 0.020648095358982488,
+          "ae_fallback_recall": 0.006710309754890657,
+          "ideal_routing_yield": 0.027358405113873146,
+          "max_waiting_time_ms": 0.21319211292247786
+        },
+        "Q95": {
+          "heavy_admitted_pct": 12.903333333333334,
+          "effective_heavy_recall": 0.1692470997740343,
+          "ae_fallback_recall": 0.3751724889509312,
+          "ideal_routing_yield": 0.5444195887249655,
+          "max_waiting_time_ms": 0.8417486954321873
+        }
+      },
+      "Q99_to_Q95_yield_gain_pct": 51.70611836110924
+    },
+    "client_04": {
+      "client_type": "Separability-limited (diffuse distribution)",
+      "total_evaluations": 38,
+      "S7_MMPP_results": {
+        "Q99": {
+          "heavy_admitted_pct": 3.011111111111111,
+          "effective_heavy_recall": 0.03478314230216933,
+          "ae_fallback_recall": 0.13958172127549887,
+          "ideal_routing_yield": 0.1743648635776682,
+          "max_waiting_time_ms": 0.25654912717243405
+        },
+        "Q95": {
+          "heavy_admitted_pct": 9.45222222222222,
+          "effective_heavy_recall": 0.1060940779679466,
+          "ae_fallback_recall": 0.34754872959917743,
+          "ideal_routing_yield": 0.453642807567124,
+          "max_waiting_time_ms": 0.5379435689292222
+        }
+      },
+      "Q99_to_Q95_yield_gain_pct": 27.927794398945583
+    }
+  }
+}

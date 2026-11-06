@@ -1,0 +1,270 @@
+{
+  "metadata": {
+    "methodological_caveat": "Synthetic routing statistics reflecting switch dynamics under stochastic sampling with replacement. Does not establish physical temporal flow continuity or recurrent-state continuity.",
+    "quantiles_evaluated": [
+      "Q99",
+      "Q95"
+    ],
+    "total_clients": 10
+  },
+  "pooled_summary": {
+    "Q99": {
+      "total_pooled_runs": 4177,
+      "mean_run_length": 1.0603303806559732,
+      "median_run_length": 1.0,
+      "max_run_length": 8,
+      "p95_run_length": 1.0,
+      "p99_run_length": 2.0
+    },
+    "Q95": {
+      "total_pooled_runs": 20917,
+      "mean_run_length": 1.1377826648180906,
+      "median_run_length": 1.0,
+      "max_run_length": 11,
+      "p95_run_length": 2.0,
+      "p99_run_length": 3.0
+    }
+  },
+  "per_client": {
+    "client_00": {
+      "Q99": {
+        "total_flows": 50040,
+        "total_admitted": 548,
+        "admission_rate": 0.010951239008792966,
+        "total_admitted_runs": 525,
+        "mean_run_length": 1.0438095238095237,
+        "median_run_length": 1.0,
+        "max_run_length": 3,
+        "p95_run_length": 1.0,
+        "p99_run_length": 2.0
+      },
+      "Q95": {
+        "total_flows": 50040,
+        "total_admitted": 2741,
+        "admission_rate": 0.054776179056754595,
+        "total_admitted_runs": 2496,
+        "mean_run_length": 1.0981570512820513,
+        "median_run_length": 1.0,
+        "max_run_length": 4,
+        "p95_run_length": 2.0,
+        "p99_run_length": 2.0
+      }
+    },
+    "client_01": {
+      "Q99": {
+        "total_flows": 80431,
+        "total_admitted": 906,
+        "admission_rate": 0.011264313510959705,
+        "total_admitted_runs": 859,
+        "mean_run_length": 1.0547147846332945,
+        "median_run_length": 1.0,
+        "max_run_length": 4,
+        "p95_run_length": 1.0,
+        "p99_run_length": 2.0
+      },
+      "Q95": {
+        "total_flows": 80431,
+        "total_admitted": 4672,
+        "admission_rate": 0.058087055985876095,
+        "total_admitted_runs": 4175,
+        "mean_run_length": 1.1190419161676646,
+        "median_run_length": 1.0,
+        "max_run_length": 5,
+        "p95_run_length": 2.0,
+        "p99_run_length": 3.0
+      }
+    },
+    "client_02": {
+      "Q99": {
+        "total_flows": 1523,
+        "total_admitted": 24,
+        "admission_rate": 0.015758371634931056,
+        "total_admitted_runs": 23,
+        "mean_run_length": 1.0434782608695652,
+        "median_run_length": 1.0,
+        "max_run_length": 2,
+        "p95_run_length": 1.0,
+        "p99_run_length": 1.7800000000000011
+      },
+      "Q95": {
+        "total_flows": 1523,
+        "total_admitted": 198,
+        "admission_rate": 0.13000656598818122,
+        "total_admitted_runs": 166,
+        "mean_run_length": 1.1927710843373494,
+        "median_run_length": 1.0,
+        "max_run_length": 4,
+        "p95_run_length": 2.0,
+        "p99_run_length": 3.0
+      }
+    },
+    "client_03": {
+      "Q99": {
+        "total_flows": 50171,
+        "total_admitted": 745,
+        "admission_rate": 0.014849215682366306,
+        "total_admitted_runs": 696,
+        "mean_run_length": 1.0704022988505748,
+        "median_run_length": 1.0,
+        "max_run_length": 8,
+        "p95_run_length": 1.0,
+        "p99_run_length": 3.0
+      },
+      "Q95": {
+        "total_flows": 50171,
+        "total_admitted": 4752,
+        "admission_rate": 0.09471607103705328,
+        "total_admitted_runs": 3934,
+        "mean_run_length": 1.2079308591764109,
+        "median_run_length": 1.0,
+        "max_run_length": 10,
+        "p95_run_length": 2.0,
+        "p99_run_length": 4.0
+      }
+    },
+    "client_04": {
+      "Q99": {
+        "total_flows": 5428,
+        "total_admitted": 161,
+        "admission_rate": 0.029661016949152543,
+        "total_admitted_runs": 143,
+        "mean_run_length": 1.1258741258741258,
+        "median_run_length": 1.0,
+        "max_run_length": 3,
+        "p95_run_length": 2.0,
+        "p99_run_length": 2.0
+      },
+      "Q95": {
+        "total_flows": 5428,
+        "total_admitted": 517,
+        "admission_rate": 0.09524686809137804,
+        "total_admitted_runs": 397,
+        "mean_run_length": 1.3022670025188916,
+        "median_run_length": 1.0,
+        "max_run_length": 11,
+        "p95_run_length": 2.0,
+        "p99_run_length": 5.080000000000041
+      }
+    },
+    "client_05": {
+      "Q99": {
+        "total_flows": 8712,
+        "total_admitted": 89,
+        "admission_rate": 0.010215794306703397,
+        "total_admitted_runs": 86,
+        "mean_run_length": 1.0348837209302326,
+        "median_run_length": 1.0,
+        "max_run_length": 2,
+        "p95_run_length": 1.0,
+        "p99_run_length": 2.0
+      },
+      "Q95": {
+        "total_flows": 8712,
+        "total_admitted": 525,
+        "admission_rate": 0.060261707988980714,
+        "total_admitted_runs": 479,
+        "mean_run_length": 1.0960334029227556,
+        "median_run_length": 1.0,
+        "max_run_length": 4,
+        "p95_run_length": 2.0,
+        "p99_run_length": 2.0
+      }
+    },
+    "client_06": {
+      "Q99": {
+        "total_flows": 28568,
+        "total_admitted": 371,
+        "admission_rate": 0.012986558387006441,
+        "total_admitted_runs": 351,
+        "mean_run_length": 1.056980056980057,
+        "median_run_length": 1.0,
+        "max_run_length": 3,
+        "p95_run_length": 1.5,
+        "p99_run_length": 2.0
+      },
+      "Q95": {
+        "total_flows": 28568,
+        "total_admitted": 1904,
+        "admission_rate": 0.06664799775973117,
+        "total_admitted_runs": 1685,
+        "mean_run_length": 1.1299703264094956,
+        "median_run_length": 1.0,
+        "max_run_length": 5,
+        "p95_run_length": 2.0,
+        "p99_run_length": 3.0
+      }
+    },
+    "client_07": {
+      "Q99": {
+        "total_flows": 19388,
+        "total_admitted": 218,
+        "admission_rate": 0.011244068495976893,
+        "total_admitted_runs": 207,
+        "mean_run_length": 1.0531400966183575,
+        "median_run_length": 1.0,
+        "max_run_length": 2,
+        "p95_run_length": 1.6999999999999886,
+        "p99_run_length": 2.0
+      },
+      "Q95": {
+        "total_flows": 19388,
+        "total_admitted": 1068,
+        "admission_rate": 0.055085619971116155,
+        "total_admitted_runs": 979,
+        "mean_run_length": 1.0909090909090908,
+        "median_run_length": 1.0,
+        "max_run_length": 3,
+        "p95_run_length": 2.0,
+        "p99_run_length": 2.0
+      }
+    },
+    "client_08": {
+      "Q99": {
+        "total_flows": 67424,
+        "total_admitted": 843,
+        "admission_rate": 0.01250296630280019,
+        "total_admitted_runs": 782,
+        "mean_run_length": 1.078005115089514,
+        "median_run_length": 1.0,
+        "max_run_length": 5,
+        "p95_run_length": 2.0,
+        "p99_run_length": 2.189999999999941
+      },
+      "Q95": {
+        "total_flows": 67424,
+        "total_admitted": 4406,
+        "admission_rate": 0.06534765068818225,
+        "total_admitted_runs": 3906,
+        "mean_run_length": 1.1280081925243215,
+        "median_run_length": 1.0,
+        "max_run_length": 5,
+        "p95_run_length": 2.0,
+        "p99_run_length": 3.0
+      }
+    },
+    "client_09": {
+      "Q99": {
+        "total_flows": 46853,
+        "total_admitted": 524,
+        "admission_rate": 0.011183915651078907,
+        "total_admitted_runs": 505,
+        "mean_run_length": 1.0376237623762377,
+        "median_run_length": 1.0,
+        "max_run_length": 3,
+        "p95_run_length": 1.0,
+        "p99_run_length": 2.0
+      },
+      "Q95": {
+        "total_flows": 46853,
+        "total_admitted": 3016,
+        "admission_rate": 0.06437154504514118,
+        "total_admitted_runs": 2700,
+        "mean_run_length": 1.117037037037037,
+        "median_run_length": 1.0,
+        "max_run_length": 6,
+        "p95_run_length": 2.0,
+        "p99_run_length": 3.0
+      }
+    }
+  }
+}

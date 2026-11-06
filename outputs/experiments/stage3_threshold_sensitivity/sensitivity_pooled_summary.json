@@ -1,0 +1,798 @@
+{
+  "sample_weighted_pooled": {
+    "tier1": {
+      "Q99": {
+        "n_samples": 358538,
+        "n_benign": 344282,
+        "n_attack": 14256,
+        "ae": {
+          "tp": 3981,
+          "fp": 3419,
+          "tn": 340863,
+          "fn": 10275,
+          "recall": 0.27925084175084175,
+          "fpr": 0.009930812531587478
+        },
+        "gate": {
+          "tp": 938,
+          "fp": 3491,
+          "tn": 340791,
+          "fn": 13318,
+          "passage_recall": 0.06579685746352414,
+          "benign_fpr": 0.010139943418476714,
+          "heavy_path_invocation_rate_pct": 1.2352944457770167,
+          "filtered_pct": 98.76470555422299,
+          "attack_concentration_pct": 21.178595619778733,
+          "total_passed": 4429,
+          "benign_passed": 3491,
+          "attack_passed": 938,
+          "total_suppressed": 354109,
+          "benign_suppressed": 340791,
+          "attack_suppressed": 13318
+        },
+        "agreement": {
+          "overall_pct": 98.14385086099661,
+          "benign_pct": 99.16986656287578,
+          "attack_pct": 73.36560044893379
+        },
+        "joint_matrix": {
+          "both_trigger": 2587,
+          "ae_only": 4813,
+          "gate_only": 1842,
+          "neither": 349296,
+          "benign": {
+            "both_trigger": 2026,
+            "ae_only": 1393,
+            "gate_only": 1465,
+            "neither": 339398
+          },
+          "attack": {
+            "both_trigger": 561,
+            "ae_only": 3420,
+            "gate_only": 377,
+            "neither": 9898
+          }
+        }
+      },
+      "Q95": {
+        "n_samples": 358538,
+        "n_benign": 344282,
+        "n_attack": 14256,
+        "ae": {
+          "tp": 10534,
+          "fp": 17342,
+          "tn": 326940,
+          "fn": 3722,
+          "recall": 0.7389169472502806,
+          "fpr": 0.05037149778379352
+        },
+        "gate": {
+          "tp": 6444,
+          "fp": 17068,
+          "tn": 327214,
+          "fn": 7812,
+          "passage_recall": 0.45202020202020204,
+          "benign_fpr": 0.04957563857535392,
+          "heavy_path_invocation_rate_pct": 6.557742833395623,
+          "filtered_pct": 93.44225716660438,
+          "attack_concentration_pct": 27.40728138822729,
+          "total_passed": 23512,
+          "benign_passed": 17068,
+          "attack_passed": 6444,
+          "total_suppressed": 335026,
+          "benign_suppressed": 327214,
+          "attack_suppressed": 7812
+        },
+        "agreement": {
+          "overall_pct": 97.3882824135796,
+          "benign_pct": 98.62670717609402,
+          "attack_pct": 67.48035914702581
+        },
+        "joint_matrix": {
+          "both_trigger": 21012,
+          "ae_only": 6864,
+          "gate_only": 2500,
+          "neither": 328162,
+          "benign": {
+            "both_trigger": 14841,
+            "ae_only": 2501,
+            "gate_only": 2227,
+            "neither": 324713
+          },
+          "attack": {
+            "both_trigger": 6171,
+            "ae_only": 4363,
+            "gate_only": 273,
+            "neither": 3449
+          }
+        }
+      },
+      "Q90": {
+        "n_samples": 358538,
+        "n_benign": 344282,
+        "n_attack": 14256,
+        "ae": {
+          "tp": 11394,
+          "fp": 35243,
+          "tn": 309039,
+          "fn": 2862,
+          "recall": 0.7992424242424242,
+          "fpr": 0.10236666453662986
+        },
+        "gate": {
+          "tp": 8416,
+          "fp": 36362,
+          "tn": 307920,
+          "fn": 5840,
+          "passage_recall": 0.590347923681257,
+          "benign_fpr": 0.10561690707036674,
+          "heavy_path_invocation_rate_pct": 12.489052764281611,
+          "filtered_pct": 87.51094723571839,
+          "attack_concentration_pct": 18.794943945687614,
+          "total_passed": 44778,
+          "benign_passed": 36362,
+          "attack_passed": 8416,
+          "total_suppressed": 313760,
+          "benign_suppressed": 307920,
+          "attack_suppressed": 5840
+        },
+        "agreement": {
+          "overall_pct": 97.21563683626282,
+          "benign_pct": 98.09719938887308,
+          "attack_pct": 75.92592592592592
+        },
+        "joint_matrix": {
+          "both_trigger": 40716,
+          "ae_only": 5921,
+          "gate_only": 4062,
+          "neither": 307839,
+          "benign": {
+            "both_trigger": 32527,
+            "ae_only": 2716,
+            "gate_only": 3835,
+            "neither": 305204
+          },
+          "attack": {
+            "both_trigger": 8189,
+            "ae_only": 3205,
+            "gate_only": 227,
+            "neither": 2635
+          }
+        }
+      },
+      "Q80": {
+        "n_samples": 358538,
+        "n_benign": 344282,
+        "n_attack": 14256,
+        "ae": {
+          "tp": 12142,
+          "fp": 69221,
+          "tn": 275061,
+          "fn": 2114,
+          "recall": 0.8517115600448933,
+          "fpr": 0.2010590155744419
+        },
+        "gate": {
+          "tp": 10633,
+          "fp": 69007,
+          "tn": 275275,
+          "fn": 3623,
+          "passage_recall": 0.745861391694725,
+          "benign_fpr": 0.20043743210507664,
+          "heavy_path_invocation_rate_pct": 22.21242936592495,
+          "filtered_pct": 77.78757063407505,
+          "attack_concentration_pct": 13.351330989452537,
+          "total_passed": 79640,
+          "benign_passed": 69007,
+          "attack_passed": 10633,
+          "total_suppressed": 278898,
+          "benign_suppressed": 275275,
+          "attack_suppressed": 3623
+        },
+        "agreement": {
+          "overall_pct": 97.18439886427659,
+          "benign_pct": 97.65889590510105,
+          "attack_pct": 85.7253086419753
+        },
+        "joint_matrix": {
+          "both_trigger": 75454,
+          "ae_only": 5909,
+          "gate_only": 4186,
+          "neither": 272989,
+          "benign": {
+            "both_trigger": 65084,
+            "ae_only": 4137,
+            "gate_only": 3923,
+            "neither": 271138
+          },
+          "attack": {
+            "both_trigger": 10370,
+            "ae_only": 1772,
+            "gate_only": 263,
+            "neither": 1851
+          }
+        }
+      }
+    },
+    "tier2": {
+      "Q99": {
+        "n_samples": 97132,
+        "n_benign": 87355,
+        "n_attack": 9777,
+        "ae": {
+          "tp": 2518,
+          "fp": 3175,
+          "tn": 84180,
+          "fn": 7259,
+          "recall": 0.2575432136647233,
+          "fpr": 0.03634594470837388
+        },
+        "gate": {
+          "tp": 847,
+          "fp": 3254,
+          "tn": 84101,
+          "fn": 8930,
+          "passage_recall": 0.0866318911731615,
+          "benign_fpr": 0.03725030049796806,
+          "heavy_path_invocation_rate_pct": 4.2220895276530905,
+          "filtered_pct": 95.7779104723469,
+          "attack_concentration_pct": 20.653499146549624,
+          "total_passed": 4101,
+          "benign_passed": 3254,
+          "attack_passed": 847,
+          "total_suppressed": 93031,
+          "benign_suppressed": 84101,
+          "attack_suppressed": 8930
+        },
+        "agreement": {
+          "overall_pct": 94.93060989169378,
+          "benign_pct": 97.05225802758858,
+          "attack_pct": 75.97422522246087
+        },
+        "joint_matrix": {
+          "both_trigger": 2435,
+          "ae_only": 3258,
+          "gate_only": 1666,
+          "neither": 89773,
+          "benign": {
+            "both_trigger": 1927,
+            "ae_only": 1248,
+            "gate_only": 1327,
+            "neither": 82853
+          },
+          "attack": {
+            "both_trigger": 508,
+            "ae_only": 2010,
+            "gate_only": 339,
+            "neither": 6920
+          }
+        }
+      },
+      "Q95": {
+        "n_samples": 97132,
+        "n_benign": 87355,
+        "n_attack": 9777,
+        "ae": {
+          "tp": 7119,
+          "fp": 11587,
+          "tn": 75768,
+          "fn": 2658,
+          "recall": 0.7281374654802086,
+          "fpr": 0.1326426649876939
+        },
+        "gate": {
+          "tp": 4618,
+          "fp": 11047,
+          "tn": 76308,
+          "fn": 5159,
+          "passage_recall": 0.4723330264907436,
+          "benign_fpr": 0.12646099250186021,
+          "heavy_path_invocation_rate_pct": 16.12753778363464,
+          "filtered_pct": 83.87246221636536,
+          "attack_concentration_pct": 29.479731886370892,
+          "total_passed": 15665,
+          "benign_passed": 11047,
+          "attack_passed": 4618,
+          "total_suppressed": 81467,
+          "benign_suppressed": 76308,
+          "attack_suppressed": 5159
+        },
+        "agreement": {
+          "overall_pct": 94.54659638430178,
+          "benign_pct": 97.3304332894511,
+          "attack_pct": 69.67372404623094
+        },
+        "joint_matrix": {
+          "both_trigger": 14537,
+          "ae_only": 4169,
+          "gate_only": 1128,
+          "neither": 77298,
+          "benign": {
+            "both_trigger": 10151,
+            "ae_only": 1436,
+            "gate_only": 896,
+            "neither": 74872
+          },
+          "attack": {
+            "both_trigger": 4386,
+            "ae_only": 2733,
+            "gate_only": 232,
+            "neither": 2426
+          }
+        }
+      },
+      "Q90": {
+        "n_samples": 97132,
+        "n_benign": 87355,
+        "n_attack": 9777,
+        "ae": {
+          "tp": 7751,
+          "fp": 15105,
+          "tn": 72250,
+          "fn": 2026,
+          "recall": 0.7927789710545157,
+          "fpr": 0.1729151164787362
+        },
+        "gate": {
+          "tp": 5641,
+          "fp": 14780,
+          "tn": 72575,
+          "fn": 4136,
+          "passage_recall": 0.5769663495959906,
+          "benign_fpr": 0.16919466544559555,
+          "heavy_path_invocation_rate_pct": 21.02396738459004,
+          "filtered_pct": 78.97603261540995,
+          "attack_concentration_pct": 27.623524802898974,
+          "total_passed": 20421,
+          "benign_passed": 14780,
+          "attack_passed": 5641,
+          "total_suppressed": 76711,
+          "benign_suppressed": 72575,
+          "attack_suppressed": 4136
+        },
+        "agreement": {
+          "overall_pct": 95.41551702837377,
+          "benign_pct": 97.53305477648675,
+          "attack_pct": 76.49585762503835
+        },
+        "joint_matrix": {
+          "both_trigger": 19412,
+          "ae_only": 3444,
+          "gate_only": 1009,
+          "neither": 73267,
+          "benign": {
+            "both_trigger": 13865,
+            "ae_only": 1240,
+            "gate_only": 915,
+            "neither": 71335
+          },
+          "attack": {
+            "both_trigger": 5547,
+            "ae_only": 2204,
+            "gate_only": 94,
+            "neither": 1932
+          }
+        }
+      },
+      "Q80": {
+        "n_samples": 97132,
+        "n_benign": 87355,
+        "n_attack": 9777,
+        "ae": {
+          "tp": 8246,
+          "fp": 20550,
+          "tn": 66805,
+          "fn": 1531,
+          "recall": 0.8434079983635062,
+          "fpr": 0.23524698071089234
+        },
+        "gate": {
+          "tp": 6970,
+          "fp": 20579,
+          "tn": 66776,
+          "fn": 2807,
+          "passage_recall": 0.7128976168558863,
+          "benign_fpr": 0.23557895941846488,
+          "heavy_path_invocation_rate_pct": 28.36243462504633,
+          "filtered_pct": 71.63756537495367,
+          "attack_concentration_pct": 25.300373879269667,
+          "total_passed": 27549,
+          "benign_passed": 20579,
+          "attack_passed": 6970,
+          "total_suppressed": 69583,
+          "benign_suppressed": 66776,
+          "attack_suppressed": 2807
+        },
+        "agreement": {
+          "overall_pct": 95.88704031627064,
+          "benign_pct": 97.31555148531854,
+          "attack_pct": 83.12365756366984
+        },
+        "joint_matrix": {
+          "both_trigger": 26175,
+          "ae_only": 2621,
+          "gate_only": 1374,
+          "neither": 66962,
+          "benign": {
+            "both_trigger": 19392,
+            "ae_only": 1158,
+            "gate_only": 1187,
+            "neither": 65618
+          },
+          "attack": {
+            "both_trigger": 6783,
+            "ae_only": 1463,
+            "gate_only": 187,
+            "neither": 1344
+          }
+        }
+      }
+    },
+    "tier3": {
+      "Q99": {
+        "n_samples": 55897,
+        "n_benign": 48880,
+        "n_attack": 7017,
+        "ae": {
+          "tp": 1553,
+          "fp": 2546,
+          "tn": 46334,
+          "fn": 5464,
+          "recall": 0.22131965227305117,
+          "fpr": 0.05208674304418985
+        },
+        "gate": {
+          "tp": 670,
+          "fp": 2509,
+          "tn": 46371,
+          "fn": 6347,
+          "passage_recall": 0.09548239988599116,
+          "benign_fpr": 0.05132978723404255,
+          "heavy_path_invocation_rate_pct": 5.6872461849473135,
+          "filtered_pct": 94.31275381505269,
+          "attack_concentration_pct": 21.07581000314564,
+          "total_passed": 3179,
+          "benign_passed": 2509,
+          "attack_passed": 670,
+          "total_suppressed": 52718,
+          "benign_suppressed": 46371,
+          "attack_suppressed": 6347
+        },
+        "agreement": {
+          "overall_pct": 94.36463495357532,
+          "benign_pct": 96.48731587561375,
+          "attack_pct": 79.57816730796637
+        },
+        "joint_matrix": {
+          "both_trigger": 2064,
+          "ae_only": 2035,
+          "gate_only": 1115,
+          "neither": 50683,
+          "benign": {
+            "both_trigger": 1669,
+            "ae_only": 877,
+            "gate_only": 840,
+            "neither": 45494
+          },
+          "attack": {
+            "both_trigger": 395,
+            "ae_only": 1158,
+            "gate_only": 275,
+            "neither": 5189
+          }
+        }
+      },
+      "Q95": {
+        "n_samples": 55897,
+        "n_benign": 48880,
+        "n_attack": 7017,
+        "ae": {
+          "tp": 5212,
+          "fp": 7697,
+          "tn": 41183,
+          "fn": 1805,
+          "recall": 0.7427675644862477,
+          "fpr": 0.1574672667757774
+        },
+        "gate": {
+          "tp": 3647,
+          "fp": 7232,
+          "tn": 41648,
+          "fn": 3370,
+          "passage_recall": 0.519737779677925,
+          "benign_fpr": 0.1479541734860884,
+          "heavy_path_invocation_rate_pct": 19.462582965096516,
+          "filtered_pct": 80.53741703490348,
+          "attack_concentration_pct": 33.523301774060116,
+          "total_passed": 10879,
+          "benign_passed": 7232,
+          "attack_passed": 3647,
+          "total_suppressed": 45018,
+          "benign_suppressed": 41648,
+          "attack_suppressed": 3370
+        },
+        "agreement": {
+          "overall_pct": 94.11417428484535,
+          "benign_pct": 97.20744680851064,
+          "attack_pct": 72.56662391335328
+        },
+        "joint_matrix": {
+          "both_trigger": 10249,
+          "ae_only": 2660,
+          "gate_only": 630,
+          "neither": 42358,
+          "benign": {
+            "both_trigger": 6782,
+            "ae_only": 915,
+            "gate_only": 450,
+            "neither": 40733
+          },
+          "attack": {
+            "both_trigger": 3467,
+            "ae_only": 1745,
+            "gate_only": 180,
+            "neither": 1625
+          }
+        }
+      },
+      "Q90": {
+        "n_samples": 55897,
+        "n_benign": 48880,
+        "n_attack": 7017,
+        "ae": {
+          "tp": 5671,
+          "fp": 9100,
+          "tn": 39780,
+          "fn": 1346,
+          "recall": 0.8081801339603819,
+          "fpr": 0.18617021276595744
+        },
+        "gate": {
+          "tp": 4400,
+          "fp": 8695,
+          "tn": 40185,
+          "fn": 2617,
+          "passage_recall": 0.6270485962662107,
+          "benign_fpr": 0.1778846153846154,
+          "heavy_path_invocation_rate_pct": 23.42701755013686,
+          "filtered_pct": 76.57298244986313,
+          "attack_concentration_pct": 33.60061092019855,
+          "total_passed": 13095,
+          "benign_passed": 8695,
+          "attack_passed": 4400,
+          "total_suppressed": 42802,
+          "benign_suppressed": 40185,
+          "attack_suppressed": 2617
+        },
+        "agreement": {
+          "overall_pct": 95.41656976224127,
+          "benign_pct": 97.65343698854338,
+          "attack_pct": 79.83468718825709
+        },
+        "joint_matrix": {
+          "both_trigger": 12652,
+          "ae_only": 2119,
+          "gate_only": 443,
+          "neither": 40683,
+          "benign": {
+            "both_trigger": 8324,
+            "ae_only": 776,
+            "gate_only": 371,
+            "neither": 39409
+          },
+          "attack": {
+            "both_trigger": 4328,
+            "ae_only": 1343,
+            "gate_only": 72,
+            "neither": 1274
+          }
+        }
+      },
+      "Q80": {
+        "n_samples": 55897,
+        "n_benign": 48880,
+        "n_attack": 7017,
+        "ae": {
+          "tp": 6019,
+          "fp": 10731,
+          "tn": 38149,
+          "fn": 998,
+          "recall": 0.8577739774832549,
+          "fpr": 0.219537643207856
+        },
+        "gate": {
+          "tp": 5366,
+          "fp": 10419,
+          "tn": 38461,
+          "fn": 1651,
+          "passage_recall": 0.7647142653555651,
+          "benign_fpr": 0.21315466448445172,
+          "heavy_path_invocation_rate_pct": 28.239440399305867,
+          "filtered_pct": 71.76055960069412,
+          "attack_concentration_pct": 33.99429838454229,
+          "total_passed": 15785,
+          "benign_passed": 10419,
+          "attack_passed": 5366,
+          "total_suppressed": 40112,
+          "benign_suppressed": 38461,
+          "attack_suppressed": 1651
+        },
+        "agreement": {
+          "overall_pct": 96.77442438771313,
+          "benign_pct": 98.17921440261865,
+          "attack_pct": 86.98874162747613
+        },
+        "joint_matrix": {
+          "both_trigger": 15366,
+          "ae_only": 1384,
+          "gate_only": 419,
+          "neither": 38728,
+          "benign": {
+            "both_trigger": 10130,
+            "ae_only": 601,
+            "gate_only": 289,
+            "neither": 37860
+          },
+          "attack": {
+            "both_trigger": 5236,
+            "ae_only": 783,
+            "gate_only": 130,
+            "neither": 868
+          }
+        }
+      }
+    }
+  },
+  "macro_client_averaging": {
+    "tier1": {
+      "Q99": {
+        "ae_recall_macro": 0.3182011769295857,
+        "ae_fpr_macro": 0.010176773639951002,
+        "gate_passage_recall_macro": 0.06728467224276458,
+        "gate_benign_fpr_macro": 0.009766836770925474,
+        "heavy_path_invocation_rate_macro_pct": 1.406174599297684,
+        "filtered_macro_pct": 98.59382540070233,
+        "attack_concentration_macro_pct": 30.113284438014915,
+        "gate_ae_agreement_macro_pct": 97.21756057849015,
+        "gate_ae_benign_agreement_macro_pct": 99.16845895910672,
+        "gate_ae_attack_agreement_macro_pct": 70.15391965382142
+      },
+      "Q95": {
+        "ae_recall_macro": 0.8315620297440114,
+        "ae_fpr_macro": 0.050750649804671144,
+        "gate_passage_recall_macro": 0.5396074745369943,
+        "gate_benign_fpr_macro": 0.049889292110137554,
+        "heavy_path_invocation_rate_macro_pct": 7.388268255038858,
+        "filtered_macro_pct": 92.61173174496113,
+        "attack_concentration_macro_pct": 35.936191911303894,
+        "gate_ae_agreement_macro_pct": 92.17862196247104,
+        "gate_ae_benign_agreement_macro_pct": 97.96521068521734,
+        "gate_ae_attack_agreement_macro_pct": 67.37070234752439
+      },
+      "Q90": {
+        "ae_recall_macro": 0.8940796514901914,
+        "ae_fpr_macro": 0.10293421083572625,
+        "gate_passage_recall_macro": 0.6970329782740858,
+        "gate_benign_fpr_macro": 0.10449721322826244,
+        "heavy_path_invocation_rate_macro_pct": 14.633601405595115,
+        "filtered_macro_pct": 85.36639859440488,
+        "attack_concentration_macro_pct": 29.81179498907847,
+        "gate_ae_agreement_macro_pct": 93.54377123075918,
+        "gate_ae_benign_agreement_macro_pct": 97.26850580073534,
+        "gate_ae_attack_agreement_macro_pct": 79.03963910899532
+      },
+      "Q80": {
+        "ae_recall_macro": 0.928246043438443,
+        "ae_fpr_macro": 0.20558369433477988,
+        "gate_passage_recall_macro": 0.8356904130776928,
+        "gate_benign_fpr_macro": 0.2013157983122408,
+        "heavy_path_invocation_rate_macro_pct": 27.245673443429904,
+        "filtered_macro_pct": 72.75432655657009,
+        "attack_concentration_macro_pct": 25.549966581474457,
+        "gate_ae_agreement_macro_pct": 94.16064702187188,
+        "gate_ae_benign_agreement_macro_pct": 96.84071753463795,
+        "gate_ae_attack_agreement_macro_pct": 86.03682596412824
+      }
+    },
+    "tier2": {
+      "Q99": {
+        "ae_recall_macro": 0.27108642744434036,
+        "ae_fpr_macro": 0.031644713535404975,
+        "gate_passage_recall_macro": 0.08707420453897323,
+        "gate_benign_fpr_macro": 0.03150120481887262,
+        "heavy_path_invocation_rate_macro_pct": 3.8743134946158024,
+        "filtered_macro_pct": 96.1256865053842,
+        "attack_concentration_macro_pct": 29.942021581231256,
+        "gate_ae_agreement_macro_pct": 94.48311218933466,
+        "gate_ae_benign_agreement_macro_pct": 97.42117074709145,
+        "gate_ae_attack_agreement_macro_pct": 75.32361615627067
+      },
+      "Q95": {
+        "ae_recall_macro": 0.8247394235427701,
+        "ae_fpr_macro": 0.11992675930672983,
+        "gate_passage_recall_macro": 0.5394934815789624,
+        "gate_benign_fpr_macro": 0.11254770293401781,
+        "heavy_path_invocation_rate_macro_pct": 15.39717598852713,
+        "filtered_macro_pct": 84.60282401147288,
+        "attack_concentration_macro_pct": 36.98688267190313,
+        "gate_ae_agreement_macro_pct": 91.58114989902317,
+        "gate_ae_benign_agreement_macro_pct": 96.83833487330632,
+        "gate_ae_attack_agreement_macro_pct": 67.4503691641084
+      },
+      "Q90": {
+        "ae_recall_macro": 0.885401318835477,
+        "ae_fpr_macro": 0.1704011521548066,
+        "gate_passage_recall_macro": 0.6572252114436284,
+        "gate_benign_fpr_macro": 0.1624636626675341,
+        "heavy_path_invocation_rate_macro_pct": 21.08809852081068,
+        "filtered_macro_pct": 78.91190147918932,
+        "attack_concentration_macro_pct": 34.280393096145886,
+        "gate_ae_agreement_macro_pct": 92.73025266386662,
+        "gate_ae_benign_agreement_macro_pct": 96.6237479562532,
+        "gate_ae_attack_agreement_macro_pct": 76.25730923220547
+      },
+      "Q80": {
+        "ae_recall_macro": 0.9209545164010852,
+        "ae_fpr_macro": 0.24261967567194068,
+        "gate_passage_recall_macro": 0.810355676205031,
+        "gate_benign_fpr_macro": 0.23921826227522902,
+        "heavy_path_invocation_rate_macro_pct": 31.247594676718215,
+        "filtered_macro_pct": 68.75240532328178,
+        "attack_concentration_macro_pct": 32.36497912900274,
+        "gate_ae_agreement_macro_pct": 92.61267904034699,
+        "gate_ae_benign_agreement_macro_pct": 96.60532184847854,
+        "gate_ae_attack_agreement_macro_pct": 84.16571534204269
+      }
+    },
+    "tier3": {
+      "Q99": {
+        "ae_recall_macro": 0.2523813657611301,
+        "ae_fpr_macro": 0.046938372870569664,
+        "gate_passage_recall_macro": 0.09378621081608025,
+        "gate_benign_fpr_macro": 0.044981634829396606,
+        "heavy_path_invocation_rate_macro_pct": 5.253429170617355,
+        "filtered_macro_pct": 94.74657082938265,
+        "attack_concentration_macro_pct": 30.36566493483914,
+        "gate_ae_agreement_macro_pct": 94.32559827746465,
+        "gate_ae_benign_agreement_macro_pct": 96.67874934158152,
+        "gate_ae_attack_agreement_macro_pct": 76.98136121114104
+      },
+      "Q95": {
+        "ae_recall_macro": 0.8346044220541537,
+        "ae_fpr_macro": 0.14744066201012723,
+        "gate_passage_recall_macro": 0.5635605936658845,
+        "gate_benign_fpr_macro": 0.1345750174238937,
+        "heavy_path_invocation_rate_macro_pct": 18.534268435157934,
+        "filtered_macro_pct": 81.46573156484207,
+        "attack_concentration_macro_pct": 40.12988807389006,
+        "gate_ae_agreement_macro_pct": 91.53325063980158,
+        "gate_ae_benign_agreement_macro_pct": 96.77268870218062,
+        "gate_ae_attack_agreement_macro_pct": 69.08917167552595
+      },
+      "Q90": {
+        "ae_recall_macro": 0.8887980452183889,
+        "ae_fpr_macro": 0.19099140192510208,
+        "gate_passage_recall_macro": 0.6797277721384549,
+        "gate_benign_fpr_macro": 0.17340836312528088,
+        "heavy_path_invocation_rate_macro_pct": 23.418286425502792,
+        "filtered_macro_pct": 76.58171357449721,
+        "attack_concentration_macro_pct": 39.222527376633465,
+        "gate_ae_agreement_macro_pct": 92.862385943464,
+        "gate_ae_benign_agreement_macro_pct": 96.61954505852893,
+        "gate_ae_attack_agreement_macro_pct": 78.06182841935825
+      },
+      "Q80": {
+        "ae_recall_macro": 0.9238982055817703,
+        "ae_fpr_macro": 0.23664691299480517,
+        "gate_passage_recall_macro": 0.8263788714909568,
+        "gate_benign_fpr_macro": 0.22529452031486938,
+        "heavy_path_invocation_rate_macro_pct": 31.349929699978986,
+        "filtered_macro_pct": 68.65007030002101,
+        "attack_concentration_macro_pct": 38.858337803260454,
+        "gate_ae_agreement_macro_pct": 93.63435775233224,
+        "gate_ae_benign_agreement_macro_pct": 97.02931946018948,
+        "gate_ae_attack_agreement_macro_pct": 86.12276444573764
+      }
+    }
+  }
+}

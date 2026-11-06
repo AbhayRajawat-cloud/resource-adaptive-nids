@@ -1,0 +1,1388 @@
+{
+  "stage": 3,
+  "device": "mps",
+  "execution_time_seconds": 314.74976420402527,
+  "immutability_verified": true,
+  "thresholds_summary": [
+    {
+      "client_id": 0,
+      "tau_ae": 0.01716197095811367,
+      "tau_ae_ci_low": 0.017039474099874496,
+      "tau_ae_ci_high": 0.017304809764027596,
+      "tau_gate": -4.031378746032715,
+      "tau_gate_ci_low": -4.137970447540283,
+      "tau_gate_ci_high": -3.9856395721435547
+    },
+    {
+      "client_id": 1,
+      "tau_ae": 0.016690246760845184,
+      "tau_ae_ci_low": 0.01477646641433239,
+      "tau_ae_ci_high": 0.01764024794101715,
+      "tau_gate": -4.365236282348633,
+      "tau_gate_ci_low": -4.401111602783203,
+      "tau_gate_ci_high": -4.327123165130615
+    },
+    {
+      "client_id": 2,
+      "tau_ae": 0.1282629668712616,
+      "tau_ae_ci_low": 0.10165571421384811,
+      "tau_ae_ci_high": 0.1535504311323166,
+      "tau_gate": -1.594450831413269,
+      "tau_gate_ci_low": -2.1869218349456787,
+      "tau_gate_ci_high": -1.4675488471984863
+    },
+    {
+      "client_id": 3,
+      "tau_ae": 0.017265917733311653,
+      "tau_ae_ci_low": 0.016456518322229385,
+      "tau_ae_ci_high": 0.0180776659399271,
+      "tau_gate": -4.130823135375977,
+      "tau_gate_ci_low": -4.254705905914307,
+      "tau_gate_ci_high": -4.051115989685059
+    },
+    {
+      "client_id": 4,
+      "tau_ae": 0.08244001865386963,
+      "tau_ae_ci_low": 0.05887097492814064,
+      "tau_ae_ci_high": 0.09968628734350204,
+      "tau_gate": -2.519392728805542,
+      "tau_gate_ci_low": -2.6294078826904297,
+      "tau_gate_ci_high": -2.3276798725128174
+    },
+    {
+      "client_id": 5,
+      "tau_ae": 0.018202031031250954,
+      "tau_ae_ci_low": 0.016985107213258743,
+      "tau_ae_ci_high": 0.019219964742660522,
+      "tau_gate": -4.040293216705322,
+      "tau_gate_ci_low": -4.401573657989502,
+      "tau_gate_ci_high": -3.928982734680176
+    },
+    {
+      "client_id": 6,
+      "tau_ae": 0.015768971294164658,
+      "tau_ae_ci_low": 0.013812976889312267,
+      "tau_ae_ci_high": 0.017179755493998528,
+      "tau_gate": -4.243894100189209,
+      "tau_gate_ci_low": -4.356829643249512,
+      "tau_gate_ci_high": -4.131322860717773
+    },
+    {
+      "client_id": 7,
+      "tau_ae": 0.01430631335824728,
+      "tau_ae_ci_low": 0.013506241142749786,
+      "tau_ae_ci_high": 0.015511741861701012,
+      "tau_gate": -4.282505989074707,
+      "tau_gate_ci_low": -4.4693217277526855,
+      "tau_gate_ci_high": -4.080176830291748
+    },
+    {
+      "client_id": 8,
+      "tau_ae": 0.01742926798760891,
+      "tau_ae_ci_low": 0.01714971661567688,
+      "tau_ae_ci_high": 0.01763058453798294,
+      "tau_gate": -4.048006534576416,
+      "tau_gate_ci_low": -4.135207176208496,
+      "tau_gate_ci_high": -3.957521915435791
+    },
+    {
+      "client_id": 9,
+      "tau_ae": 0.016827117651700974,
+      "tau_ae_ci_low": 0.016531173139810562,
+      "tau_ae_ci_high": 0.01762530393898487,
+      "tau_gate": -4.129553318023682,
+      "tau_gate_ci_low": -4.192382335662842,
+      "tau_gate_ci_high": -4.068169116973877
+    }
+  ],
+  "pooled_metrics": {
+    "mean_tau_ae": 0.03443548223003745,
+    "mean_tau_gate": -3.738553488254547,
+    "tier1": {
+      "n_samples": 358538,
+      "n_benign": 344282,
+      "n_attack": 14256,
+      "gate_regression": {
+        "huber_loss": 0.06005997955799103,
+        "rmse": 0.3907187158700061,
+        "r2_score": 0.9316550493240356,
+        "spearman_rho": 0.9706065707101867
+      },
+      "ae_reconstruction_stats": {
+        "benign_mean_mse": 0.0010972433956339955,
+        "benign_std_mse": 0.0037335313390940428,
+        "benign_median_mse": 0.00030375164351426065,
+        "attack_mean_mse": 0.023980416357517242,
+        "attack_std_mse": 0.027696998789906502,
+        "attack_median_mse": 0.015567435882985592
+      },
+      "ae_classification": {
+        "precision": 0.772279792746114,
+        "recall": 0.20910493827160495,
+        "f1_score": 0.32910134687569,
+        "false_positive_rate": 0.0025531395774394247
+      },
+      "gate_routing": {
+        "heavy_path_trigger_rate_pct": 1.253981446875924,
+        "attack_passage_recall_pct": 15.79685746352413,
+        "benign_passage_rate_pct": 0.6517912641381194,
+        "h1_benchmark_met_70pct": false
+      },
+      "agreement": {
+        "gate_ae_agreement_rate_pct": 98.87375954571064
+      }
+    }
+  },
+  "per_client_results": {
+    "client_00": {
+      "thresholds": {
+        "client_id": 0,
+        "tau_ae": 0.01716197095811367,
+        "tau_ae_ci_low": 0.017039474099874496,
+        "tau_ae_ci_high": 0.017304809764027596,
+        "tau_gate": -4.031378746032715,
+        "tau_gate_ci_low": -4.137970447540283,
+        "tau_gate_ci_high": -3.9856395721435547
+      },
+      "tier1": {
+        "n_samples": 50040,
+        "n_benign": 49693,
+        "n_attack": 347,
+        "gate_regression": {
+          "huber_loss": 0.04453132674098015,
+          "rmse": 0.32247355140122896,
+          "r2_score": 0.9289206266403198,
+          "spearman_rho": 0.9632452579689503
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.0009424645686522126,
+          "benign_std_mse": 0.0033245477825403214,
+          "benign_median_mse": 0.0002630093367770314,
+          "attack_mean_mse": 0.013901601545512676,
+          "attack_std_mse": 0.013252628035843372,
+          "attack_median_mse": 0.006344587542116642
+        },
+        "ae_classification": {
+          "precision": 0.20583717357910905,
+          "recall": 0.3861671469740634,
+          "f1_score": 0.2685370741482966,
+          "false_positive_rate": 0.01040387982210774
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 1.0951239008792966,
+          "attack_passage_recall_pct": 5.475504322766571,
+          "benign_passage_rate_pct": 1.0645362525909081,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 98.77897681854516
+        },
+        "tier_info": {
+          "n_samples": 50040
+        }
+      },
+      "tier2": {
+        "n_samples": 12694,
+        "n_benign": 12425,
+        "n_attack": 269,
+        "gate_regression": {
+          "huber_loss": 0.06899894773960114,
+          "rmse": 0.440396732696034,
+          "r2_score": 0.9327692985534668,
+          "spearman_rho": 0.9811213264685629
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.002082736697047949,
+          "benign_std_mse": 0.00623188354074955,
+          "benign_median_mse": 0.00017195478721987456,
+          "attack_mean_mse": 0.013296226970851421,
+          "attack_std_mse": 0.014272044412791729,
+          "attack_median_mse": 0.005844247527420521
+        },
+        "ae_classification": {
+          "precision": 0.1431095406360424,
+          "recall": 0.30111524163568776,
+          "f1_score": 0.19401197604790418,
+          "false_positive_rate": 0.03903420523138833
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 4.033401607058453,
+          "attack_passage_recall_pct": 7.063197026022305,
+          "benign_passage_rate_pct": 3.967806841046278,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 95.9981093429967
+        },
+        "tier_info": {
+          "n_samples": 12694,
+          "pct_of_tier1": 25.367705835331734
+        }
+      },
+      "tier3": {
+        "n_samples": 7341,
+        "n_benign": 7093,
+        "n_attack": 248,
+        "gate_regression": {
+          "huber_loss": 0.08512457460165024,
+          "rmse": 0.5072307188431492,
+          "r2_score": 0.9258384704589844,
+          "spearman_rho": 0.979969090334819
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.0025690316688269377,
+          "benign_std_mse": 0.007448362186551094,
+          "benign_median_mse": 0.000139197611133568,
+          "attack_mean_mse": 0.013238535262644291,
+          "attack_std_mse": 0.014169412665069103,
+          "attack_median_mse": 0.005851747468113899
+        },
+        "ae_classification": {
+          "precision": 0.1615720524017467,
+          "recall": 0.29838709677419356,
+          "f1_score": 0.2096317280453258,
+          "false_positive_rate": 0.05413788241928662
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 5.312627707396812,
+          "attack_passage_recall_pct": 6.854838709677419,
+          "benign_passage_rate_pct": 5.258705766248414,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 95.15052445170957
+        },
+        "tier_info": {
+          "n_samples": 7341,
+          "pct_of_tier1": 14.670263788968823,
+          "pct_of_tier2": 57.83047108870333
+        }
+      }
+    },
+    "client_01": {
+      "thresholds": {
+        "client_id": 1,
+        "tau_ae": 0.016690246760845184,
+        "tau_ae_ci_low": 0.01477646641433239,
+        "tau_ae_ci_high": 0.01764024794101715,
+        "tau_gate": -4.365236282348633,
+        "tau_gate_ci_low": -4.401111602783203,
+        "tau_gate_ci_high": -4.327123165130615
+      },
+      "tier1": {
+        "n_samples": 80431,
+        "n_benign": 79082,
+        "n_attack": 1349,
+        "gate_regression": {
+          "huber_loss": 0.05361107364296913,
+          "rmse": 0.3630389564328643,
+          "r2_score": 0.9329982995986938,
+          "spearman_rho": 0.9626514902472377
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.0009523655171506107,
+          "benign_std_mse": 0.0033418461680412292,
+          "benign_median_mse": 0.0002644493943080306,
+          "attack_mean_mse": 0.012312259525060654,
+          "attack_std_mse": 0.009583109989762306,
+          "attack_median_mse": 0.008759084157645702
+        },
+        "ae_classification": {
+          "precision": 0.28338136407300674,
+          "recall": 0.21868050407709413,
+          "f1_score": 0.24686192468619247,
+          "false_positive_rate": 0.009433246503629145
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 1.1264313510959705,
+          "attack_passage_recall_pct": 9.785025945144552,
+          "benign_passage_rate_pct": 0.9787309375079032,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 99.02400815605922
+        },
+        "tier_info": {
+          "n_samples": 80431
+        }
+      },
+      "tier2": {
+        "n_samples": 19213,
+        "n_benign": 18226,
+        "n_attack": 987,
+        "gate_regression": {
+          "huber_loss": 0.09618839621543884,
+          "rmse": 0.522188547020347,
+          "r2_score": 0.9417313933372498,
+          "spearman_rho": 0.9820933326278709
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.0021667920518666506,
+          "benign_std_mse": 0.006497686263173819,
+          "benign_median_mse": 0.00014726308290846646,
+          "attack_mean_mse": 0.012668414041399956,
+          "attack_std_mse": 0.0107048274949193,
+          "attack_median_mse": 0.007463662885129452
+        },
+        "ae_classification": {
+          "precision": 0.28497942386831276,
+          "recall": 0.2806484295845998,
+          "f1_score": 0.2827973455844819,
+          "false_positive_rate": 0.03813233841764512
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 4.372039764742622,
+          "attack_passage_recall_pct": 12.76595744680851,
+          "benign_passage_rate_pct": 3.9174805223307367,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 96.38786238484359
+        },
+        "tier_info": {
+          "n_samples": 19213,
+          "pct_of_tier1": 23.887555793164328
+        }
+      },
+      "tier3": {
+        "n_samples": 10345,
+        "n_benign": 9593,
+        "n_attack": 752,
+        "gate_regression": {
+          "huber_loss": 0.12227152287960052,
+          "rmse": 0.6010784083947837,
+          "r2_score": 0.9331158399581909,
+          "spearman_rho": 0.9781347943423263
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.0029001475777477026,
+          "benign_std_mse": 0.008131163194775581,
+          "benign_median_mse": 0.00013256374222692102,
+          "attack_mean_mse": 0.012598752975463867,
+          "attack_std_mse": 0.010502106510102749,
+          "attack_median_mse": 0.007410629652440548
+        },
+        "ae_classification": {
+          "precision": 0.2572509457755359,
+          "recall": 0.2712765957446808,
+          "f1_score": 0.26407766990291265,
+          "false_positive_rate": 0.06139893672469509
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 6.3895601739971,
+          "attack_passage_recall_pct": 14.49468085106383,
+          "benign_passage_rate_pct": 5.754195767747316,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 95.57274045432577
+        },
+        "tier_info": {
+          "n_samples": 10345,
+          "pct_of_tier1": 12.861956210913702,
+          "pct_of_tier2": 53.843751626502886
+        }
+      }
+    },
+    "client_02": {
+      "thresholds": {
+        "client_id": 2,
+        "tau_ae": 0.1282629668712616,
+        "tau_ae_ci_low": 0.10165571421384811,
+        "tau_ae_ci_high": 0.1535504311323166,
+        "tau_gate": -1.594450831413269,
+        "tau_gate_ci_low": -2.1869218349456787,
+        "tau_gate_ci_high": -1.4675488471984863
+      },
+      "tier1": {
+        "n_samples": 1523,
+        "n_benign": 548,
+        "n_attack": 975,
+        "gate_regression": {
+          "huber_loss": 0.15384860336780548,
+          "rmse": 0.5617278415331496,
+          "r2_score": 0.6469600796699524,
+          "spearman_rho": 0.8035257367525702
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.020064065232872963,
+          "benign_std_mse": 0.022425254806876183,
+          "benign_median_mse": 0.010715922340750694,
+          "attack_mean_mse": 0.056121837347745895,
+          "attack_std_mse": 0.03900185227394104,
+          "attack_median_mse": 0.05628592148423195
+        },
+        "ae_classification": {
+          "precision": 0.72,
+          "recall": 0.018461538461538463,
+          "f1_score": 0.036,
+          "false_positive_rate": 0.012773722627737226
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 1.5758371634931057,
+          "attack_passage_recall_pct": 2.051282051282051,
+          "benign_passage_rate_pct": 0.7299270072992701,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 98.88378200919237
+        },
+        "tier_info": {
+          "n_samples": 1523
+        }
+      },
+      "tier2": {
+        "n_samples": 1040,
+        "n_benign": 342,
+        "n_attack": 698,
+        "gate_regression": {
+          "huber_loss": 0.17034310102462769,
+          "rmse": 0.5931495843099491,
+          "r2_score": 0.6066855192184448,
+          "spearman_rho": 0.7958764832786911
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.02130982279777527,
+          "benign_std_mse": 0.026653507724404335,
+          "benign_median_mse": 0.00987949501723051,
+          "attack_mean_mse": 0.052465178072452545,
+          "attack_std_mse": 0.041895195841789246,
+          "attack_median_mse": 0.04524949938058853
+        },
+        "ae_classification": {
+          "precision": 0.72,
+          "recall": 0.025787965616045846,
+          "f1_score": 0.04979253112033195,
+          "false_positive_rate": 0.02046783625730994
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 2.307692307692308,
+          "attack_passage_recall_pct": 2.865329512893983,
+          "benign_passage_rate_pct": 1.1695906432748537,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 98.36538461538461
+        },
+        "tier_info": {
+          "n_samples": 1040,
+          "pct_of_tier1": 68.28627708470125
+        }
+      },
+      "tier3": {
+        "n_samples": 763,
+        "n_benign": 199,
+        "n_attack": 564,
+        "gate_regression": {
+          "huber_loss": 0.17839500308036804,
+          "rmse": 0.6078048676156224,
+          "r2_score": 0.5900276899337769,
+          "spearman_rho": 0.7713536204247106
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.023778589442372322,
+          "benign_std_mse": 0.03144804388284683,
+          "benign_median_mse": 0.00960289966315031,
+          "attack_mean_mse": 0.05504943057894707,
+          "attack_std_mse": 0.04398070648312569,
+          "attack_median_mse": 0.04848140478134155
+        },
+        "ae_classification": {
+          "precision": 0.7083333333333334,
+          "recall": 0.030141843971631204,
+          "f1_score": 0.05782312925170068,
+          "false_positive_rate": 0.035175879396984924
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 3.014416775884666,
+          "attack_passage_recall_pct": 3.368794326241135,
+          "benign_passage_rate_pct": 2.0100502512562812,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 98.0340760157274
+        },
+        "tier_info": {
+          "n_samples": 763,
+          "pct_of_tier1": 50.09848982271832,
+          "pct_of_tier2": 73.36538461538461
+        }
+      }
+    },
+    "client_03": {
+      "thresholds": {
+        "client_id": 3,
+        "tau_ae": 0.017265917733311653,
+        "tau_ae_ci_low": 0.016456518322229385,
+        "tau_ae_ci_high": 0.0180776659399271,
+        "tau_gate": -4.130823135375977,
+        "tau_gate_ci_low": -4.254705905914307,
+        "tau_gate_ci_high": -4.051115989685059
+      },
+      "tier1": {
+        "n_samples": 50171,
+        "n_benign": 46685,
+        "n_attack": 3486,
+        "gate_regression": {
+          "huber_loss": 0.08078597486019135,
+          "rmse": 0.48723701205884257,
+          "r2_score": 0.8839281797409058,
+          "spearman_rho": 0.964029849015279
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.0012580668553709984,
+          "benign_std_mse": 0.003569668158888817,
+          "benign_median_mse": 0.0004380262107588351,
+          "attack_mean_mse": 0.013466463424265385,
+          "attack_std_mse": 0.012390440329909325,
+          "attack_median_mse": 0.006530772894620895
+        },
+        "ae_classification": {
+          "precision": 0.7289669861554846,
+          "recall": 0.39271371199082045,
+          "f1_score": 0.5104399701715138,
+          "false_positive_rate": 0.010902859590875013
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 1.4849215682366306,
+          "attack_passage_recall_pct": 8.749282845668388,
+          "benign_passage_rate_pct": 0.942486880154225,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 96.45014051942357
+        },
+        "tier_info": {
+          "n_samples": 50171
+        }
+      },
+      "tier2": {
+        "n_samples": 14140,
+        "n_benign": 11804,
+        "n_attack": 2336,
+        "gate_regression": {
+          "huber_loss": 0.16510914266109467,
+          "rmse": 0.7544292553067284,
+          "r2_score": 0.8628633618354797,
+          "spearman_rho": 0.9586958349869014
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.0023206230252981186,
+          "benign_std_mse": 0.006627015303820372,
+          "benign_median_mse": 0.0002108032495016232,
+          "attack_mean_mse": 0.01253656204789877,
+          "attack_std_mse": 0.013171401806175709,
+          "attack_median_mse": 0.00578696932643652
+        },
+        "ae_classification": {
+          "precision": 0.5988023952095808,
+          "recall": 0.2996575342465753,
+          "f1_score": 0.39942938659058486,
+          "false_positive_rate": 0.03973229413758048
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 4.667609618104668,
+          "attack_passage_recall_pct": 11.13013698630137,
+          "benign_passage_rate_pct": 3.3886818027787187,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 92.42574257425743
+        },
+        "tier_info": {
+          "n_samples": 14140,
+          "pct_of_tier1": 28.183612046799944
+        }
+      },
+      "tier3": {
+        "n_samples": 8366,
+        "n_benign": 6796,
+        "n_attack": 1570,
+        "gate_regression": {
+          "huber_loss": 0.1541513055562973,
+          "rmse": 0.7173304429894162,
+          "r2_score": 0.8889779448509216,
+          "spearman_rho": 0.9655544422585408
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.002610389608889818,
+          "benign_std_mse": 0.007650014013051987,
+          "benign_median_mse": 0.00016732935910113156,
+          "attack_mean_mse": 0.011333849281072617,
+          "attack_std_mse": 0.011837919242680073,
+          "attack_median_mse": 0.005746318027377129
+        },
+        "ae_classification": {
+          "precision": 0.5103163686382394,
+          "recall": 0.23630573248407644,
+          "f1_score": 0.32303003918154116,
+          "false_positive_rate": 0.052383755150088286
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 5.713602677504183,
+          "attack_passage_recall_pct": 12.165605095541402,
+          "benign_passage_rate_pct": 4.22307239552678,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 92.5531914893617
+        },
+        "tier_info": {
+          "n_samples": 8366,
+          "pct_of_tier1": 16.674971597137787,
+          "pct_of_tier2": 59.16548797736917
+        }
+      }
+    },
+    "client_04": {
+      "thresholds": {
+        "client_id": 4,
+        "tau_ae": 0.08244001865386963,
+        "tau_ae_ci_low": 0.05887097492814064,
+        "tau_ae_ci_high": 0.09968628734350204,
+        "tau_gate": -2.519392728805542,
+        "tau_gate_ci_low": -2.6294078826904297,
+        "tau_gate_ci_high": -2.3276798725128174
+      },
+      "tier1": {
+        "n_samples": 5428,
+        "n_benign": 1013,
+        "n_attack": 4415,
+        "gate_regression": {
+          "huber_loss": 0.2759513854980469,
+          "rmse": 0.8429323048884425,
+          "r2_score": 0.28094083070755005,
+          "spearman_rho": 0.6267373752389094
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.01294031459838152,
+          "benign_std_mse": 0.016066407784819603,
+          "benign_median_mse": 0.007707199081778526,
+          "attack_mean_mse": 0.038406625390052795,
+          "attack_std_mse": 0.03445793688297272,
+          "attack_median_mse": 0.02868853136897087
+        },
+        "ae_classification": {
+          "precision": 0.9874125874125874,
+          "recall": 0.15990939977349944,
+          "f1_score": 0.2752436647173489,
+          "false_positive_rate": 0.008884501480750246
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 2.9661016949152543,
+          "attack_passage_recall_pct": 3.442808607021518,
+          "benign_passage_rate_pct": 0.8884501480750246,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 87.03021370670598
+        },
+        "tier_info": {
+          "n_samples": 5428
+        }
+      },
+      "tier2": {
+        "n_samples": 3428,
+        "n_benign": 584,
+        "n_attack": 2844,
+        "gate_regression": {
+          "huber_loss": 0.3419315814971924,
+          "rmse": 0.9476904162406267,
+          "r2_score": 0.20128029584884644,
+          "spearman_rho": 0.5806433489826449
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.01507545169442892,
+          "benign_std_mse": 0.019916770979762077,
+          "benign_median_mse": 0.006267537362873554,
+          "attack_mean_mse": 0.04132811725139618,
+          "attack_std_mse": 0.039656657725572586,
+          "attack_median_mse": 0.022907160222530365
+        },
+        "ae_classification": {
+          "precision": 0.9858044164037855,
+          "recall": 0.21976090014064698,
+          "f1_score": 0.359401955146636,
+          "false_positive_rate": 0.015410958904109588
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 4.2590431738623105,
+          "attack_passage_recall_pct": 4.817158931082981,
+          "benign_passage_rate_pct": 1.5410958904109588,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 82.08868144690781
+        },
+        "tier_info": {
+          "n_samples": 3428,
+          "pct_of_tier1": 63.15401621223287
+        }
+      },
+      "tier3": {
+        "n_samples": 2096,
+        "n_benign": 315,
+        "n_attack": 1781,
+        "gate_regression": {
+          "huber_loss": 0.2513517439365387,
+          "rmse": 0.7837318291147163,
+          "r2_score": 0.3699217438697815,
+          "spearman_rho": 0.6942330667034062
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.018690917640924454,
+          "benign_std_mse": 0.024266593158245087,
+          "benign_median_mse": 0.006683209910988808,
+          "attack_mean_mse": 0.037338197231292725,
+          "attack_std_mse": 0.038727156817913055,
+          "attack_median_mse": 0.021260680630803108
+        },
+        "ae_classification": {
+          "precision": 0.9661654135338346,
+          "recall": 0.14430095451993263,
+          "f1_score": 0.2510991695163654,
+          "false_positive_rate": 0.02857142857142857
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 5.009541984732825,
+          "attack_passage_recall_pct": 5.446378439079169,
+          "benign_passage_rate_pct": 2.5396825396825395,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 88.7881679389313
+        },
+        "tier_info": {
+          "n_samples": 2096,
+          "pct_of_tier1": 38.614591009579954,
+          "pct_of_tier2": 61.14352392065344
+        }
+      }
+    },
+    "client_05": {
+      "thresholds": {
+        "client_id": 5,
+        "tau_ae": 0.018202031031250954,
+        "tau_ae_ci_low": 0.016985107213258743,
+        "tau_ae_ci_high": 0.019219964742660522,
+        "tau_gate": -4.040293216705322,
+        "tau_gate_ci_low": -4.401573657989502,
+        "tau_gate_ci_high": -3.928982734680176
+      },
+      "tier1": {
+        "n_samples": 8712,
+        "n_benign": 8492,
+        "n_attack": 220,
+        "gate_regression": {
+          "huber_loss": 0.06753752380609512,
+          "rmse": 0.41995409464874095,
+          "r2_score": 0.8864914774894714,
+          "spearman_rho": 0.961059626251526
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.001204761560074985,
+          "benign_std_mse": 0.0034623995888978243,
+          "benign_median_mse": 0.00045531135401688516,
+          "attack_mean_mse": 0.014654326252639294,
+          "attack_std_mse": 0.015244348905980587,
+          "attack_median_mse": 0.0070321224629879
+        },
+        "ae_classification": {
+          "precision": 0.5,
+          "recall": 0.37272727272727274,
+          "f1_score": 0.4270833333333333,
+          "false_positive_rate": 0.009656146961846444
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 1.0215794306703396,
+          "attack_passage_recall_pct": 5.0,
+          "benign_passage_rate_pct": 0.9185115402731984,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 98.3356290174472
+        },
+        "tier_info": {
+          "n_samples": 8712
+        }
+      },
+      "tier2": {
+        "n_samples": 3259,
+        "n_benign": 3090,
+        "n_attack": 169,
+        "gate_regression": {
+          "huber_loss": 0.10458683967590332,
+          "rmse": 0.5576740777011009,
+          "r2_score": 0.8569273352622986,
+          "spearman_rho": 0.959535797433464
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.00202007545158267,
+          "benign_std_mse": 0.005472310818731785,
+          "benign_median_mse": 0.0004670578346122056,
+          "attack_mean_mse": 0.014780099503695965,
+          "attack_std_mse": 0.016613854095339775,
+          "attack_median_mse": 0.006690153386443853
+        },
+        "ae_classification": {
+          "precision": 0.3969465648854962,
+          "recall": 0.3076923076923077,
+          "f1_score": 0.3466666666666667,
+          "false_positive_rate": 0.0255663430420712
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 2.700214789812826,
+          "attack_passage_recall_pct": 6.508875739644971,
+          "benign_passage_rate_pct": 2.4919093851132685,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 96.53267873580853
+        },
+        "tier_info": {
+          "n_samples": 3259,
+          "pct_of_tier1": 37.40817263544536
+        }
+      },
+      "tier3": {
+        "n_samples": 1824,
+        "n_benign": 1682,
+        "n_attack": 142,
+        "gate_regression": {
+          "huber_loss": 0.14250479638576508,
+          "rmse": 0.6662448924729496,
+          "r2_score": 0.8493528366088867,
+          "spearman_rho": 0.9601853133536433
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.0026326605584472418,
+          "benign_std_mse": 0.00706099160015583,
+          "benign_median_mse": 0.0003563094651326537,
+          "attack_mean_mse": 0.01505634281784296,
+          "attack_std_mse": 0.017196739092469215,
+          "attack_median_mse": 0.006871951278299093
+        },
+        "ae_classification": {
+          "precision": 0.3620689655172414,
+          "recall": 0.29577464788732394,
+          "f1_score": 0.32558139534883723,
+          "false_positive_rate": 0.04399524375743163
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 4.660087719298246,
+          "attack_passage_recall_pct": 7.042253521126761,
+          "benign_passage_rate_pct": 4.4589774078478,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 94.46271929824562
+        },
+        "tier_info": {
+          "n_samples": 1824,
+          "pct_of_tier1": 20.9366391184573,
+          "pct_of_tier2": 55.968088370665846
+        }
+      }
+    },
+    "client_06": {
+      "thresholds": {
+        "client_id": 6,
+        "tau_ae": 0.015768971294164658,
+        "tau_ae_ci_low": 0.013812976889312267,
+        "tau_ae_ci_high": 0.017179755493998528,
+        "tau_gate": -4.243894100189209,
+        "tau_gate_ci_low": -4.356829643249512,
+        "tau_gate_ci_high": -4.131322860717773
+      },
+      "tier1": {
+        "n_samples": 28568,
+        "n_benign": 27699,
+        "n_attack": 869,
+        "gate_regression": {
+          "huber_loss": 0.06301140040159225,
+          "rmse": 0.40075774690894594,
+          "r2_score": 0.9166426062583923,
+          "spearman_rho": 0.9647838739615726
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.0009559113532304764,
+          "benign_std_mse": 0.0034888910595327616,
+          "benign_median_mse": 0.0002669616660568863,
+          "attack_mean_mse": 0.011905383318662643,
+          "attack_std_mse": 0.01124913152307272,
+          "attack_median_mse": 0.0061395191587507725
+        },
+        "ae_classification": {
+          "precision": 0.521875,
+          "recall": 0.38434982738780205,
+          "f1_score": 0.44267726971504306,
+          "false_positive_rate": 0.011047330228528105
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 1.2986558387006442,
+          "attack_passage_recall_pct": 5.523590333716916,
+          "benign_passage_rate_pct": 1.1661070796779667,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 98.08527023242789
+        },
+        "tier_info": {
+          "n_samples": 28568
+        }
+      },
+      "tier2": {
+        "n_samples": 8378,
+        "n_benign": 7763,
+        "n_attack": 615,
+        "gate_regression": {
+          "huber_loss": 0.10667594522237778,
+          "rmse": 0.5617334387799208,
+          "r2_score": 0.9172921776771545,
+          "spearman_rho": 0.9801076740055035
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.00201733922585845,
+          "benign_std_mse": 0.006262659095227718,
+          "benign_median_mse": 0.00017255298735108227,
+          "attack_mean_mse": 0.01174722146242857,
+          "attack_std_mse": 0.012631392106413841,
+          "attack_median_mse": 0.005093333777040243
+        },
+        "ae_classification": {
+          "precision": 0.37719298245614036,
+          "recall": 0.27967479674796747,
+          "f1_score": 0.3211951447245565,
+          "false_positive_rate": 0.03658379492464253
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 4.249224158510384,
+          "attack_passage_recall_pct": 7.642276422764227,
+          "benign_passage_rate_pct": 3.9804199407445577,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 95.60754356648364
+        },
+        "tier_info": {
+          "n_samples": 8378,
+          "pct_of_tier1": 29.326519182301876
+        }
+      },
+      "tier3": {
+        "n_samples": 5041,
+        "n_benign": 4552,
+        "n_attack": 489,
+        "gate_regression": {
+          "huber_loss": 0.13239066302776337,
+          "rmse": 0.6353851816058411,
+          "r2_score": 0.915160059928894,
+          "spearman_rho": 0.9731934377440273
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.0024993992410600185,
+          "benign_std_mse": 0.007571537513285875,
+          "benign_median_mse": 0.00011299003381282091,
+          "attack_mean_mse": 0.012288573198020458,
+          "attack_std_mse": 0.013219942338764668,
+          "attack_median_mse": 0.005352152045816183
+        },
+        "ae_classification": {
+          "precision": 0.37467018469656993,
+          "recall": 0.2903885480572597,
+          "f1_score": 0.3271889400921659,
+          "false_positive_rate": 0.05206502636203866
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 5.931362824836342,
+          "attack_passage_recall_pct": 9.406952965235174,
+          "benign_passage_rate_pct": 5.557996485061512,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 94.32652251537394
+        },
+        "tier_info": {
+          "n_samples": 5041,
+          "pct_of_tier1": 17.64561747409689,
+          "pct_of_tier2": 60.16949152542372
+        }
+      }
+    },
+    "client_07": {
+      "thresholds": {
+        "client_id": 7,
+        "tau_ae": 0.01430631335824728,
+        "tau_ae_ci_low": 0.013506241142749786,
+        "tau_ae_ci_high": 0.015511741861701012,
+        "tau_gate": -4.282505989074707,
+        "tau_gate_ci_low": -4.4693217277526855,
+        "tau_gate_ci_high": -4.080176830291748
+      },
+      "tier1": {
+        "n_samples": 19388,
+        "n_benign": 19218,
+        "n_attack": 170,
+        "gate_regression": {
+          "huber_loss": 0.053553275763988495,
+          "rmse": 0.3691373350612425,
+          "r2_score": 0.9201200604438782,
+          "spearman_rho": 0.9490410481060116
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.0007631081389263272,
+          "benign_std_mse": 0.0030336976051330566,
+          "benign_median_mse": 0.00017240225861314684,
+          "attack_mean_mse": 0.013370181433856487,
+          "attack_std_mse": 0.011653106659650803,
+          "attack_median_mse": 0.008121542632579803
+        },
+        "ae_classification": {
+          "precision": 0.2899628252788104,
+          "recall": 0.4588235294117647,
+          "f1_score": 0.3553530751708428,
+          "false_positive_rate": 0.009938599229888646
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 1.1244068495976893,
+          "attack_passage_recall_pct": 9.411764705882353,
+          "benign_passage_rate_pct": 1.0510979290248725,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 98.69506911491645
+        },
+        "tier_info": {
+          "n_samples": 19388
+        }
+      },
+      "tier2": {
+        "n_samples": 5968,
+        "n_benign": 5836,
+        "n_attack": 132,
+        "gate_regression": {
+          "huber_loss": 0.08636920154094696,
+          "rmse": 0.5153601862286282,
+          "r2_score": 0.9155903458595276,
+          "spearman_rho": 0.9750734084297159
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.001628886559046805,
+          "benign_std_mse": 0.00525085162371397,
+          "benign_median_mse": 0.00015571319090668112,
+          "attack_mean_mse": 0.012977074831724167,
+          "attack_std_mse": 0.01262650080025196,
+          "attack_median_mse": 0.006632686592638493
+        },
+        "ae_classification": {
+          "precision": 0.21212121212121213,
+          "recall": 0.3712121212121212,
+          "f1_score": 0.2699724517906336,
+          "false_positive_rate": 0.031185743660041124
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 3.5522788203753355,
+          "attack_passage_recall_pct": 11.363636363636363,
+          "benign_passage_rate_pct": 3.375599725839616,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 96.3304289544236
+        },
+        "tier_info": {
+          "n_samples": 5968,
+          "pct_of_tier1": 30.78192696513307
+        }
+      },
+      "tier3": {
+        "n_samples": 3584,
+        "n_benign": 3464,
+        "n_attack": 120,
+        "gate_regression": {
+          "huber_loss": 0.10984998196363449,
+          "rmse": 0.6045629308961871,
+          "r2_score": 0.9094223976135254,
+          "spearman_rho": 0.9778400489475136
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.002063169376924634,
+          "benign_std_mse": 0.006240478716790676,
+          "benign_median_mse": 8.975222590379417e-05,
+          "attack_mean_mse": 0.013015222735702991,
+          "attack_std_mse": 0.012812856584787369,
+          "attack_median_mse": 0.006632686592638493
+        },
+        "ae_classification": {
+          "precision": 0.215,
+          "recall": 0.35833333333333334,
+          "f1_score": 0.26875,
+          "false_positive_rate": 0.045323325635103925
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 5.050223214285714,
+          "attack_passage_recall_pct": 11.666666666666666,
+          "benign_passage_rate_pct": 4.821016166281755,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 95.06138392857143
+        },
+        "tier_info": {
+          "n_samples": 3584,
+          "pct_of_tier1": 18.485661233752836,
+          "pct_of_tier2": 60.05361930294906
+        }
+      }
+    },
+    "client_08": {
+      "thresholds": {
+        "client_id": 8,
+        "tau_ae": 0.01742926798760891,
+        "tau_ae_ci_low": 0.01714971661567688,
+        "tau_ae_ci_high": 0.01763058453798294,
+        "tau_gate": -4.048006534576416,
+        "tau_gate_ci_low": -4.135207176208496,
+        "tau_gate_ci_high": -3.957521915435791
+      },
+      "tier1": {
+        "n_samples": 67424,
+        "n_benign": 65847,
+        "n_attack": 1577,
+        "gate_regression": {
+          "huber_loss": 0.0549091212451458,
+          "rmse": 0.3630827699946832,
+          "r2_score": 0.9336077570915222,
+          "spearman_rho": 0.9592854820923333
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.0008977832621894777,
+          "benign_std_mse": 0.003347660880535841,
+          "benign_median_mse": 0.00023397227050736547,
+          "attack_mean_mse": 0.013322812505066395,
+          "attack_std_mse": 0.011559667997062206,
+          "attack_median_mse": 0.007413995917886496
+        },
+        "ae_classification": {
+          "precision": 0.5023622047244094,
+          "recall": 0.40456563094483194,
+          "f1_score": 0.44819107832806465,
+          "false_positive_rate": 0.009598007502240042
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 1.250296630280019,
+          "attack_passage_recall_pct": 11.477488902980342,
+          "benign_passage_rate_pct": 1.0053609124181815,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 98.26916231608924
+        },
+        "tier_info": {
+          "n_samples": 67424
+        }
+      },
+      "tier2": {
+        "n_samples": 16736,
+        "n_benign": 15623,
+        "n_attack": 1113,
+        "gate_regression": {
+          "huber_loss": 0.09445254504680634,
+          "rmse": 0.5193810783700759,
+          "r2_score": 0.9380056858062744,
+          "spearman_rho": 0.9859795713360526
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.0020743554923683405,
+          "benign_std_mse": 0.00634743133559823,
+          "benign_median_mse": 0.00012858561240136623,
+          "attack_mean_mse": 0.013025173917412758,
+          "attack_std_mse": 0.01248877216130495,
+          "attack_median_mse": 0.006689896807074547
+        },
+        "ae_classification": {
+          "precision": 0.38469827586206895,
+          "recall": 0.32075471698113206,
+          "f1_score": 0.349828515433611,
+          "false_positive_rate": 0.03654867823081354
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 4.642686424474187,
+          "attack_passage_recall_pct": 14.285714285714285,
+          "benign_passage_rate_pct": 3.9557063304102926,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 94.91515296367112
+        },
+        "tier_info": {
+          "n_samples": 16736,
+          "pct_of_tier1": 24.822021831988607
+        }
+      },
+      "tier3": {
+        "n_samples": 9362,
+        "n_benign": 8508,
+        "n_attack": 854,
+        "gate_regression": {
+          "huber_loss": 0.11744096130132675,
+          "rmse": 0.5873739563891485,
+          "r2_score": 0.9319959878921509,
+          "spearman_rho": 0.9850835100516665
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.002548498334363103,
+          "benign_std_mse": 0.007524563930928707,
+          "benign_median_mse": 0.00011409954458940774,
+          "attack_mean_mse": 0.0124431774020195,
+          "attack_std_mse": 0.01165327150374651,
+          "attack_median_mse": 0.0066628241911530495
+        },
+        "ae_classification": {
+          "precision": 0.37668161434977576,
+          "recall": 0.29508196721311475,
+          "f1_score": 0.3309258043335522,
+          "false_positive_rate": 0.04901269393511989
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 6.184575945310831,
+          "attack_passage_recall_pct": 14.285714285714285,
+          "benign_passage_rate_pct": 5.371415138692995,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 93.97564622943815
+        },
+        "tier_info": {
+          "n_samples": 9362,
+          "pct_of_tier1": 13.885263407688656,
+          "pct_of_tier2": 55.93929254302103
+        }
+      }
+    },
+    "client_09": {
+      "thresholds": {
+        "client_id": 9,
+        "tau_ae": 0.016827117651700974,
+        "tau_ae_ci_low": 0.016531173139810562,
+        "tau_ae_ci_high": 0.01762530393898487,
+        "tau_gate": -4.129553318023682,
+        "tau_gate_ci_low": -4.192382335662842,
+        "tau_gate_ci_high": -4.068169116973877
+      },
+      "tier1": {
+        "n_samples": 46853,
+        "n_benign": 46005,
+        "n_attack": 848,
+        "gate_regression": {
+          "huber_loss": 0.044376593083143234,
+          "rmse": 0.3275787711597696,
+          "r2_score": 0.9295647144317627,
+          "spearman_rho": 0.9673787917643466
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.0013538834173232317,
+          "benign_std_mse": 0.003391506616026163,
+          "benign_median_mse": 0.00048072164645418525,
+          "attack_mean_mse": 0.014564658515155315,
+          "attack_std_mse": 0.013135473243892193,
+          "attack_median_mse": 0.009020403027534485
+        },
+        "ae_classification": {
+          "precision": 0.43775100401606426,
+          "recall": 0.3856132075471698,
+          "f1_score": 0.41003134796238244,
+          "false_positive_rate": 0.009129442451907402
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 1.1183915651078906,
+          "attack_passage_recall_pct": 6.367924528301887,
+          "benign_passage_rate_pct": 1.0216280839039236,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 98.6233538940943
+        },
+        "tier_info": {
+          "n_samples": 46853
+        }
+      },
+      "tier2": {
+        "n_samples": 12276,
+        "n_benign": 11662,
+        "n_attack": 614,
+        "gate_regression": {
+          "huber_loss": 0.08000972121953964,
+          "rmse": 0.47240630547952855,
+          "r2_score": 0.9257480502128601,
+          "spearman_rho": 0.9745106024657388
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.0024885819293558598,
+          "benign_std_mse": 0.00617265934124589,
+          "benign_median_mse": 0.00039246692904271185,
+          "attack_mean_mse": 0.01458425261080265,
+          "attack_std_mse": 0.014431212097406387,
+          "attack_median_mse": 0.008106278255581856
+        },
+        "ae_classification": {
+          "precision": 0.3218588640275387,
+          "recall": 0.30456026058631924,
+          "f1_score": 0.3129707112970711,
+          "false_positive_rate": 0.03378494254844795
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 3.9589442815249267,
+          "attack_passage_recall_pct": 8.631921824104234,
+          "benign_passage_rate_pct": 3.712913736923341,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 96.17953730856956
+        },
+        "tier_info": {
+          "n_samples": 12276,
+          "pct_of_tier1": 26.201097048214628
+        }
+      },
+      "tier3": {
+        "n_samples": 7175,
+        "n_benign": 6678,
+        "n_attack": 497,
+        "gate_regression": {
+          "huber_loss": 0.09860456734895706,
+          "rmse": 0.5223068723175706,
+          "r2_score": 0.9210304021835327,
+          "spearman_rho": 0.9727975631799085
+        },
+        "ae_reconstruction_stats": {
+          "benign_mean_mse": 0.0028466021176427603,
+          "benign_std_mse": 0.007360118441283703,
+          "benign_median_mse": 0.00034851429518312216,
+          "attack_mean_mse": 0.014667379669845104,
+          "attack_std_mse": 0.0142766572535038,
+          "attack_median_mse": 0.00829123705625534
+        },
+        "ae_classification": {
+          "precision": 0.3233404710920771,
+          "recall": 0.3038229376257545,
+          "f1_score": 0.3132780082987552,
+          "false_positive_rate": 0.04731955675351902
+        },
+        "gate_routing": {
+          "heavy_path_trigger_rate_pct": 5.2682926829268295,
+          "attack_passage_recall_pct": 9.054325955734406,
+          "benign_passage_rate_pct": 4.986522911051213,
+          "h1_benchmark_met_70pct": false
+        },
+        "agreement": {
+          "gate_ae_agreement_rate_pct": 95.33101045296168
+        },
+        "tier_info": {
+          "n_samples": 7175,
+          "pct_of_tier1": 15.313853968796021,
+          "pct_of_tier2": 58.44737699576409
+        }
+      }
+    }
+  }
+}

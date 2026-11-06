@@ -1,0 +1,80 @@
+{
+  "redundant_pair_check": {
+    "pair_results": [
+      {
+        "feature_a": "LONGEST_FLOW_PKT",
+        "feature_b": "MAX_IP_PKT_LEN",
+        "total_rows_checked": 2390275,
+        "mismatch_rows": 0,
+        "are_bit_exact_identical": true,
+        "decision": "DROP 'MAX_IP_PKT_LEN', KEEP 'LONGEST_FLOW_PKT'"
+      },
+      {
+        "feature_a": "ICMP_TYPE",
+        "feature_b": "ICMP_IPV4_TYPE",
+        "total_rows_checked": 2390275,
+        "mismatch_rows": 1693429,
+        "are_bit_exact_identical": false,
+        "decision": "KEEP BOTH (differ in 1693429 rows)"
+      }
+    ],
+    "columns_to_drop": [
+      "MAX_IP_PKT_LEN"
+    ],
+    "total_rows_verified": 2390275
+  },
+  "duplicate_vector_check": {
+    "total_rows": 2390275,
+    "duplicate_feature_vector_rows": 2153276,
+    "unique_feature_vectors": 236999,
+    "label_conflict_vectors": 0,
+    "label_conflict_rows": 0,
+    "conflict_details_sample": {},
+    "recommendation": "No label conflicts detected. Duplicate vectors with identical labels may be retained safely; they represent repeated identical network flows.",
+    "has_conflicts": false
+  },
+  "verified_feature_cols": [
+    "PROTOCOL",
+    "L7_PROTO",
+    "IN_BYTES",
+    "IN_PKTS",
+    "OUT_BYTES",
+    "OUT_PKTS",
+    "TCP_FLAGS",
+    "CLIENT_TCP_FLAGS",
+    "SERVER_TCP_FLAGS",
+    "FLOW_DURATION_MILLISECONDS",
+    "DURATION_IN",
+    "DURATION_OUT",
+    "MIN_TTL",
+    "MAX_TTL",
+    "LONGEST_FLOW_PKT",
+    "SHORTEST_FLOW_PKT",
+    "MIN_IP_PKT_LEN",
+    "SRC_TO_DST_SECOND_BYTES",
+    "DST_TO_SRC_SECOND_BYTES",
+    "RETRANSMITTED_IN_BYTES",
+    "RETRANSMITTED_IN_PKTS",
+    "RETRANSMITTED_OUT_BYTES",
+    "RETRANSMITTED_OUT_PKTS",
+    "SRC_TO_DST_AVG_THROUGHPUT",
+    "DST_TO_SRC_AVG_THROUGHPUT",
+    "NUM_PKTS_UP_TO_128_BYTES",
+    "NUM_PKTS_128_TO_256_BYTES",
+    "NUM_PKTS_256_TO_512_BYTES",
+    "NUM_PKTS_512_TO_1024_BYTES",
+    "NUM_PKTS_1024_TO_1514_BYTES",
+    "TCP_WIN_MAX_IN",
+    "TCP_WIN_MAX_OUT",
+    "ICMP_TYPE",
+    "ICMP_IPV4_TYPE",
+    "DNS_QUERY_ID",
+    "DNS_QUERY_TYPE",
+    "DNS_TTL_ANSWER",
+    "FTP_COMMAND_RET_CODE"
+  ],
+  "final_feature_count": 38,
+  "dropped_columns": [
+    "MAX_IP_PKT_LEN"
+  ]
+}

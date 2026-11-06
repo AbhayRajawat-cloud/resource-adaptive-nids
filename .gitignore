@@ -1,0 +1,134 @@
+# =============================================================================
+# Gitignore for Resource-Adaptive Gated Network Intrusion Detection
+# Research Project: Federated IoT Edge Networks
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# 1. Python Bytecode, C-Extensions & Build Artifacts
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# -----------------------------------------------------------------------------
+# 2. Virtual Environments
+# -----------------------------------------------------------------------------
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# -----------------------------------------------------------------------------
+# 3. Testing, Coverage & Profiling Caches
+# -----------------------------------------------------------------------------
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# -----------------------------------------------------------------------------
+# 4. IDE, Editor & Operating System Metadata
+# -----------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+.Spotlight-V100
+.Trashes
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# -----------------------------------------------------------------------------
+# 5. Jupyter Notebook Checkpoints
+# -----------------------------------------------------------------------------
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# -----------------------------------------------------------------------------
+# 6. Environment Variables, Credentials & Secrets
+# -----------------------------------------------------------------------------
+.env
+.env.*
+*.key
+*.pem
+*.cert
+*.pfx
+
+# -----------------------------------------------------------------------------
+# 7. Temporary & Log Files
+# -----------------------------------------------------------------------------
+*.log
+
+# -----------------------------------------------------------------------------
+# 8. Raw Datasets (Do NOT commit large benchmark CSVs like NF-UNSW-NB15-v2.csv)
+# -----------------------------------------------------------------------------
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/README.md
+
+# -----------------------------------------------------------------------------
+# 9. Processed Dataset Binary Arrays (Reproducible via run_stage2.py & extraction)
+# -----------------------------------------------------------------------------
+data/processed/**/*.npz
+data/processed/**/*.npy
+data/processed/**/*.parquet
+*.npz
+*.npy
+*.parquet
+
+# Explicitly Preserve Processed Metadata, Partition Stats, Scalers & Summaries
+!data/processed/**/feature_cols.json
+!data/processed/**/client_stats.json
+!data/processed/**/scaler_params.json
+!data/processed/**/extraction_summary.csv
+!data/processed/**/extraction_summary.json
+!data/processed/.gitkeep
+!data/processed/README.md
+
+# -----------------------------------------------------------------------------
+# 10. Model Checkpoints & Heavy Weights (PyTorch State Dicts)
+# -----------------------------------------------------------------------------
+outputs/checkpoints/**/*.pt
+outputs/models/**/*.pt
+*.pt
+*.pth
+
+# Explicitly Preserve Calibrated Threshold Definitions & Directory Structure
+!outputs/checkpoints/**/client_*_thresholds.json
+!outputs/checkpoints/**/thresholds.json
+!outputs/models/.gitkeep
+!outputs/checkpoints/.gitkeep
+
+# -----------------------------------------------------------------------------
+# 11. Explicitly Preserve Research Evidence, Metrics, Reports, Plots & Logs
+# -----------------------------------------------------------------------------
+!outputs/metrics/**
+!outputs/reports/**
+!outputs/plots/**
+!outputs/experiments/**
+!outputs/verification/**
+!outputs/logs/**

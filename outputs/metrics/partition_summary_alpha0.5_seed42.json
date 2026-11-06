@@ -1,0 +1,337 @@
+{
+  "stage": 2,
+  "alpha": "0.5",
+  "seed": 42,
+  "num_clients": 10,
+  "total_rows": 2390275,
+  "feature_cols": [
+    "PROTOCOL",
+    "L7_PROTO",
+    "IN_BYTES",
+    "IN_PKTS",
+    "OUT_BYTES",
+    "OUT_PKTS",
+    "TCP_FLAGS",
+    "CLIENT_TCP_FLAGS",
+    "SERVER_TCP_FLAGS",
+    "FLOW_DURATION_MILLISECONDS",
+    "DURATION_IN",
+    "DURATION_OUT",
+    "MIN_TTL",
+    "MAX_TTL",
+    "LONGEST_FLOW_PKT",
+    "SHORTEST_FLOW_PKT",
+    "MIN_IP_PKT_LEN",
+    "SRC_TO_DST_SECOND_BYTES",
+    "DST_TO_SRC_SECOND_BYTES",
+    "RETRANSMITTED_IN_BYTES",
+    "RETRANSMITTED_IN_PKTS",
+    "RETRANSMITTED_OUT_BYTES",
+    "RETRANSMITTED_OUT_PKTS",
+    "SRC_TO_DST_AVG_THROUGHPUT",
+    "DST_TO_SRC_AVG_THROUGHPUT",
+    "NUM_PKTS_UP_TO_128_BYTES",
+    "NUM_PKTS_128_TO_256_BYTES",
+    "NUM_PKTS_256_TO_512_BYTES",
+    "NUM_PKTS_512_TO_1024_BYTES",
+    "NUM_PKTS_1024_TO_1514_BYTES",
+    "TCP_WIN_MAX_IN",
+    "TCP_WIN_MAX_OUT",
+    "ICMP_TYPE",
+    "ICMP_IPV4_TYPE",
+    "DNS_QUERY_ID",
+    "DNS_QUERY_TYPE",
+    "DNS_TTL_ANSWER",
+    "FTP_COMMAND_RET_CODE"
+  ],
+  "feature_count": 38,
+  "dropped_cols": [
+    "MAX_IP_PKT_LEN"
+  ],
+  "split_fractions": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "normalization": {
+    "method": "benign_train_only_clip_minmax",
+    "percentile_low": 1,
+    "percentile_high": 99,
+    "scale_range": [
+      0,
+      1
+    ]
+  },
+  "client_stats": [
+    {
+      "client_id": 0,
+      "total_samples": 333603,
+      "n_benign": 331285,
+      "n_malicious": 2318,
+      "benign_pct": 99.3052,
+      "split_sizes": {
+        "train": 233522,
+        "val": 50041,
+        "test": 50040
+      },
+      "benign_train_samples": 231899,
+      "attack_distribution": {
+        "Analysis": 43,
+        "Backdoor": 51,
+        "Benign": 331285,
+        "DoS": 149,
+        "Exploits": 820,
+        "Fuzzers": 530,
+        "Generic": 399,
+        "Reconnaissance": 301,
+        "Shellcode": 22,
+        "Worms": 3
+      }
+    },
+    {
+      "client_id": 1,
+      "total_samples": 536210,
+      "n_benign": 527212,
+      "n_malicious": 8998,
+      "benign_pct": 98.3219,
+      "split_sizes": {
+        "train": 375347,
+        "val": 80432,
+        "test": 80431
+      },
+      "benign_train_samples": 369048,
+      "attack_distribution": {
+        "Analysis": 225,
+        "Backdoor": 202,
+        "Benign": 527212,
+        "DoS": 608,
+        "Exploits": 2920,
+        "Fuzzers": 2121,
+        "Generic": 1571,
+        "Reconnaissance": 1187,
+        "Shellcode": 154,
+        "Worms": 10
+      }
+    },
+    {
+      "client_id": 2,
+      "total_samples": 10147,
+      "n_benign": 3652,
+      "n_malicious": 6495,
+      "benign_pct": 35.9909,
+      "split_sizes": {
+        "train": 7102,
+        "val": 1522,
+        "test": 1523
+      },
+      "benign_train_samples": 2556,
+      "attack_distribution": {
+        "Analysis": 141,
+        "Backdoor": 142,
+        "Benign": 3652,
+        "DoS": 434,
+        "Exploits": 2120,
+        "Fuzzers": 1514,
+        "Generic": 1108,
+        "Reconnaissance": 938,
+        "Shellcode": 86,
+        "Worms": 12
+      }
+    },
+    {
+      "client_id": 3,
+      "total_samples": 334473,
+      "n_benign": 311229,
+      "n_malicious": 23244,
+      "benign_pct": 93.0506,
+      "split_sizes": {
+        "train": 234131,
+        "val": 50171,
+        "test": 50171
+      },
+      "benign_train_samples": 217860,
+      "attack_distribution": {
+        "Analysis": 513,
+        "Backdoor": 562,
+        "Benign": 311229,
+        "DoS": 1358,
+        "Exploits": 7663,
+        "Fuzzers": 5562,
+        "Generic": 4080,
+        "Reconnaissance": 3123,
+        "Shellcode": 343,
+        "Worms": 40
+      }
+    },
+    {
+      "client_id": 4,
+      "total_samples": 36191,
+      "n_benign": 6758,
+      "n_malicious": 29433,
+      "benign_pct": 18.6732,
+      "split_sizes": {
+        "train": 25334,
+        "val": 5429,
+        "test": 5428
+      },
+      "benign_train_samples": 4731,
+      "attack_distribution": {
+        "Analysis": 765,
+        "Backdoor": 683,
+        "Benign": 6758,
+        "DoS": 1754,
+        "Exploits": 9768,
+        "Fuzzers": 6857,
+        "Generic": 5241,
+        "Reconnaissance": 3856,
+        "Shellcode": 453,
+        "Worms": 56
+      }
+    },
+    {
+      "client_id": 5,
+      "total_samples": 58080,
+      "n_benign": 56617,
+      "n_malicious": 1463,
+      "benign_pct": 97.4811,
+      "split_sizes": {
+        "train": 40656,
+        "val": 8712,
+        "test": 8712
+      },
+      "benign_train_samples": 39632,
+      "attack_distribution": {
+        "Analysis": 37,
+        "Backdoor": 38,
+        "Benign": 56617,
+        "DoS": 79,
+        "Exploits": 461,
+        "Fuzzers": 341,
+        "Generic": 240,
+        "Reconnaissance": 242,
+        "Shellcode": 24,
+        "Worms": 1
+      }
+    },
+    {
+      "client_id": 6,
+      "total_samples": 190457,
+      "n_benign": 184659,
+      "n_malicious": 5798,
+      "benign_pct": 96.9557,
+      "split_sizes": {
+        "train": 133320,
+        "val": 28569,
+        "test": 28568
+      },
+      "benign_train_samples": 129261,
+      "attack_distribution": {
+        "Analysis": 147,
+        "Backdoor": 135,
+        "Benign": 184659,
+        "DoS": 356,
+        "Exploits": 1933,
+        "Fuzzers": 1415,
+        "Generic": 939,
+        "Reconnaissance": 780,
+        "Shellcode": 85,
+        "Worms": 8
+      }
+    },
+    {
+      "client_id": 7,
+      "total_samples": 129258,
+      "n_benign": 128125,
+      "n_malicious": 1133,
+      "benign_pct": 99.1235,
+      "split_sizes": {
+        "train": 90481,
+        "val": 19389,
+        "test": 19388
+      },
+      "benign_train_samples": 89688,
+      "attack_distribution": {
+        "Analysis": 25,
+        "Backdoor": 27,
+        "Benign": 128125,
+        "DoS": 65,
+        "Exploits": 378,
+        "Fuzzers": 273,
+        "Generic": 189,
+        "Reconnaissance": 153,
+        "Shellcode": 19,
+        "Worms": 4
+      }
+    },
+    {
+      "client_id": 8,
+      "total_samples": 449498,
+      "n_benign": 438980,
+      "n_malicious": 10518,
+      "benign_pct": 97.6601,
+      "split_sizes": {
+        "train": 314649,
+        "val": 67425,
+        "test": 67424
+      },
+      "benign_train_samples": 307286,
+      "attack_distribution": {
+        "Analysis": 262,
+        "Backdoor": 200,
+        "Benign": 438980,
+        "DoS": 649,
+        "Exploits": 3514,
+        "Fuzzers": 2442,
+        "Generic": 1850,
+        "Reconnaissance": 1433,
+        "Shellcode": 152,
+        "Worms": 16
+      }
+    },
+    {
+      "client_id": 9,
+      "total_samples": 312358,
+      "n_benign": 306705,
+      "n_malicious": 5653,
+      "benign_pct": 98.1902,
+      "split_sizes": {
+        "train": 218651,
+        "val": 46854,
+        "test": 46853
+      },
+      "benign_train_samples": 214694,
+      "attack_distribution": {
+        "Analysis": 141,
+        "Backdoor": 129,
+        "Benign": 306705,
+        "DoS": 342,
+        "Exploits": 1974,
+        "Fuzzers": 1255,
+        "Generic": 943,
+        "Reconnaissance": 766,
+        "Shellcode": 89,
+        "Worms": 14
+      }
+    }
+  ],
+  "validation": {
+    "status": "PASS",
+    "issues": [],
+    "checks_performed": [
+      "no_samples_lost",
+      "no_cross_client_duplication",
+      "no_intra_client_split_overlap",
+      "min_benign_per_client",
+      "all_scaled_values_in_0_1",
+      "worms_count_preserved",
+      "label_index_alignment"
+    ]
+  },
+  "verification_summary": {
+    "skipped": false,
+    "dropped_cols": [
+      "MAX_IP_PKT_LEN"
+    ],
+    "has_label_conflicts": false
+  }
+}

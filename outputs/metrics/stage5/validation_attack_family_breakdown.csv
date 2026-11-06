@@ -1,0 +1,801 @@
+client_id,client_str,config_short,config_full,quantile,attack_family,is_attack,status,n_total,n_fe_drop,n_gate_rej,n_load_shed,n_heavy_adm,gate_passage_rate,heavy_admission_rate,tp_ae,n_processed_ae,conditional_ae_recall,tp_heavy,n_admitted_heavy,conditional_heavy_recall,e2e_ae_contribution,e2e_heavy_contribution,recall_e2e
+0,client_00,Config A,Config A: HeavyGRU FedAvg,Q99,Analysis,True,EVALUATED,1,0.0,1.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+0,client_00,Config A,Config A: HeavyGRU FedAvg,Q99,Backdoor,True,EVALUATED,4,0.0,4.0,0.0,0.0,0.0,0.0,4.0,4.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+0,client_00,Config A,Config A: HeavyGRU FedAvg,Q99,DoS,True,EVALUATED,9,0.0,9.0,0.0,0.0,0.0,0.0,4.0,9.0,0.444444,0.0,0.0,0.0,0.444444,0.0,0.444444
+0,client_00,Config A,Config A: HeavyGRU FedAvg,Q99,Exploits,True,EVALUATED,47,0.0,47.0,0.0,0.0,0.0,0.0,9.0,47.0,0.191489,0.0,0.0,0.0,0.191489,0.0,0.191489
+0,client_00,Config A,Config A: HeavyGRU FedAvg,Q99,Fuzzers,True,EVALUATED,18,0.0,17.0,0.0,1.0,0.055556,0.055556,4.0,17.0,0.235294,1.0,1.0,1.0,0.222222,0.055556,0.277778
+0,client_00,Config A,Config A: HeavyGRU FedAvg,Q99,Generic,True,EVALUATED,36,0.0,32.0,0.0,4.0,0.111111,0.111111,26.0,32.0,0.8125,4.0,4.0,1.0,0.722222,0.111111,0.833333
+0,client_00,Config A,Config A: HeavyGRU FedAvg,Q99,Reconnaissance,True,EVALUATED,13,0.0,12.0,0.0,1.0,0.076923,0.076923,7.0,12.0,0.583333,1.0,1.0,1.0,0.538462,0.076923,0.615385
+0,client_00,Config A,Config A: HeavyGRU FedAvg,Q99,Shellcode,True,EVALUATED,2,0.0,2.0,0.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,client_00,Config A,Config A: HeavyGRU FedAvg,Q99,Worms,True,ZERO_SAMPLES,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,
+0,client_00,Config A,Config A: HeavyGRU FedAvg,Q99,Benign,False,EVALUATED,19870,0.0,19646.0,0.0,224.0,0.011273,0.011273,0.0,19646.0,0.0,0.0,224.0,0.0,0.0,0.0,0.0
+0,client_00,Config A,Config A: HeavyGRU FedAvg,Q95,Analysis,True,EVALUATED,1,0.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,1.0,0.0,1.0,1.0
+0,client_00,Config A,Config A: HeavyGRU FedAvg,Q95,Backdoor,True,EVALUATED,4,0.0,0.0,0.0,4.0,1.0,1.0,0.0,0.0,0.0,4.0,4.0,1.0,0.0,1.0,1.0
+0,client_00,Config A,Config A: HeavyGRU FedAvg,Q95,DoS,True,EVALUATED,9,0.0,0.0,0.0,9.0,1.0,1.0,0.0,0.0,0.0,9.0,9.0,1.0,0.0,1.0,1.0
+0,client_00,Config A,Config A: HeavyGRU FedAvg,Q95,Exploits,True,EVALUATED,47,0.0,13.0,0.0,34.0,0.723404,0.723404,9.0,13.0,0.692308,34.0,34.0,1.0,0.191489,0.723404,0.914894
+0,client_00,Config A,Config A: HeavyGRU FedAvg,Q95,Fuzzers,True,EVALUATED,18,0.0,9.0,0.0,9.0,0.5,0.5,6.0,9.0,0.666667,9.0,9.0,1.0,0.333333,0.5,0.833333
+0,client_00,Config A,Config A: HeavyGRU FedAvg,Q95,Generic,True,EVALUATED,36,0.0,22.0,0.0,14.0,0.388889,0.388889,21.0,22.0,0.954545,14.0,14.0,1.0,0.583333,0.388889,0.972222
+0,client_00,Config A,Config A: HeavyGRU FedAvg,Q95,Reconnaissance,True,EVALUATED,13,0.0,4.0,0.0,9.0,0.692308,0.692308,4.0,4.0,1.0,9.0,9.0,1.0,0.307692,0.692308,1.0
+0,client_00,Config A,Config A: HeavyGRU FedAvg,Q95,Shellcode,True,EVALUATED,2,0.0,2.0,0.0,0.0,0.0,0.0,2.0,2.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+0,client_00,Config A,Config A: HeavyGRU FedAvg,Q95,Worms,True,ZERO_SAMPLES,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,
+0,client_00,Config A,Config A: HeavyGRU FedAvg,Q95,Benign,False,EVALUATED,19870,0.0,18853.0,0.0,1017.0,0.051183,0.051183,0.0,18853.0,0.0,0.0,1017.0,0.0,0.0,0.0,0.0
+0,client_00,Config B,Config B: DenseMLP FedPer,Q99,Analysis,True,EVALUATED,1,0.0,1.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+0,client_00,Config B,Config B: DenseMLP FedPer,Q99,Backdoor,True,EVALUATED,4,0.0,4.0,0.0,0.0,0.0,0.0,4.0,4.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+0,client_00,Config B,Config B: DenseMLP FedPer,Q99,DoS,True,EVALUATED,9,0.0,9.0,0.0,0.0,0.0,0.0,4.0,9.0,0.444444,0.0,0.0,0.0,0.444444,0.0,0.444444
+0,client_00,Config B,Config B: DenseMLP FedPer,Q99,Exploits,True,EVALUATED,47,0.0,47.0,0.0,0.0,0.0,0.0,9.0,47.0,0.191489,0.0,0.0,0.0,0.191489,0.0,0.191489
+0,client_00,Config B,Config B: DenseMLP FedPer,Q99,Fuzzers,True,EVALUATED,18,0.0,17.0,0.0,1.0,0.055556,0.055556,4.0,17.0,0.235294,1.0,1.0,1.0,0.222222,0.055556,0.277778
+0,client_00,Config B,Config B: DenseMLP FedPer,Q99,Generic,True,EVALUATED,36,0.0,32.0,0.0,4.0,0.111111,0.111111,26.0,32.0,0.8125,4.0,4.0,1.0,0.722222,0.111111,0.833333
+0,client_00,Config B,Config B: DenseMLP FedPer,Q99,Reconnaissance,True,EVALUATED,13,0.0,12.0,0.0,1.0,0.076923,0.076923,7.0,12.0,0.583333,1.0,1.0,1.0,0.538462,0.076923,0.615385
+0,client_00,Config B,Config B: DenseMLP FedPer,Q99,Shellcode,True,EVALUATED,2,0.0,2.0,0.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,client_00,Config B,Config B: DenseMLP FedPer,Q99,Worms,True,ZERO_SAMPLES,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,
+0,client_00,Config B,Config B: DenseMLP FedPer,Q99,Benign,False,EVALUATED,19870,0.0,19646.0,0.0,224.0,0.011273,0.011273,0.0,19646.0,0.0,0.0,224.0,0.0,0.0,0.0,0.0
+0,client_00,Config B,Config B: DenseMLP FedPer,Q95,Analysis,True,NOT AVAILABLE,1,,,,,,,,,,,,,,,
+0,client_00,Config B,Config B: DenseMLP FedPer,Q95,Backdoor,True,NOT AVAILABLE,4,,,,,,,,,,,,,,,
+0,client_00,Config B,Config B: DenseMLP FedPer,Q95,DoS,True,NOT AVAILABLE,9,,,,,,,,,,,,,,,
+0,client_00,Config B,Config B: DenseMLP FedPer,Q95,Exploits,True,NOT AVAILABLE,47,,,,,,,,,,,,,,,
+0,client_00,Config B,Config B: DenseMLP FedPer,Q95,Fuzzers,True,NOT AVAILABLE,18,,,,,,,,,,,,,,,
+0,client_00,Config B,Config B: DenseMLP FedPer,Q95,Generic,True,NOT AVAILABLE,36,,,,,,,,,,,,,,,
+0,client_00,Config B,Config B: DenseMLP FedPer,Q95,Reconnaissance,True,NOT AVAILABLE,13,,,,,,,,,,,,,,,
+0,client_00,Config B,Config B: DenseMLP FedPer,Q95,Shellcode,True,NOT AVAILABLE,2,,,,,,,,,,,,,,,
+0,client_00,Config B,Config B: DenseMLP FedPer,Q95,Worms,True,NOT AVAILABLE,0,,,,,,,,,,,,,,,
+0,client_00,Config B,Config B: DenseMLP FedPer,Q95,Benign,False,NOT AVAILABLE,19870,,,,,,,,,,,,,,,
+0,client_00,Config C,Config C: DenseMLP FedAvg,Q99,Analysis,True,EVALUATED,1,0.0,1.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+0,client_00,Config C,Config C: DenseMLP FedAvg,Q99,Backdoor,True,EVALUATED,4,0.0,4.0,0.0,0.0,0.0,0.0,4.0,4.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+0,client_00,Config C,Config C: DenseMLP FedAvg,Q99,DoS,True,EVALUATED,9,0.0,9.0,0.0,0.0,0.0,0.0,4.0,9.0,0.444444,0.0,0.0,0.0,0.444444,0.0,0.444444
+0,client_00,Config C,Config C: DenseMLP FedAvg,Q99,Exploits,True,EVALUATED,47,0.0,47.0,0.0,0.0,0.0,0.0,9.0,47.0,0.191489,0.0,0.0,0.0,0.191489,0.0,0.191489
+0,client_00,Config C,Config C: DenseMLP FedAvg,Q99,Fuzzers,True,EVALUATED,18,0.0,17.0,0.0,1.0,0.055556,0.055556,4.0,17.0,0.235294,1.0,1.0,1.0,0.222222,0.055556,0.277778
+0,client_00,Config C,Config C: DenseMLP FedAvg,Q99,Generic,True,EVALUATED,36,0.0,32.0,0.0,4.0,0.111111,0.111111,26.0,32.0,0.8125,4.0,4.0,1.0,0.722222,0.111111,0.833333
+0,client_00,Config C,Config C: DenseMLP FedAvg,Q99,Reconnaissance,True,EVALUATED,13,0.0,12.0,0.0,1.0,0.076923,0.076923,7.0,12.0,0.583333,1.0,1.0,1.0,0.538462,0.076923,0.615385
+0,client_00,Config C,Config C: DenseMLP FedAvg,Q99,Shellcode,True,EVALUATED,2,0.0,2.0,0.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,client_00,Config C,Config C: DenseMLP FedAvg,Q99,Worms,True,ZERO_SAMPLES,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,
+0,client_00,Config C,Config C: DenseMLP FedAvg,Q99,Benign,False,EVALUATED,19870,0.0,19646.0,0.0,224.0,0.011273,0.011273,0.0,19646.0,0.0,0.0,224.0,0.0,0.0,0.0,0.0
+0,client_00,Config C,Config C: DenseMLP FedAvg,Q95,Analysis,True,EVALUATED,1,0.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,1.0,0.0,1.0,1.0
+0,client_00,Config C,Config C: DenseMLP FedAvg,Q95,Backdoor,True,EVALUATED,4,0.0,0.0,0.0,4.0,1.0,1.0,0.0,0.0,0.0,4.0,4.0,1.0,0.0,1.0,1.0
+0,client_00,Config C,Config C: DenseMLP FedAvg,Q95,DoS,True,EVALUATED,9,0.0,0.0,0.0,9.0,1.0,1.0,0.0,0.0,0.0,9.0,9.0,1.0,0.0,1.0,1.0
+0,client_00,Config C,Config C: DenseMLP FedAvg,Q95,Exploits,True,EVALUATED,47,0.0,13.0,0.0,34.0,0.723404,0.723404,9.0,13.0,0.692308,34.0,34.0,1.0,0.191489,0.723404,0.914894
+0,client_00,Config C,Config C: DenseMLP FedAvg,Q95,Fuzzers,True,EVALUATED,18,0.0,9.0,0.0,9.0,0.5,0.5,6.0,9.0,0.666667,9.0,9.0,1.0,0.333333,0.5,0.833333
+0,client_00,Config C,Config C: DenseMLP FedAvg,Q95,Generic,True,EVALUATED,36,0.0,22.0,0.0,14.0,0.388889,0.388889,21.0,22.0,0.954545,14.0,14.0,1.0,0.583333,0.388889,0.972222
+0,client_00,Config C,Config C: DenseMLP FedAvg,Q95,Reconnaissance,True,EVALUATED,13,0.0,4.0,0.0,9.0,0.692308,0.692308,4.0,4.0,1.0,9.0,9.0,1.0,0.307692,0.692308,1.0
+0,client_00,Config C,Config C: DenseMLP FedAvg,Q95,Shellcode,True,EVALUATED,2,0.0,2.0,0.0,0.0,0.0,0.0,2.0,2.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+0,client_00,Config C,Config C: DenseMLP FedAvg,Q95,Worms,True,ZERO_SAMPLES,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,
+0,client_00,Config C,Config C: DenseMLP FedAvg,Q95,Benign,False,EVALUATED,19870,0.0,18853.0,0.0,1017.0,0.051183,0.051183,0.0,18853.0,0.0,0.0,1017.0,0.0,0.0,0.0,0.0
+0,client_00,Config D,Config D: Light AE Standalone,Q99,Analysis,True,EVALUATED,1,0.0,1.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+0,client_00,Config D,Config D: Light AE Standalone,Q99,Backdoor,True,EVALUATED,4,0.0,4.0,0.0,0.0,0.0,0.0,4.0,4.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+0,client_00,Config D,Config D: Light AE Standalone,Q99,DoS,True,EVALUATED,9,0.0,9.0,0.0,0.0,0.0,0.0,4.0,9.0,0.444444,0.0,0.0,0.0,0.444444,0.0,0.444444
+0,client_00,Config D,Config D: Light AE Standalone,Q99,Exploits,True,EVALUATED,47,0.0,47.0,0.0,0.0,0.0,0.0,9.0,47.0,0.191489,0.0,0.0,0.0,0.191489,0.0,0.191489
+0,client_00,Config D,Config D: Light AE Standalone,Q99,Fuzzers,True,EVALUATED,18,0.0,17.0,1.0,0.0,0.055556,0.0,5.0,18.0,0.277778,0.0,0.0,0.0,0.277778,0.0,0.277778
+0,client_00,Config D,Config D: Light AE Standalone,Q99,Generic,True,EVALUATED,36,0.0,32.0,4.0,0.0,0.111111,0.0,30.0,36.0,0.833333,0.0,0.0,0.0,0.833333,0.0,0.833333
+0,client_00,Config D,Config D: Light AE Standalone,Q99,Reconnaissance,True,EVALUATED,13,0.0,12.0,1.0,0.0,0.076923,0.0,8.0,13.0,0.615385,0.0,0.0,0.0,0.615385,0.0,0.615385
+0,client_00,Config D,Config D: Light AE Standalone,Q99,Shellcode,True,EVALUATED,2,0.0,2.0,0.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,client_00,Config D,Config D: Light AE Standalone,Q99,Worms,True,ZERO_SAMPLES,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,
+0,client_00,Config D,Config D: Light AE Standalone,Q99,Benign,False,EVALUATED,19870,0.0,19646.0,224.0,0.0,0.011273,0.0,0.0,19870.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0,client_00,Config D,Config D: Light AE Standalone,Q95,Analysis,True,EVALUATED,1,0.0,0.0,1.0,0.0,1.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+0,client_00,Config D,Config D: Light AE Standalone,Q95,Backdoor,True,EVALUATED,4,0.0,0.0,4.0,0.0,1.0,0.0,4.0,4.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+0,client_00,Config D,Config D: Light AE Standalone,Q95,DoS,True,EVALUATED,9,0.0,0.0,9.0,0.0,1.0,0.0,9.0,9.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+0,client_00,Config D,Config D: Light AE Standalone,Q95,Exploits,True,EVALUATED,47,0.0,13.0,34.0,0.0,0.723404,0.0,43.0,47.0,0.914894,0.0,0.0,0.0,0.914894,0.0,0.914894
+0,client_00,Config D,Config D: Light AE Standalone,Q95,Fuzzers,True,EVALUATED,18,0.0,9.0,9.0,0.0,0.5,0.0,15.0,18.0,0.833333,0.0,0.0,0.0,0.833333,0.0,0.833333
+0,client_00,Config D,Config D: Light AE Standalone,Q95,Generic,True,EVALUATED,36,0.0,22.0,14.0,0.0,0.388889,0.0,35.0,36.0,0.972222,0.0,0.0,0.0,0.972222,0.0,0.972222
+0,client_00,Config D,Config D: Light AE Standalone,Q95,Reconnaissance,True,EVALUATED,13,0.0,4.0,9.0,0.0,0.692308,0.0,13.0,13.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+0,client_00,Config D,Config D: Light AE Standalone,Q95,Shellcode,True,EVALUATED,2,0.0,2.0,0.0,0.0,0.0,0.0,2.0,2.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+0,client_00,Config D,Config D: Light AE Standalone,Q95,Worms,True,ZERO_SAMPLES,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,
+0,client_00,Config D,Config D: Light AE Standalone,Q95,Benign,False,EVALUATED,19870,0.0,18853.0,1017.0,0.0,0.051183,0.0,0.0,19870.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1,client_01,Config A,Config A: HeavyGRU FedAvg,Q99,Analysis,True,EVALUATED,8,0.0,6.0,0.0,2.0,0.25,0.25,0.0,6.0,0.0,2.0,2.0,1.0,0.0,0.25,0.25
+1,client_01,Config A,Config A: HeavyGRU FedAvg,Q99,Backdoor,True,EVALUATED,11,0.0,7.0,0.0,4.0,0.363636,0.363636,0.0,7.0,0.0,4.0,4.0,1.0,0.0,0.363636,0.363636
+1,client_01,Config A,Config A: HeavyGRU FedAvg,Q99,DoS,True,EVALUATED,23,0.0,21.0,0.0,2.0,0.086957,0.086957,1.0,21.0,0.047619,2.0,2.0,1.0,0.043478,0.086957,0.130435
+1,client_01,Config A,Config A: HeavyGRU FedAvg,Q99,Exploits,True,EVALUATED,114,0.0,92.0,0.0,22.0,0.192982,0.192982,5.0,92.0,0.054348,22.0,22.0,1.0,0.04386,0.192982,0.236842
+1,client_01,Config A,Config A: HeavyGRU FedAvg,Q99,Fuzzers,True,EVALUATED,81,0.0,76.0,0.0,5.0,0.061728,0.061728,6.0,76.0,0.078947,5.0,5.0,1.0,0.074074,0.061728,0.135802
+1,client_01,Config A,Config A: HeavyGRU FedAvg,Q99,Generic,True,EVALUATED,42,0.0,40.0,0.0,2.0,0.047619,0.047619,29.0,40.0,0.725,2.0,2.0,1.0,0.690476,0.047619,0.738095
+1,client_01,Config A,Config A: HeavyGRU FedAvg,Q99,Reconnaissance,True,EVALUATED,46,0.0,46.0,0.0,0.0,0.0,0.0,1.0,46.0,0.021739,0.0,0.0,0.0,0.021739,0.0,0.021739
+1,client_01,Config A,Config A: HeavyGRU FedAvg,Q99,Shellcode,True,EVALUATED,5,0.0,5.0,0.0,0.0,0.0,0.0,0.0,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1,client_01,Config A,Config A: HeavyGRU FedAvg,Q99,Worms,True,ZERO_SAMPLES,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,
+1,client_01,Config A,Config A: HeavyGRU FedAvg,Q99,Benign,False,EVALUATED,19670,0.0,19499.0,0.0,171.0,0.008693,0.008693,0.0,19499.0,0.0,0.0,171.0,0.0,0.0,0.0,0.0
+1,client_01,Config A,Config A: HeavyGRU FedAvg,Q95,Analysis,True,EVALUATED,8,0.0,6.0,0.0,2.0,0.25,0.25,6.0,6.0,1.0,2.0,2.0,1.0,0.75,0.25,1.0
+1,client_01,Config A,Config A: HeavyGRU FedAvg,Q95,Backdoor,True,EVALUATED,11,0.0,5.0,0.0,6.0,0.545455,0.545455,5.0,5.0,1.0,6.0,6.0,1.0,0.454545,0.545455,1.0
+1,client_01,Config A,Config A: HeavyGRU FedAvg,Q95,DoS,True,EVALUATED,23,0.0,8.0,0.0,15.0,0.652174,0.652174,8.0,8.0,1.0,15.0,15.0,1.0,0.347826,0.652174,1.0
+1,client_01,Config A,Config A: HeavyGRU FedAvg,Q95,Exploits,True,EVALUATED,114,0.0,35.0,0.0,79.0,0.692982,0.692982,29.0,35.0,0.828571,78.0,79.0,0.987342,0.254386,0.684211,0.938596
+1,client_01,Config A,Config A: HeavyGRU FedAvg,Q95,Fuzzers,True,EVALUATED,81,0.0,21.0,0.0,60.0,0.740741,0.740741,13.0,21.0,0.619048,59.0,60.0,0.983333,0.160494,0.728395,0.888889
+1,client_01,Config A,Config A: HeavyGRU FedAvg,Q95,Generic,True,EVALUATED,42,0.0,35.0,0.0,7.0,0.166667,0.166667,35.0,35.0,1.0,7.0,7.0,1.0,0.833333,0.166667,1.0
+1,client_01,Config A,Config A: HeavyGRU FedAvg,Q95,Reconnaissance,True,EVALUATED,46,0.0,29.0,0.0,17.0,0.369565,0.369565,29.0,29.0,1.0,17.0,17.0,1.0,0.630435,0.369565,1.0
+1,client_01,Config A,Config A: HeavyGRU FedAvg,Q95,Shellcode,True,EVALUATED,5,0.0,3.0,0.0,2.0,0.4,0.4,3.0,3.0,1.0,2.0,2.0,1.0,0.6,0.4,1.0
+1,client_01,Config A,Config A: HeavyGRU FedAvg,Q95,Worms,True,ZERO_SAMPLES,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,
+1,client_01,Config A,Config A: HeavyGRU FedAvg,Q95,Benign,False,EVALUATED,19670,0.0,18694.0,0.0,976.0,0.049619,0.049619,0.0,18694.0,0.0,0.0,976.0,0.0,0.0,0.0,0.0
+1,client_01,Config B,Config B: DenseMLP FedPer,Q99,Analysis,True,EVALUATED,8,0.0,6.0,0.0,2.0,0.25,0.25,0.0,6.0,0.0,2.0,2.0,1.0,0.0,0.25,0.25
+1,client_01,Config B,Config B: DenseMLP FedPer,Q99,Backdoor,True,EVALUATED,11,0.0,7.0,0.0,4.0,0.363636,0.363636,0.0,7.0,0.0,4.0,4.0,1.0,0.0,0.363636,0.363636
+1,client_01,Config B,Config B: DenseMLP FedPer,Q99,DoS,True,EVALUATED,23,0.0,21.0,0.0,2.0,0.086957,0.086957,1.0,21.0,0.047619,2.0,2.0,1.0,0.043478,0.086957,0.130435
+1,client_01,Config B,Config B: DenseMLP FedPer,Q99,Exploits,True,EVALUATED,114,0.0,92.0,0.0,22.0,0.192982,0.192982,5.0,92.0,0.054348,22.0,22.0,1.0,0.04386,0.192982,0.236842
+1,client_01,Config B,Config B: DenseMLP FedPer,Q99,Fuzzers,True,EVALUATED,81,0.0,76.0,0.0,5.0,0.061728,0.061728,6.0,76.0,0.078947,5.0,5.0,1.0,0.074074,0.061728,0.135802
+1,client_01,Config B,Config B: DenseMLP FedPer,Q99,Generic,True,EVALUATED,42,0.0,40.0,0.0,2.0,0.047619,0.047619,29.0,40.0,0.725,2.0,2.0,1.0,0.690476,0.047619,0.738095
+1,client_01,Config B,Config B: DenseMLP FedPer,Q99,Reconnaissance,True,EVALUATED,46,0.0,46.0,0.0,0.0,0.0,0.0,1.0,46.0,0.021739,0.0,0.0,0.0,0.021739,0.0,0.021739
+1,client_01,Config B,Config B: DenseMLP FedPer,Q99,Shellcode,True,EVALUATED,5,0.0,5.0,0.0,0.0,0.0,0.0,0.0,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1,client_01,Config B,Config B: DenseMLP FedPer,Q99,Worms,True,ZERO_SAMPLES,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,
+1,client_01,Config B,Config B: DenseMLP FedPer,Q99,Benign,False,EVALUATED,19670,0.0,19499.0,0.0,171.0,0.008693,0.008693,0.0,19499.0,0.0,0.0,171.0,0.0,0.0,0.0,0.0
+1,client_01,Config B,Config B: DenseMLP FedPer,Q95,Analysis,True,NOT AVAILABLE,8,,,,,,,,,,,,,,,
+1,client_01,Config B,Config B: DenseMLP FedPer,Q95,Backdoor,True,NOT AVAILABLE,11,,,,,,,,,,,,,,,
+1,client_01,Config B,Config B: DenseMLP FedPer,Q95,DoS,True,NOT AVAILABLE,23,,,,,,,,,,,,,,,
+1,client_01,Config B,Config B: DenseMLP FedPer,Q95,Exploits,True,NOT AVAILABLE,114,,,,,,,,,,,,,,,
+1,client_01,Config B,Config B: DenseMLP FedPer,Q95,Fuzzers,True,NOT AVAILABLE,81,,,,,,,,,,,,,,,
+1,client_01,Config B,Config B: DenseMLP FedPer,Q95,Generic,True,NOT AVAILABLE,42,,,,,,,,,,,,,,,
+1,client_01,Config B,Config B: DenseMLP FedPer,Q95,Reconnaissance,True,NOT AVAILABLE,46,,,,,,,,,,,,,,,
+1,client_01,Config B,Config B: DenseMLP FedPer,Q95,Shellcode,True,NOT AVAILABLE,5,,,,,,,,,,,,,,,
+1,client_01,Config B,Config B: DenseMLP FedPer,Q95,Worms,True,NOT AVAILABLE,0,,,,,,,,,,,,,,,
+1,client_01,Config B,Config B: DenseMLP FedPer,Q95,Benign,False,NOT AVAILABLE,19670,,,,,,,,,,,,,,,
+1,client_01,Config C,Config C: DenseMLP FedAvg,Q99,Analysis,True,EVALUATED,8,0.0,6.0,0.0,2.0,0.25,0.25,0.0,6.0,0.0,2.0,2.0,1.0,0.0,0.25,0.25
+1,client_01,Config C,Config C: DenseMLP FedAvg,Q99,Backdoor,True,EVALUATED,11,0.0,7.0,0.0,4.0,0.363636,0.363636,0.0,7.0,0.0,4.0,4.0,1.0,0.0,0.363636,0.363636
+1,client_01,Config C,Config C: DenseMLP FedAvg,Q99,DoS,True,EVALUATED,23,0.0,21.0,0.0,2.0,0.086957,0.086957,1.0,21.0,0.047619,2.0,2.0,1.0,0.043478,0.086957,0.130435
+1,client_01,Config C,Config C: DenseMLP FedAvg,Q99,Exploits,True,EVALUATED,114,0.0,92.0,0.0,22.0,0.192982,0.192982,5.0,92.0,0.054348,22.0,22.0,1.0,0.04386,0.192982,0.236842
+1,client_01,Config C,Config C: DenseMLP FedAvg,Q99,Fuzzers,True,EVALUATED,81,0.0,76.0,0.0,5.0,0.061728,0.061728,6.0,76.0,0.078947,5.0,5.0,1.0,0.074074,0.061728,0.135802
+1,client_01,Config C,Config C: DenseMLP FedAvg,Q99,Generic,True,EVALUATED,42,0.0,40.0,0.0,2.0,0.047619,0.047619,29.0,40.0,0.725,2.0,2.0,1.0,0.690476,0.047619,0.738095
+1,client_01,Config C,Config C: DenseMLP FedAvg,Q99,Reconnaissance,True,EVALUATED,46,0.0,46.0,0.0,0.0,0.0,0.0,1.0,46.0,0.021739,0.0,0.0,0.0,0.021739,0.0,0.021739
+1,client_01,Config C,Config C: DenseMLP FedAvg,Q99,Shellcode,True,EVALUATED,5,0.0,5.0,0.0,0.0,0.0,0.0,0.0,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1,client_01,Config C,Config C: DenseMLP FedAvg,Q99,Worms,True,ZERO_SAMPLES,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,
+1,client_01,Config C,Config C: DenseMLP FedAvg,Q99,Benign,False,EVALUATED,19670,0.0,19499.0,0.0,171.0,0.008693,0.008693,0.0,19499.0,0.0,0.0,171.0,0.0,0.0,0.0,0.0
+1,client_01,Config C,Config C: DenseMLP FedAvg,Q95,Analysis,True,EVALUATED,8,0.0,6.0,0.0,2.0,0.25,0.25,6.0,6.0,1.0,2.0,2.0,1.0,0.75,0.25,1.0
+1,client_01,Config C,Config C: DenseMLP FedAvg,Q95,Backdoor,True,EVALUATED,11,0.0,5.0,0.0,6.0,0.545455,0.545455,5.0,5.0,1.0,6.0,6.0,1.0,0.454545,0.545455,1.0
+1,client_01,Config C,Config C: DenseMLP FedAvg,Q95,DoS,True,EVALUATED,23,0.0,8.0,0.0,15.0,0.652174,0.652174,8.0,8.0,1.0,15.0,15.0,1.0,0.347826,0.652174,1.0
+1,client_01,Config C,Config C: DenseMLP FedAvg,Q95,Exploits,True,EVALUATED,114,0.0,35.0,0.0,79.0,0.692982,0.692982,29.0,35.0,0.828571,78.0,79.0,0.987342,0.254386,0.684211,0.938596
+1,client_01,Config C,Config C: DenseMLP FedAvg,Q95,Fuzzers,True,EVALUATED,81,0.0,21.0,0.0,60.0,0.740741,0.740741,13.0,21.0,0.619048,60.0,60.0,1.0,0.160494,0.740741,0.901235
+1,client_01,Config C,Config C: DenseMLP FedAvg,Q95,Generic,True,EVALUATED,42,0.0,35.0,0.0,7.0,0.166667,0.166667,35.0,35.0,1.0,7.0,7.0,1.0,0.833333,0.166667,1.0
+1,client_01,Config C,Config C: DenseMLP FedAvg,Q95,Reconnaissance,True,EVALUATED,46,0.0,29.0,0.0,17.0,0.369565,0.369565,29.0,29.0,1.0,17.0,17.0,1.0,0.630435,0.369565,1.0
+1,client_01,Config C,Config C: DenseMLP FedAvg,Q95,Shellcode,True,EVALUATED,5,0.0,3.0,0.0,2.0,0.4,0.4,3.0,3.0,1.0,2.0,2.0,1.0,0.6,0.4,1.0
+1,client_01,Config C,Config C: DenseMLP FedAvg,Q95,Worms,True,ZERO_SAMPLES,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,
+1,client_01,Config C,Config C: DenseMLP FedAvg,Q95,Benign,False,EVALUATED,19670,0.0,18694.0,0.0,976.0,0.049619,0.049619,0.0,18694.0,0.0,0.0,976.0,0.0,0.0,0.0,0.0
+1,client_01,Config D,Config D: Light AE Standalone,Q99,Analysis,True,EVALUATED,8,0.0,6.0,2.0,0.0,0.25,0.0,2.0,8.0,0.25,0.0,0.0,0.0,0.25,0.0,0.25
+1,client_01,Config D,Config D: Light AE Standalone,Q99,Backdoor,True,EVALUATED,11,0.0,7.0,4.0,0.0,0.363636,0.0,4.0,11.0,0.363636,0.0,0.0,0.0,0.363636,0.0,0.363636
+1,client_01,Config D,Config D: Light AE Standalone,Q99,DoS,True,EVALUATED,23,0.0,21.0,2.0,0.0,0.086957,0.0,3.0,23.0,0.130435,0.0,0.0,0.0,0.130435,0.0,0.130435
+1,client_01,Config D,Config D: Light AE Standalone,Q99,Exploits,True,EVALUATED,114,0.0,92.0,22.0,0.0,0.192982,0.0,12.0,114.0,0.105263,0.0,0.0,0.0,0.105263,0.0,0.105263
+1,client_01,Config D,Config D: Light AE Standalone,Q99,Fuzzers,True,EVALUATED,81,0.0,76.0,5.0,0.0,0.061728,0.0,8.0,81.0,0.098765,0.0,0.0,0.0,0.098765,0.0,0.098765
+1,client_01,Config D,Config D: Light AE Standalone,Q99,Generic,True,EVALUATED,42,0.0,40.0,2.0,0.0,0.047619,0.0,29.0,42.0,0.690476,0.0,0.0,0.0,0.690476,0.0,0.690476
+1,client_01,Config D,Config D: Light AE Standalone,Q99,Reconnaissance,True,EVALUATED,46,0.0,46.0,0.0,0.0,0.0,0.0,1.0,46.0,0.021739,0.0,0.0,0.0,0.021739,0.0,0.021739
+1,client_01,Config D,Config D: Light AE Standalone,Q99,Shellcode,True,EVALUATED,5,0.0,5.0,0.0,0.0,0.0,0.0,0.0,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1,client_01,Config D,Config D: Light AE Standalone,Q99,Worms,True,ZERO_SAMPLES,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,
+1,client_01,Config D,Config D: Light AE Standalone,Q99,Benign,False,EVALUATED,19670,0.0,19499.0,171.0,0.0,0.008693,0.0,0.0,19670.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1,client_01,Config D,Config D: Light AE Standalone,Q95,Analysis,True,EVALUATED,8,0.0,6.0,2.0,0.0,0.25,0.0,8.0,8.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+1,client_01,Config D,Config D: Light AE Standalone,Q95,Backdoor,True,EVALUATED,11,0.0,5.0,6.0,0.0,0.545455,0.0,11.0,11.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+1,client_01,Config D,Config D: Light AE Standalone,Q95,DoS,True,EVALUATED,23,0.0,8.0,15.0,0.0,0.652174,0.0,23.0,23.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+1,client_01,Config D,Config D: Light AE Standalone,Q95,Exploits,True,EVALUATED,114,0.0,35.0,79.0,0.0,0.692982,0.0,108.0,114.0,0.947368,0.0,0.0,0.0,0.947368,0.0,0.947368
+1,client_01,Config D,Config D: Light AE Standalone,Q95,Fuzzers,True,EVALUATED,81,0.0,21.0,60.0,0.0,0.740741,0.0,73.0,81.0,0.901235,0.0,0.0,0.0,0.901235,0.0,0.901235
+1,client_01,Config D,Config D: Light AE Standalone,Q95,Generic,True,EVALUATED,42,0.0,35.0,7.0,0.0,0.166667,0.0,42.0,42.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+1,client_01,Config D,Config D: Light AE Standalone,Q95,Reconnaissance,True,EVALUATED,46,0.0,29.0,17.0,0.0,0.369565,0.0,46.0,46.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+1,client_01,Config D,Config D: Light AE Standalone,Q95,Shellcode,True,EVALUATED,5,0.0,3.0,2.0,0.0,0.4,0.0,5.0,5.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+1,client_01,Config D,Config D: Light AE Standalone,Q95,Worms,True,ZERO_SAMPLES,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,
+1,client_01,Config D,Config D: Light AE Standalone,Q95,Benign,False,EVALUATED,19670,0.0,18694.0,976.0,0.0,0.049619,0.0,0.0,19670.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2,client_02,Config A,Config A: HeavyGRU FedAvg,Q99,Analysis,True,EVALUATED,206,0.0,206.0,0.0,0.0,0.0,0.0,0.0,206.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2,client_02,Config A,Config A: HeavyGRU FedAvg,Q99,Backdoor,True,EVALUATED,307,0.0,291.0,0.0,16.0,0.052117,0.052117,0.0,291.0,0.0,16.0,16.0,1.0,0.0,0.052117,0.052117
+2,client_02,Config A,Config A: HeavyGRU FedAvg,Q99,DoS,True,EVALUATED,841,0.0,825.0,0.0,16.0,0.019025,0.019025,15.0,825.0,0.018182,16.0,16.0,1.0,0.017836,0.019025,0.036861
+2,client_02,Config A,Config A: HeavyGRU FedAvg,Q99,Exploits,True,EVALUATED,4157,0.0,4002.0,0.0,155.0,0.037287,0.037287,23.0,4002.0,0.005747,155.0,155.0,1.0,0.005533,0.037287,0.042819
+2,client_02,Config A,Config A: HeavyGRU FedAvg,Q99,Fuzzers,True,EVALUATED,2809,0.0,2789.0,0.0,20.0,0.00712,0.00712,33.0,2789.0,0.011832,20.0,20.0,1.0,0.011748,0.00712,0.018868
+2,client_02,Config A,Config A: HeavyGRU FedAvg,Q99,Generic,True,EVALUATED,2330,0.0,2330.0,0.0,0.0,0.0,0.0,10.0,2330.0,0.004292,0.0,0.0,0.0,0.004292,0.0,0.004292
+2,client_02,Config A,Config A: HeavyGRU FedAvg,Q99,Reconnaissance,True,EVALUATED,1941,0.0,1907.0,0.0,34.0,0.017517,0.017517,0.0,1907.0,0.0,34.0,34.0,1.0,0.0,0.017517,0.017517
+2,client_02,Config A,Config A: HeavyGRU FedAvg,Q99,Shellcode,True,EVALUATED,97,0.0,97.0,0.0,0.0,0.0,0.0,0.0,97.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2,client_02,Config A,Config A: HeavyGRU FedAvg,Q99,Worms,True,EVALUATED,41,0.0,41.0,0.0,0.0,0.0,0.0,0.0,41.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2,client_02,Config A,Config A: HeavyGRU FedAvg,Q99,Benign,False,EVALUATED,7271,0.0,7224.0,0.0,47.0,0.006464,0.006464,0.0,7224.0,0.0,0.0,47.0,0.0,0.0,0.0,0.0
+2,client_02,Config A,Config A: HeavyGRU FedAvg,Q95,Analysis,True,EVALUATED,206,0.0,155.0,0.0,51.0,0.247573,0.247573,136.0,155.0,0.877419,51.0,51.0,1.0,0.660194,0.247573,0.907767
+2,client_02,Config A,Config A: HeavyGRU FedAvg,Q95,Backdoor,True,EVALUATED,307,0.0,224.0,0.0,83.0,0.270358,0.270358,212.0,224.0,0.946429,83.0,83.0,1.0,0.690554,0.270358,0.960912
+2,client_02,Config A,Config A: HeavyGRU FedAvg,Q95,DoS,True,EVALUATED,841,0.0,668.0,0.0,173.0,0.205707,0.205707,324.0,668.0,0.48503,173.0,173.0,1.0,0.385256,0.205707,0.590963
+2,client_02,Config A,Config A: HeavyGRU FedAvg,Q95,Exploits,True,EVALUATED,4157,0.0,3353.0,0.0,804.0,0.193409,0.193409,645.0,3353.0,0.192365,793.0,804.0,0.986318,0.15516,0.190763,0.345923
+2,client_02,Config A,Config A: HeavyGRU FedAvg,Q95,Fuzzers,True,EVALUATED,2809,0.0,2237.0,0.0,572.0,0.203631,0.203631,597.0,2237.0,0.266875,572.0,572.0,1.0,0.212531,0.203631,0.416162
+2,client_02,Config A,Config A: HeavyGRU FedAvg,Q95,Generic,True,EVALUATED,2330,0.0,2159.0,0.0,171.0,0.073391,0.073391,1842.0,2159.0,0.853173,171.0,171.0,1.0,0.790558,0.073391,0.863948
+2,client_02,Config A,Config A: HeavyGRU FedAvg,Q95,Reconnaissance,True,EVALUATED,1941,0.0,1702.0,0.0,239.0,0.123132,0.123132,965.0,1702.0,0.56698,239.0,239.0,1.0,0.497166,0.123132,0.620299
+2,client_02,Config A,Config A: HeavyGRU FedAvg,Q95,Shellcode,True,EVALUATED,97,0.0,86.0,0.0,11.0,0.113402,0.113402,49.0,86.0,0.569767,11.0,11.0,1.0,0.505155,0.113402,0.618557
+2,client_02,Config A,Config A: HeavyGRU FedAvg,Q95,Worms,True,EVALUATED,41,0.0,30.0,0.0,11.0,0.268293,0.268293,0.0,30.0,0.0,11.0,11.0,1.0,0.0,0.268293,0.268293
+2,client_02,Config A,Config A: HeavyGRU FedAvg,Q95,Benign,False,EVALUATED,7271,0.0,6844.0,0.0,427.0,0.058726,0.058726,0.0,6844.0,0.0,0.0,427.0,0.0,0.0,0.0,0.0
+2,client_02,Config B,Config B: DenseMLP FedPer,Q99,Analysis,True,EVALUATED,206,0.0,206.0,0.0,0.0,0.0,0.0,0.0,206.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2,client_02,Config B,Config B: DenseMLP FedPer,Q99,Backdoor,True,EVALUATED,307,0.0,291.0,0.0,16.0,0.052117,0.052117,0.0,291.0,0.0,16.0,16.0,1.0,0.0,0.052117,0.052117
+2,client_02,Config B,Config B: DenseMLP FedPer,Q99,DoS,True,EVALUATED,841,0.0,825.0,0.0,16.0,0.019025,0.019025,15.0,825.0,0.018182,16.0,16.0,1.0,0.017836,0.019025,0.036861
+2,client_02,Config B,Config B: DenseMLP FedPer,Q99,Exploits,True,EVALUATED,4157,0.0,4002.0,0.0,155.0,0.037287,0.037287,23.0,4002.0,0.005747,155.0,155.0,1.0,0.005533,0.037287,0.042819
+2,client_02,Config B,Config B: DenseMLP FedPer,Q99,Fuzzers,True,EVALUATED,2809,0.0,2789.0,0.0,20.0,0.00712,0.00712,33.0,2789.0,0.011832,20.0,20.0,1.0,0.011748,0.00712,0.018868
+2,client_02,Config B,Config B: DenseMLP FedPer,Q99,Generic,True,EVALUATED,2330,0.0,2330.0,0.0,0.0,0.0,0.0,10.0,2330.0,0.004292,0.0,0.0,0.0,0.004292,0.0,0.004292
+2,client_02,Config B,Config B: DenseMLP FedPer,Q99,Reconnaissance,True,EVALUATED,1941,0.0,1907.0,0.0,34.0,0.017517,0.017517,0.0,1907.0,0.0,7.0,34.0,0.205882,0.0,0.003606,0.003606
+2,client_02,Config B,Config B: DenseMLP FedPer,Q99,Shellcode,True,EVALUATED,97,0.0,97.0,0.0,0.0,0.0,0.0,0.0,97.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2,client_02,Config B,Config B: DenseMLP FedPer,Q99,Worms,True,EVALUATED,41,0.0,41.0,0.0,0.0,0.0,0.0,0.0,41.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2,client_02,Config B,Config B: DenseMLP FedPer,Q99,Benign,False,EVALUATED,7271,0.0,7224.0,0.0,47.0,0.006464,0.006464,0.0,7224.0,0.0,0.0,47.0,0.0,0.0,0.0,0.0
+2,client_02,Config B,Config B: DenseMLP FedPer,Q95,Analysis,True,NOT AVAILABLE,206,,,,,,,,,,,,,,,
+2,client_02,Config B,Config B: DenseMLP FedPer,Q95,Backdoor,True,NOT AVAILABLE,307,,,,,,,,,,,,,,,
+2,client_02,Config B,Config B: DenseMLP FedPer,Q95,DoS,True,NOT AVAILABLE,841,,,,,,,,,,,,,,,
+2,client_02,Config B,Config B: DenseMLP FedPer,Q95,Exploits,True,NOT AVAILABLE,4157,,,,,,,,,,,,,,,
+2,client_02,Config B,Config B: DenseMLP FedPer,Q95,Fuzzers,True,NOT AVAILABLE,2809,,,,,,,,,,,,,,,
+2,client_02,Config B,Config B: DenseMLP FedPer,Q95,Generic,True,NOT AVAILABLE,2330,,,,,,,,,,,,,,,
+2,client_02,Config B,Config B: DenseMLP FedPer,Q95,Reconnaissance,True,NOT AVAILABLE,1941,,,,,,,,,,,,,,,
+2,client_02,Config B,Config B: DenseMLP FedPer,Q95,Shellcode,True,NOT AVAILABLE,97,,,,,,,,,,,,,,,
+2,client_02,Config B,Config B: DenseMLP FedPer,Q95,Worms,True,NOT AVAILABLE,41,,,,,,,,,,,,,,,
+2,client_02,Config B,Config B: DenseMLP FedPer,Q95,Benign,False,NOT AVAILABLE,7271,,,,,,,,,,,,,,,
+2,client_02,Config C,Config C: DenseMLP FedAvg,Q99,Analysis,True,EVALUATED,206,0.0,206.0,0.0,0.0,0.0,0.0,0.0,206.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2,client_02,Config C,Config C: DenseMLP FedAvg,Q99,Backdoor,True,EVALUATED,307,0.0,291.0,0.0,16.0,0.052117,0.052117,0.0,291.0,0.0,0.0,16.0,0.0,0.0,0.0,0.0
+2,client_02,Config C,Config C: DenseMLP FedAvg,Q99,DoS,True,EVALUATED,841,0.0,825.0,0.0,16.0,0.019025,0.019025,15.0,825.0,0.018182,16.0,16.0,1.0,0.017836,0.019025,0.036861
+2,client_02,Config C,Config C: DenseMLP FedAvg,Q99,Exploits,True,EVALUATED,4157,0.0,4002.0,0.0,155.0,0.037287,0.037287,23.0,4002.0,0.005747,141.0,155.0,0.909677,0.005533,0.033919,0.039452
+2,client_02,Config C,Config C: DenseMLP FedAvg,Q99,Fuzzers,True,EVALUATED,2809,0.0,2789.0,0.0,20.0,0.00712,0.00712,33.0,2789.0,0.011832,20.0,20.0,1.0,0.011748,0.00712,0.018868
+2,client_02,Config C,Config C: DenseMLP FedAvg,Q99,Generic,True,EVALUATED,2330,0.0,2330.0,0.0,0.0,0.0,0.0,10.0,2330.0,0.004292,0.0,0.0,0.0,0.004292,0.0,0.004292
+2,client_02,Config C,Config C: DenseMLP FedAvg,Q99,Reconnaissance,True,EVALUATED,1941,0.0,1907.0,0.0,34.0,0.017517,0.017517,0.0,1907.0,0.0,7.0,34.0,0.205882,0.0,0.003606,0.003606
+2,client_02,Config C,Config C: DenseMLP FedAvg,Q99,Shellcode,True,EVALUATED,97,0.0,97.0,0.0,0.0,0.0,0.0,0.0,97.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2,client_02,Config C,Config C: DenseMLP FedAvg,Q99,Worms,True,EVALUATED,41,0.0,41.0,0.0,0.0,0.0,0.0,0.0,41.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2,client_02,Config C,Config C: DenseMLP FedAvg,Q99,Benign,False,EVALUATED,7271,0.0,7224.0,0.0,47.0,0.006464,0.006464,0.0,7224.0,0.0,0.0,47.0,0.0,0.0,0.0,0.0
+2,client_02,Config C,Config C: DenseMLP FedAvg,Q95,Analysis,True,EVALUATED,206,0.0,155.0,0.0,51.0,0.247573,0.247573,136.0,155.0,0.877419,30.0,51.0,0.588235,0.660194,0.145631,0.805825
+2,client_02,Config C,Config C: DenseMLP FedAvg,Q95,Backdoor,True,EVALUATED,307,0.0,224.0,0.0,83.0,0.270358,0.270358,212.0,224.0,0.946429,83.0,83.0,1.0,0.690554,0.270358,0.960912
+2,client_02,Config C,Config C: DenseMLP FedAvg,Q95,DoS,True,EVALUATED,841,0.0,668.0,0.0,173.0,0.205707,0.205707,324.0,668.0,0.48503,24.0,173.0,0.138728,0.385256,0.028537,0.413793
+2,client_02,Config C,Config C: DenseMLP FedAvg,Q95,Exploits,True,EVALUATED,4157,0.0,3353.0,0.0,804.0,0.193409,0.193409,645.0,3353.0,0.192365,329.0,804.0,0.409204,0.15516,0.079144,0.234304
+2,client_02,Config C,Config C: DenseMLP FedAvg,Q95,Fuzzers,True,EVALUATED,2809,0.0,2237.0,0.0,572.0,0.203631,0.203631,597.0,2237.0,0.266875,274.0,572.0,0.479021,0.212531,0.097544,0.310075
+2,client_02,Config C,Config C: DenseMLP FedAvg,Q95,Generic,True,EVALUATED,2330,0.0,2159.0,0.0,171.0,0.073391,0.073391,1842.0,2159.0,0.853173,75.0,171.0,0.438596,0.790558,0.032189,0.822747
+2,client_02,Config C,Config C: DenseMLP FedAvg,Q95,Reconnaissance,True,EVALUATED,1941,0.0,1702.0,0.0,239.0,0.123132,0.123132,965.0,1702.0,0.56698,81.0,239.0,0.338912,0.497166,0.041731,0.538897
+2,client_02,Config C,Config C: DenseMLP FedAvg,Q95,Shellcode,True,EVALUATED,97,0.0,86.0,0.0,11.0,0.113402,0.113402,49.0,86.0,0.569767,11.0,11.0,1.0,0.505155,0.113402,0.618557
+2,client_02,Config C,Config C: DenseMLP FedAvg,Q95,Worms,True,EVALUATED,41,0.0,30.0,0.0,11.0,0.268293,0.268293,0.0,30.0,0.0,0.0,11.0,0.0,0.0,0.0,0.0
+2,client_02,Config C,Config C: DenseMLP FedAvg,Q95,Benign,False,EVALUATED,7271,0.0,6844.0,0.0,427.0,0.058726,0.058726,0.0,6844.0,0.0,0.0,427.0,0.0,0.0,0.0,0.0
+2,client_02,Config D,Config D: Light AE Standalone,Q99,Analysis,True,EVALUATED,206,0.0,206.0,0.0,0.0,0.0,0.0,0.0,206.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2,client_02,Config D,Config D: Light AE Standalone,Q99,Backdoor,True,EVALUATED,307,0.0,291.0,16.0,0.0,0.052117,0.0,16.0,307.0,0.052117,0.0,0.0,0.0,0.052117,0.0,0.052117
+2,client_02,Config D,Config D: Light AE Standalone,Q99,DoS,True,EVALUATED,841,0.0,825.0,16.0,0.0,0.019025,0.0,25.0,841.0,0.029727,0.0,0.0,0.0,0.029727,0.0,0.029727
+2,client_02,Config D,Config D: Light AE Standalone,Q99,Exploits,True,EVALUATED,4157,0.0,4002.0,155.0,0.0,0.037287,0.0,139.0,4157.0,0.033438,0.0,0.0,0.0,0.033438,0.0,0.033438
+2,client_02,Config D,Config D: Light AE Standalone,Q99,Fuzzers,True,EVALUATED,2809,0.0,2789.0,20.0,0.0,0.00712,0.0,33.0,2809.0,0.011748,0.0,0.0,0.0,0.011748,0.0,0.011748
+2,client_02,Config D,Config D: Light AE Standalone,Q99,Generic,True,EVALUATED,2330,0.0,2330.0,0.0,0.0,0.0,0.0,10.0,2330.0,0.004292,0.0,0.0,0.0,0.004292,0.0,0.004292
+2,client_02,Config D,Config D: Light AE Standalone,Q99,Reconnaissance,True,EVALUATED,1941,0.0,1907.0,34.0,0.0,0.017517,0.0,7.0,1941.0,0.003606,0.0,0.0,0.0,0.003606,0.0,0.003606
+2,client_02,Config D,Config D: Light AE Standalone,Q99,Shellcode,True,EVALUATED,97,0.0,97.0,0.0,0.0,0.0,0.0,0.0,97.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2,client_02,Config D,Config D: Light AE Standalone,Q99,Worms,True,EVALUATED,41,0.0,41.0,0.0,0.0,0.0,0.0,0.0,41.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2,client_02,Config D,Config D: Light AE Standalone,Q99,Benign,False,EVALUATED,7271,0.0,7224.0,47.0,0.0,0.006464,0.0,0.0,7271.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2,client_02,Config D,Config D: Light AE Standalone,Q95,Analysis,True,EVALUATED,206,0.0,155.0,51.0,0.0,0.247573,0.0,163.0,206.0,0.791262,0.0,0.0,0.0,0.791262,0.0,0.791262
+2,client_02,Config D,Config D: Light AE Standalone,Q95,Backdoor,True,EVALUATED,307,0.0,224.0,83.0,0.0,0.270358,0.0,285.0,307.0,0.928339,0.0,0.0,0.0,0.928339,0.0,0.928339
+2,client_02,Config D,Config D: Light AE Standalone,Q95,DoS,True,EVALUATED,841,0.0,668.0,173.0,0.0,0.205707,0.0,474.0,841.0,0.563615,0.0,0.0,0.0,0.563615,0.0,0.563615
+2,client_02,Config D,Config D: Light AE Standalone,Q95,Exploits,True,EVALUATED,4157,0.0,3353.0,804.0,0.0,0.193409,0.0,1232.0,4157.0,0.296368,0.0,0.0,0.0,0.296368,0.0,0.296368
+2,client_02,Config D,Config D: Light AE Standalone,Q95,Fuzzers,True,EVALUATED,2809,0.0,2237.0,572.0,0.0,0.203631,0.0,783.0,2809.0,0.278747,0.0,0.0,0.0,0.278747,0.0,0.278747
+2,client_02,Config D,Config D: Light AE Standalone,Q95,Generic,True,EVALUATED,2330,0.0,2159.0,171.0,0.0,0.073391,0.0,1947.0,2330.0,0.835622,0.0,0.0,0.0,0.835622,0.0,0.835622
+2,client_02,Config D,Config D: Light AE Standalone,Q95,Reconnaissance,True,EVALUATED,1941,0.0,1702.0,239.0,0.0,0.123132,0.0,985.0,1941.0,0.50747,0.0,0.0,0.0,0.50747,0.0,0.50747
+2,client_02,Config D,Config D: Light AE Standalone,Q95,Shellcode,True,EVALUATED,97,0.0,86.0,11.0,0.0,0.113402,0.0,49.0,97.0,0.505155,0.0,0.0,0.0,0.505155,0.0,0.505155
+2,client_02,Config D,Config D: Light AE Standalone,Q95,Worms,True,EVALUATED,41,0.0,30.0,11.0,0.0,0.268293,0.0,11.0,41.0,0.268293,0.0,0.0,0.0,0.268293,0.0,0.268293
+2,client_02,Config D,Config D: Light AE Standalone,Q95,Benign,False,EVALUATED,7271,0.0,6844.0,427.0,0.0,0.058726,0.0,0.0,7271.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,client_03,Config A,Config A: HeavyGRU FedAvg,Q99,Analysis,True,EVALUATED,26,0.0,25.0,0.0,1.0,0.038462,0.038462,19.0,25.0,0.76,1.0,1.0,1.0,0.730769,0.038462,0.769231
+3,client_03,Config A,Config A: HeavyGRU FedAvg,Q99,Backdoor,True,EVALUATED,27,0.0,19.0,0.0,8.0,0.296296,0.296296,16.0,19.0,0.842105,8.0,8.0,1.0,0.592593,0.296296,0.888889
+3,client_03,Config A,Config A: HeavyGRU FedAvg,Q99,DoS,True,EVALUATED,99,0.0,91.0,0.0,8.0,0.080808,0.080808,39.0,91.0,0.428571,8.0,8.0,1.0,0.393939,0.080808,0.474747
+3,client_03,Config A,Config A: HeavyGRU FedAvg,Q99,Exploits,True,EVALUATED,483,0.0,415.0,0.0,68.0,0.140787,0.140787,48.0,415.0,0.115663,68.0,68.0,1.0,0.099379,0.140787,0.240166
+3,client_03,Config A,Config A: HeavyGRU FedAvg,Q99,Fuzzers,True,EVALUATED,338,0.0,305.0,0.0,33.0,0.097633,0.097633,66.0,305.0,0.216393,33.0,33.0,1.0,0.195266,0.097633,0.292899
+3,client_03,Config A,Config A: HeavyGRU FedAvg,Q99,Generic,True,EVALUATED,239,0.0,232.0,0.0,7.0,0.029289,0.029289,187.0,232.0,0.806034,7.0,7.0,1.0,0.782427,0.029289,0.811715
+3,client_03,Config A,Config A: HeavyGRU FedAvg,Q99,Reconnaissance,True,EVALUATED,187,0.0,182.0,0.0,5.0,0.026738,0.026738,81.0,182.0,0.445055,5.0,5.0,1.0,0.433155,0.026738,0.459893
+3,client_03,Config A,Config A: HeavyGRU FedAvg,Q99,Shellcode,True,EVALUATED,16,0.0,16.0,0.0,0.0,0.0,0.0,7.0,16.0,0.4375,0.0,0.0,0.0,0.4375,0.0,0.4375
+3,client_03,Config A,Config A: HeavyGRU FedAvg,Q99,Worms,True,EVALUATED,4,0.0,4.0,0.0,0.0,0.0,0.0,0.0,4.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,client_03,Config A,Config A: HeavyGRU FedAvg,Q99,Benign,False,EVALUATED,18581,0.0,18407.0,0.0,174.0,0.009364,0.009364,0.0,18407.0,0.0,0.0,174.0,0.0,0.0,0.0,0.0
+3,client_03,Config A,Config A: HeavyGRU FedAvg,Q95,Analysis,True,EVALUATED,26,0.0,0.0,0.0,26.0,1.0,1.0,0.0,0.0,0.0,26.0,26.0,1.0,0.0,1.0,1.0
+3,client_03,Config A,Config A: HeavyGRU FedAvg,Q95,Backdoor,True,EVALUATED,27,0.0,1.0,0.0,26.0,0.962963,0.962963,1.0,1.0,1.0,25.0,26.0,0.961538,0.037037,0.925926,0.962963
+3,client_03,Config A,Config A: HeavyGRU FedAvg,Q95,DoS,True,EVALUATED,99,0.0,20.0,0.0,79.0,0.79798,0.79798,17.0,20.0,0.85,79.0,79.0,1.0,0.171717,0.79798,0.969697
+3,client_03,Config A,Config A: HeavyGRU FedAvg,Q95,Exploits,True,EVALUATED,483,0.0,76.0,0.0,407.0,0.84265,0.84265,39.0,76.0,0.513158,407.0,407.0,1.0,0.080745,0.84265,0.923395
+3,client_03,Config A,Config A: HeavyGRU FedAvg,Q95,Fuzzers,True,EVALUATED,338,0.0,118.0,0.0,220.0,0.650888,0.650888,78.0,118.0,0.661017,220.0,220.0,1.0,0.230769,0.650888,0.881657
+3,client_03,Config A,Config A: HeavyGRU FedAvg,Q95,Generic,True,EVALUATED,239,0.0,163.0,0.0,76.0,0.317992,0.317992,159.0,163.0,0.97546,75.0,76.0,0.986842,0.665272,0.313808,0.979079
+3,client_03,Config A,Config A: HeavyGRU FedAvg,Q95,Reconnaissance,True,EVALUATED,187,0.0,55.0,0.0,132.0,0.705882,0.705882,52.0,55.0,0.945455,132.0,132.0,1.0,0.278075,0.705882,0.983957
+3,client_03,Config A,Config A: HeavyGRU FedAvg,Q95,Shellcode,True,EVALUATED,16,0.0,6.0,0.0,10.0,0.625,0.625,5.0,6.0,0.833333,10.0,10.0,1.0,0.3125,0.625,0.9375
+3,client_03,Config A,Config A: HeavyGRU FedAvg,Q95,Worms,True,EVALUATED,4,0.0,0.0,0.0,4.0,1.0,1.0,0.0,0.0,0.0,4.0,4.0,1.0,0.0,1.0,1.0
+3,client_03,Config A,Config A: HeavyGRU FedAvg,Q95,Benign,False,EVALUATED,18581,0.0,17645.0,0.0,936.0,0.050374,0.050374,0.0,17645.0,0.0,0.0,936.0,0.0,0.0,0.0,0.0
+3,client_03,Config B,Config B: DenseMLP FedPer,Q99,Analysis,True,EVALUATED,26,0.0,25.0,0.0,1.0,0.038462,0.038462,19.0,25.0,0.76,1.0,1.0,1.0,0.730769,0.038462,0.769231
+3,client_03,Config B,Config B: DenseMLP FedPer,Q99,Backdoor,True,EVALUATED,27,0.0,19.0,0.0,8.0,0.296296,0.296296,16.0,19.0,0.842105,8.0,8.0,1.0,0.592593,0.296296,0.888889
+3,client_03,Config B,Config B: DenseMLP FedPer,Q99,DoS,True,EVALUATED,99,0.0,91.0,0.0,8.0,0.080808,0.080808,39.0,91.0,0.428571,8.0,8.0,1.0,0.393939,0.080808,0.474747
+3,client_03,Config B,Config B: DenseMLP FedPer,Q99,Exploits,True,EVALUATED,483,0.0,415.0,0.0,68.0,0.140787,0.140787,48.0,415.0,0.115663,68.0,68.0,1.0,0.099379,0.140787,0.240166
+3,client_03,Config B,Config B: DenseMLP FedPer,Q99,Fuzzers,True,EVALUATED,338,0.0,305.0,0.0,33.0,0.097633,0.097633,66.0,305.0,0.216393,33.0,33.0,1.0,0.195266,0.097633,0.292899
+3,client_03,Config B,Config B: DenseMLP FedPer,Q99,Generic,True,EVALUATED,239,0.0,232.0,0.0,7.0,0.029289,0.029289,187.0,232.0,0.806034,7.0,7.0,1.0,0.782427,0.029289,0.811715
+3,client_03,Config B,Config B: DenseMLP FedPer,Q99,Reconnaissance,True,EVALUATED,187,0.0,182.0,0.0,5.0,0.026738,0.026738,81.0,182.0,0.445055,5.0,5.0,1.0,0.433155,0.026738,0.459893
+3,client_03,Config B,Config B: DenseMLP FedPer,Q99,Shellcode,True,EVALUATED,16,0.0,16.0,0.0,0.0,0.0,0.0,7.0,16.0,0.4375,0.0,0.0,0.0,0.4375,0.0,0.4375
+3,client_03,Config B,Config B: DenseMLP FedPer,Q99,Worms,True,EVALUATED,4,0.0,4.0,0.0,0.0,0.0,0.0,0.0,4.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,client_03,Config B,Config B: DenseMLP FedPer,Q99,Benign,False,EVALUATED,18581,0.0,18407.0,0.0,174.0,0.009364,0.009364,0.0,18407.0,0.0,0.0,174.0,0.0,0.0,0.0,0.0
+3,client_03,Config B,Config B: DenseMLP FedPer,Q95,Analysis,True,NOT AVAILABLE,26,,,,,,,,,,,,,,,
+3,client_03,Config B,Config B: DenseMLP FedPer,Q95,Backdoor,True,NOT AVAILABLE,27,,,,,,,,,,,,,,,
+3,client_03,Config B,Config B: DenseMLP FedPer,Q95,DoS,True,NOT AVAILABLE,99,,,,,,,,,,,,,,,
+3,client_03,Config B,Config B: DenseMLP FedPer,Q95,Exploits,True,NOT AVAILABLE,483,,,,,,,,,,,,,,,
+3,client_03,Config B,Config B: DenseMLP FedPer,Q95,Fuzzers,True,NOT AVAILABLE,338,,,,,,,,,,,,,,,
+3,client_03,Config B,Config B: DenseMLP FedPer,Q95,Generic,True,NOT AVAILABLE,239,,,,,,,,,,,,,,,
+3,client_03,Config B,Config B: DenseMLP FedPer,Q95,Reconnaissance,True,NOT AVAILABLE,187,,,,,,,,,,,,,,,
+3,client_03,Config B,Config B: DenseMLP FedPer,Q95,Shellcode,True,NOT AVAILABLE,16,,,,,,,,,,,,,,,
+3,client_03,Config B,Config B: DenseMLP FedPer,Q95,Worms,True,NOT AVAILABLE,4,,,,,,,,,,,,,,,
+3,client_03,Config B,Config B: DenseMLP FedPer,Q95,Benign,False,NOT AVAILABLE,18581,,,,,,,,,,,,,,,
+3,client_03,Config C,Config C: DenseMLP FedAvg,Q99,Analysis,True,EVALUATED,26,0.0,25.0,0.0,1.0,0.038462,0.038462,19.0,25.0,0.76,1.0,1.0,1.0,0.730769,0.038462,0.769231
+3,client_03,Config C,Config C: DenseMLP FedAvg,Q99,Backdoor,True,EVALUATED,27,0.0,19.0,0.0,8.0,0.296296,0.296296,16.0,19.0,0.842105,8.0,8.0,1.0,0.592593,0.296296,0.888889
+3,client_03,Config C,Config C: DenseMLP FedAvg,Q99,DoS,True,EVALUATED,99,0.0,91.0,0.0,8.0,0.080808,0.080808,39.0,91.0,0.428571,8.0,8.0,1.0,0.393939,0.080808,0.474747
+3,client_03,Config C,Config C: DenseMLP FedAvg,Q99,Exploits,True,EVALUATED,483,0.0,415.0,0.0,68.0,0.140787,0.140787,48.0,415.0,0.115663,65.0,68.0,0.955882,0.099379,0.134576,0.233954
+3,client_03,Config C,Config C: DenseMLP FedAvg,Q99,Fuzzers,True,EVALUATED,338,0.0,305.0,0.0,33.0,0.097633,0.097633,66.0,305.0,0.216393,33.0,33.0,1.0,0.195266,0.097633,0.292899
+3,client_03,Config C,Config C: DenseMLP FedAvg,Q99,Generic,True,EVALUATED,239,0.0,232.0,0.0,7.0,0.029289,0.029289,187.0,232.0,0.806034,7.0,7.0,1.0,0.782427,0.029289,0.811715
+3,client_03,Config C,Config C: DenseMLP FedAvg,Q99,Reconnaissance,True,EVALUATED,187,0.0,182.0,0.0,5.0,0.026738,0.026738,81.0,182.0,0.445055,5.0,5.0,1.0,0.433155,0.026738,0.459893
+3,client_03,Config C,Config C: DenseMLP FedAvg,Q99,Shellcode,True,EVALUATED,16,0.0,16.0,0.0,0.0,0.0,0.0,7.0,16.0,0.4375,0.0,0.0,0.0,0.4375,0.0,0.4375
+3,client_03,Config C,Config C: DenseMLP FedAvg,Q99,Worms,True,EVALUATED,4,0.0,4.0,0.0,0.0,0.0,0.0,0.0,4.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,client_03,Config C,Config C: DenseMLP FedAvg,Q99,Benign,False,EVALUATED,18581,0.0,18407.0,0.0,174.0,0.009364,0.009364,0.0,18407.0,0.0,0.0,174.0,0.0,0.0,0.0,0.0
+3,client_03,Config C,Config C: DenseMLP FedAvg,Q95,Analysis,True,EVALUATED,26,0.0,0.0,0.0,26.0,1.0,1.0,0.0,0.0,0.0,26.0,26.0,1.0,0.0,1.0,1.0
+3,client_03,Config C,Config C: DenseMLP FedAvg,Q95,Backdoor,True,EVALUATED,27,0.0,1.0,0.0,26.0,0.962963,0.962963,1.0,1.0,1.0,25.0,26.0,0.961538,0.037037,0.925926,0.962963
+3,client_03,Config C,Config C: DenseMLP FedAvg,Q95,DoS,True,EVALUATED,99,0.0,20.0,0.0,79.0,0.79798,0.79798,17.0,20.0,0.85,79.0,79.0,1.0,0.171717,0.79798,0.969697
+3,client_03,Config C,Config C: DenseMLP FedAvg,Q95,Exploits,True,EVALUATED,483,0.0,76.0,0.0,407.0,0.84265,0.84265,39.0,76.0,0.513158,407.0,407.0,1.0,0.080745,0.84265,0.923395
+3,client_03,Config C,Config C: DenseMLP FedAvg,Q95,Fuzzers,True,EVALUATED,338,0.0,118.0,0.0,220.0,0.650888,0.650888,78.0,118.0,0.661017,220.0,220.0,1.0,0.230769,0.650888,0.881657
+3,client_03,Config C,Config C: DenseMLP FedAvg,Q95,Generic,True,EVALUATED,239,0.0,163.0,0.0,76.0,0.317992,0.317992,159.0,163.0,0.97546,75.0,76.0,0.986842,0.665272,0.313808,0.979079
+3,client_03,Config C,Config C: DenseMLP FedAvg,Q95,Reconnaissance,True,EVALUATED,187,0.0,55.0,0.0,132.0,0.705882,0.705882,52.0,55.0,0.945455,132.0,132.0,1.0,0.278075,0.705882,0.983957
+3,client_03,Config C,Config C: DenseMLP FedAvg,Q95,Shellcode,True,EVALUATED,16,0.0,6.0,0.0,10.0,0.625,0.625,5.0,6.0,0.833333,10.0,10.0,1.0,0.3125,0.625,0.9375
+3,client_03,Config C,Config C: DenseMLP FedAvg,Q95,Worms,True,EVALUATED,4,0.0,0.0,0.0,4.0,1.0,1.0,0.0,0.0,0.0,4.0,4.0,1.0,0.0,1.0,1.0
+3,client_03,Config C,Config C: DenseMLP FedAvg,Q95,Benign,False,EVALUATED,18581,0.0,17645.0,0.0,936.0,0.050374,0.050374,0.0,17645.0,0.0,0.0,936.0,0.0,0.0,0.0,0.0
+3,client_03,Config D,Config D: Light AE Standalone,Q99,Analysis,True,EVALUATED,26,0.0,25.0,1.0,0.0,0.038462,0.0,20.0,26.0,0.769231,0.0,0.0,0.0,0.769231,0.0,0.769231
+3,client_03,Config D,Config D: Light AE Standalone,Q99,Backdoor,True,EVALUATED,27,0.0,19.0,8.0,0.0,0.296296,0.0,24.0,27.0,0.888889,0.0,0.0,0.0,0.888889,0.0,0.888889
+3,client_03,Config D,Config D: Light AE Standalone,Q99,DoS,True,EVALUATED,99,0.0,91.0,8.0,0.0,0.080808,0.0,45.0,99.0,0.454545,0.0,0.0,0.0,0.454545,0.0,0.454545
+3,client_03,Config D,Config D: Light AE Standalone,Q99,Exploits,True,EVALUATED,483,0.0,415.0,68.0,0.0,0.140787,0.0,79.0,483.0,0.163561,0.0,0.0,0.0,0.163561,0.0,0.163561
+3,client_03,Config D,Config D: Light AE Standalone,Q99,Fuzzers,True,EVALUATED,338,0.0,305.0,33.0,0.0,0.097633,0.0,84.0,338.0,0.248521,0.0,0.0,0.0,0.248521,0.0,0.248521
+3,client_03,Config D,Config D: Light AE Standalone,Q99,Generic,True,EVALUATED,239,0.0,232.0,7.0,0.0,0.029289,0.0,194.0,239.0,0.811715,0.0,0.0,0.0,0.811715,0.0,0.811715
+3,client_03,Config D,Config D: Light AE Standalone,Q99,Reconnaissance,True,EVALUATED,187,0.0,182.0,5.0,0.0,0.026738,0.0,86.0,187.0,0.459893,0.0,0.0,0.0,0.459893,0.0,0.459893
+3,client_03,Config D,Config D: Light AE Standalone,Q99,Shellcode,True,EVALUATED,16,0.0,16.0,0.0,0.0,0.0,0.0,7.0,16.0,0.4375,0.0,0.0,0.0,0.4375,0.0,0.4375
+3,client_03,Config D,Config D: Light AE Standalone,Q99,Worms,True,EVALUATED,4,0.0,4.0,0.0,0.0,0.0,0.0,0.0,4.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,client_03,Config D,Config D: Light AE Standalone,Q99,Benign,False,EVALUATED,18581,0.0,18407.0,174.0,0.0,0.009364,0.0,0.0,18581.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3,client_03,Config D,Config D: Light AE Standalone,Q95,Analysis,True,EVALUATED,26,0.0,0.0,26.0,0.0,1.0,0.0,26.0,26.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+3,client_03,Config D,Config D: Light AE Standalone,Q95,Backdoor,True,EVALUATED,27,0.0,1.0,26.0,0.0,0.962963,0.0,27.0,27.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+3,client_03,Config D,Config D: Light AE Standalone,Q95,DoS,True,EVALUATED,99,0.0,20.0,79.0,0.0,0.79798,0.0,96.0,99.0,0.969697,0.0,0.0,0.0,0.969697,0.0,0.969697
+3,client_03,Config D,Config D: Light AE Standalone,Q95,Exploits,True,EVALUATED,483,0.0,76.0,407.0,0.0,0.84265,0.0,431.0,483.0,0.89234,0.0,0.0,0.0,0.89234,0.0,0.89234
+3,client_03,Config D,Config D: Light AE Standalone,Q95,Fuzzers,True,EVALUATED,338,0.0,118.0,220.0,0.0,0.650888,0.0,294.0,338.0,0.869822,0.0,0.0,0.0,0.869822,0.0,0.869822
+3,client_03,Config D,Config D: Light AE Standalone,Q95,Generic,True,EVALUATED,239,0.0,163.0,76.0,0.0,0.317992,0.0,234.0,239.0,0.979079,0.0,0.0,0.0,0.979079,0.0,0.979079
+3,client_03,Config D,Config D: Light AE Standalone,Q95,Reconnaissance,True,EVALUATED,187,0.0,55.0,132.0,0.0,0.705882,0.0,184.0,187.0,0.983957,0.0,0.0,0.0,0.983957,0.0,0.983957
+3,client_03,Config D,Config D: Light AE Standalone,Q95,Shellcode,True,EVALUATED,16,0.0,6.0,10.0,0.0,0.625,0.0,15.0,16.0,0.9375,0.0,0.0,0.0,0.9375,0.0,0.9375
+3,client_03,Config D,Config D: Light AE Standalone,Q95,Worms,True,EVALUATED,4,0.0,0.0,4.0,0.0,1.0,0.0,4.0,4.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+3,client_03,Config D,Config D: Light AE Standalone,Q95,Benign,False,EVALUATED,18581,0.0,17645.0,936.0,0.0,0.050374,0.0,0.0,18581.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4,client_04,Config A,Config A: HeavyGRU FedAvg,Q99,Analysis,True,EVALUATED,476,0.0,461.0,0.0,15.0,0.031513,0.031513,9.0,461.0,0.019523,15.0,15.0,1.0,0.018908,0.031513,0.05042
+4,client_04,Config A,Config A: HeavyGRU FedAvg,Q99,Backdoor,True,EVALUATED,329,0.0,322.0,0.0,7.0,0.021277,0.021277,14.0,322.0,0.043478,7.0,7.0,1.0,0.042553,0.021277,0.06383
+4,client_04,Config A,Config A: HeavyGRU FedAvg,Q99,DoS,True,EVALUATED,1083,0.0,1025.0,0.0,58.0,0.053555,0.053555,69.0,1025.0,0.067317,55.0,58.0,0.948276,0.063712,0.050785,0.114497
+4,client_04,Config A,Config A: HeavyGRU FedAvg,Q99,Exploits,True,EVALUATED,5208,0.0,4992.0,0.0,216.0,0.041475,0.041475,150.0,4992.0,0.030048,216.0,216.0,1.0,0.028802,0.041475,0.070276
+4,client_04,Config A,Config A: HeavyGRU FedAvg,Q99,Fuzzers,True,EVALUATED,3855,0.0,3659.0,0.0,196.0,0.050843,0.050843,101.0,3659.0,0.027603,196.0,196.0,1.0,0.0262,0.050843,0.077043
+4,client_04,Config A,Config A: HeavyGRU FedAvg,Q99,Generic,True,EVALUATED,2832,0.0,2813.0,0.0,19.0,0.006709,0.006709,1996.0,2813.0,0.709563,19.0,19.0,1.0,0.704802,0.006709,0.711511
+4,client_04,Config A,Config A: HeavyGRU FedAvg,Q99,Reconnaissance,True,EVALUATED,2189,0.0,2168.0,0.0,21.0,0.009593,0.009593,30.0,2168.0,0.013838,21.0,21.0,1.0,0.013705,0.009593,0.023298
+4,client_04,Config A,Config A: HeavyGRU FedAvg,Q99,Shellcode,True,EVALUATED,238,0.0,235.0,0.0,3.0,0.012605,0.012605,0.0,235.0,0.0,3.0,3.0,1.0,0.0,0.012605,0.012605
+4,client_04,Config A,Config A: HeavyGRU FedAvg,Q99,Worms,True,EVALUATED,29,0.0,29.0,0.0,0.0,0.0,0.0,2.0,29.0,0.068966,0.0,0.0,0.0,0.068966,0.0,0.068966
+4,client_04,Config A,Config A: HeavyGRU FedAvg,Q99,Benign,False,EVALUATED,3761,0.0,3735.0,0.0,26.0,0.006913,0.006913,0.0,3735.0,0.0,0.0,26.0,0.0,0.0,0.0,0.0
+4,client_04,Config A,Config A: HeavyGRU FedAvg,Q95,Analysis,True,EVALUATED,476,0.0,437.0,0.0,39.0,0.081933,0.081933,368.0,437.0,0.842105,39.0,39.0,1.0,0.773109,0.081933,0.855042
+4,client_04,Config A,Config A: HeavyGRU FedAvg,Q95,Backdoor,True,EVALUATED,329,0.0,291.0,0.0,38.0,0.115502,0.115502,226.0,291.0,0.776632,38.0,38.0,1.0,0.68693,0.115502,0.802432
+4,client_04,Config A,Config A: HeavyGRU FedAvg,Q95,DoS,True,EVALUATED,1083,0.0,898.0,0.0,185.0,0.170822,0.170822,379.0,898.0,0.422049,173.0,185.0,0.935135,0.349954,0.159741,0.509695
+4,client_04,Config A,Config A: HeavyGRU FedAvg,Q95,Exploits,True,EVALUATED,5208,0.0,4535.0,0.0,673.0,0.129224,0.129224,631.0,4535.0,0.13914,665.0,673.0,0.988113,0.12116,0.127688,0.248848
+4,client_04,Config A,Config A: HeavyGRU FedAvg,Q95,Fuzzers,True,EVALUATED,3855,0.0,3360.0,0.0,495.0,0.128405,0.128405,736.0,3360.0,0.219048,495.0,495.0,1.0,0.190921,0.128405,0.319326
+4,client_04,Config A,Config A: HeavyGRU FedAvg,Q95,Generic,True,EVALUATED,2832,0.0,2700.0,0.0,132.0,0.04661,0.04661,2285.0,2700.0,0.846296,132.0,132.0,1.0,0.80685,0.04661,0.85346
+4,client_04,Config A,Config A: HeavyGRU FedAvg,Q95,Reconnaissance,True,EVALUATED,2189,0.0,2052.0,0.0,137.0,0.062586,0.062586,991.0,2052.0,0.482943,137.0,137.0,1.0,0.452718,0.062586,0.515304
+4,client_04,Config A,Config A: HeavyGRU FedAvg,Q95,Shellcode,True,EVALUATED,238,0.0,227.0,0.0,11.0,0.046218,0.046218,81.0,227.0,0.356828,11.0,11.0,1.0,0.340336,0.046218,0.386555
+4,client_04,Config A,Config A: HeavyGRU FedAvg,Q95,Worms,True,EVALUATED,29,0.0,27.0,0.0,2.0,0.068966,0.068966,9.0,27.0,0.333333,2.0,2.0,1.0,0.310345,0.068966,0.37931
+4,client_04,Config A,Config A: HeavyGRU FedAvg,Q95,Benign,False,EVALUATED,3761,0.0,3589.0,0.0,172.0,0.045733,0.045733,0.0,3589.0,0.0,0.0,172.0,0.0,0.0,0.0,0.0
+4,client_04,Config B,Config B: DenseMLP FedPer,Q99,Analysis,True,EVALUATED,476,0.0,461.0,0.0,15.0,0.031513,0.031513,9.0,461.0,0.019523,15.0,15.0,1.0,0.018908,0.031513,0.05042
+4,client_04,Config B,Config B: DenseMLP FedPer,Q99,Backdoor,True,EVALUATED,329,0.0,322.0,0.0,7.0,0.021277,0.021277,14.0,322.0,0.043478,6.0,7.0,0.857143,0.042553,0.018237,0.06079
+4,client_04,Config B,Config B: DenseMLP FedPer,Q99,DoS,True,EVALUATED,1083,0.0,1025.0,0.0,58.0,0.053555,0.053555,69.0,1025.0,0.067317,50.0,58.0,0.862069,0.063712,0.046168,0.10988
+4,client_04,Config B,Config B: DenseMLP FedPer,Q99,Exploits,True,EVALUATED,5208,0.0,4992.0,0.0,216.0,0.041475,0.041475,150.0,4992.0,0.030048,214.0,216.0,0.990741,0.028802,0.041091,0.069892
+4,client_04,Config B,Config B: DenseMLP FedPer,Q99,Fuzzers,True,EVALUATED,3855,0.0,3659.0,0.0,196.0,0.050843,0.050843,101.0,3659.0,0.027603,189.0,196.0,0.964286,0.0262,0.049027,0.075227
+4,client_04,Config B,Config B: DenseMLP FedPer,Q99,Generic,True,EVALUATED,2832,0.0,2813.0,0.0,19.0,0.006709,0.006709,1996.0,2813.0,0.709563,15.0,19.0,0.789474,0.704802,0.005297,0.710099
+4,client_04,Config B,Config B: DenseMLP FedPer,Q99,Reconnaissance,True,EVALUATED,2189,0.0,2168.0,0.0,21.0,0.009593,0.009593,30.0,2168.0,0.013838,21.0,21.0,1.0,0.013705,0.009593,0.023298
+4,client_04,Config B,Config B: DenseMLP FedPer,Q99,Shellcode,True,EVALUATED,238,0.0,235.0,0.0,3.0,0.012605,0.012605,0.0,235.0,0.0,3.0,3.0,1.0,0.0,0.012605,0.012605
+4,client_04,Config B,Config B: DenseMLP FedPer,Q99,Worms,True,EVALUATED,29,0.0,29.0,0.0,0.0,0.0,0.0,2.0,29.0,0.068966,0.0,0.0,0.0,0.068966,0.0,0.068966
+4,client_04,Config B,Config B: DenseMLP FedPer,Q99,Benign,False,EVALUATED,3761,0.0,3735.0,0.0,26.0,0.006913,0.006913,0.0,3735.0,0.0,0.0,26.0,0.0,0.0,0.0,0.0
+4,client_04,Config B,Config B: DenseMLP FedPer,Q95,Analysis,True,NOT AVAILABLE,476,,,,,,,,,,,,,,,
+4,client_04,Config B,Config B: DenseMLP FedPer,Q95,Backdoor,True,NOT AVAILABLE,329,,,,,,,,,,,,,,,
+4,client_04,Config B,Config B: DenseMLP FedPer,Q95,DoS,True,NOT AVAILABLE,1083,,,,,,,,,,,,,,,
+4,client_04,Config B,Config B: DenseMLP FedPer,Q95,Exploits,True,NOT AVAILABLE,5208,,,,,,,,,,,,,,,
+4,client_04,Config B,Config B: DenseMLP FedPer,Q95,Fuzzers,True,NOT AVAILABLE,3855,,,,,,,,,,,,,,,
+4,client_04,Config B,Config B: DenseMLP FedPer,Q95,Generic,True,NOT AVAILABLE,2832,,,,,,,,,,,,,,,
+4,client_04,Config B,Config B: DenseMLP FedPer,Q95,Reconnaissance,True,NOT AVAILABLE,2189,,,,,,,,,,,,,,,
+4,client_04,Config B,Config B: DenseMLP FedPer,Q95,Shellcode,True,NOT AVAILABLE,238,,,,,,,,,,,,,,,
+4,client_04,Config B,Config B: DenseMLP FedPer,Q95,Worms,True,NOT AVAILABLE,29,,,,,,,,,,,,,,,
+4,client_04,Config B,Config B: DenseMLP FedPer,Q95,Benign,False,NOT AVAILABLE,3761,,,,,,,,,,,,,,,
+4,client_04,Config C,Config C: DenseMLP FedAvg,Q99,Analysis,True,EVALUATED,476,0.0,461.0,0.0,15.0,0.031513,0.031513,9.0,461.0,0.019523,0.0,15.0,0.0,0.018908,0.0,0.018908
+4,client_04,Config C,Config C: DenseMLP FedAvg,Q99,Backdoor,True,EVALUATED,329,0.0,322.0,0.0,7.0,0.021277,0.021277,14.0,322.0,0.043478,0.0,7.0,0.0,0.042553,0.0,0.042553
+4,client_04,Config C,Config C: DenseMLP FedAvg,Q99,DoS,True,EVALUATED,1083,0.0,1025.0,0.0,58.0,0.053555,0.053555,69.0,1025.0,0.067317,1.0,58.0,0.017241,0.063712,0.000923,0.064635
+4,client_04,Config C,Config C: DenseMLP FedAvg,Q99,Exploits,True,EVALUATED,5208,0.0,4992.0,0.0,216.0,0.041475,0.041475,150.0,4992.0,0.030048,36.0,216.0,0.166667,0.028802,0.006912,0.035714
+4,client_04,Config C,Config C: DenseMLP FedAvg,Q99,Fuzzers,True,EVALUATED,3855,0.0,3659.0,0.0,196.0,0.050843,0.050843,101.0,3659.0,0.027603,0.0,196.0,0.0,0.0262,0.0,0.0262
+4,client_04,Config C,Config C: DenseMLP FedAvg,Q99,Generic,True,EVALUATED,2832,0.0,2813.0,0.0,19.0,0.006709,0.006709,1996.0,2813.0,0.709563,0.0,19.0,0.0,0.704802,0.0,0.704802
+4,client_04,Config C,Config C: DenseMLP FedAvg,Q99,Reconnaissance,True,EVALUATED,2189,0.0,2168.0,0.0,21.0,0.009593,0.009593,30.0,2168.0,0.013838,0.0,21.0,0.0,0.013705,0.0,0.013705
+4,client_04,Config C,Config C: DenseMLP FedAvg,Q99,Shellcode,True,EVALUATED,238,0.0,235.0,0.0,3.0,0.012605,0.012605,0.0,235.0,0.0,0.0,3.0,0.0,0.0,0.0,0.0
+4,client_04,Config C,Config C: DenseMLP FedAvg,Q99,Worms,True,EVALUATED,29,0.0,29.0,0.0,0.0,0.0,0.0,2.0,29.0,0.068966,0.0,0.0,0.0,0.068966,0.0,0.068966
+4,client_04,Config C,Config C: DenseMLP FedAvg,Q99,Benign,False,EVALUATED,3761,0.0,3735.0,0.0,26.0,0.006913,0.006913,0.0,3735.0,0.0,0.0,26.0,0.0,0.0,0.0,0.0
+4,client_04,Config C,Config C: DenseMLP FedAvg,Q95,Analysis,True,EVALUATED,476,0.0,437.0,0.0,39.0,0.081933,0.081933,368.0,437.0,0.842105,25.0,39.0,0.641026,0.773109,0.052521,0.82563
+4,client_04,Config C,Config C: DenseMLP FedAvg,Q95,Backdoor,True,EVALUATED,329,0.0,291.0,0.0,38.0,0.115502,0.115502,226.0,291.0,0.776632,12.0,38.0,0.315789,0.68693,0.036474,0.723404
+4,client_04,Config C,Config C: DenseMLP FedAvg,Q95,DoS,True,EVALUATED,1083,0.0,898.0,0.0,185.0,0.170822,0.170822,379.0,898.0,0.422049,74.0,185.0,0.4,0.349954,0.068329,0.418283
+4,client_04,Config C,Config C: DenseMLP FedAvg,Q95,Exploits,True,EVALUATED,5208,0.0,4535.0,0.0,673.0,0.129224,0.129224,631.0,4535.0,0.13914,130.0,673.0,0.193165,0.12116,0.024962,0.146121
+4,client_04,Config C,Config C: DenseMLP FedAvg,Q95,Fuzzers,True,EVALUATED,3855,0.0,3360.0,0.0,495.0,0.128405,0.128405,736.0,3360.0,0.219048,73.0,495.0,0.147475,0.190921,0.018936,0.209857
+4,client_04,Config C,Config C: DenseMLP FedAvg,Q95,Generic,True,EVALUATED,2832,0.0,2700.0,0.0,132.0,0.04661,0.04661,2285.0,2700.0,0.846296,74.0,132.0,0.560606,0.80685,0.02613,0.83298
+4,client_04,Config C,Config C: DenseMLP FedAvg,Q95,Reconnaissance,True,EVALUATED,2189,0.0,2052.0,0.0,137.0,0.062586,0.062586,991.0,2052.0,0.482943,46.0,137.0,0.335766,0.452718,0.021014,0.473732
+4,client_04,Config C,Config C: DenseMLP FedAvg,Q95,Shellcode,True,EVALUATED,238,0.0,227.0,0.0,11.0,0.046218,0.046218,81.0,227.0,0.356828,0.0,11.0,0.0,0.340336,0.0,0.340336
+4,client_04,Config C,Config C: DenseMLP FedAvg,Q95,Worms,True,EVALUATED,29,0.0,27.0,0.0,2.0,0.068966,0.068966,9.0,27.0,0.333333,0.0,2.0,0.0,0.310345,0.0,0.310345
+4,client_04,Config C,Config C: DenseMLP FedAvg,Q95,Benign,False,EVALUATED,3761,0.0,3589.0,0.0,172.0,0.045733,0.045733,0.0,3589.0,0.0,0.0,172.0,0.0,0.0,0.0,0.0
+4,client_04,Config D,Config D: Light AE Standalone,Q99,Analysis,True,EVALUATED,476,0.0,461.0,15.0,0.0,0.031513,0.0,9.0,476.0,0.018908,0.0,0.0,0.0,0.018908,0.0,0.018908
+4,client_04,Config D,Config D: Light AE Standalone,Q99,Backdoor,True,EVALUATED,329,0.0,322.0,7.0,0.0,0.021277,0.0,21.0,329.0,0.06383,0.0,0.0,0.0,0.06383,0.0,0.06383
+4,client_04,Config D,Config D: Light AE Standalone,Q99,DoS,True,EVALUATED,1083,0.0,1025.0,58.0,0.0,0.053555,0.0,122.0,1083.0,0.11265,0.0,0.0,0.0,0.11265,0.0,0.11265
+4,client_04,Config D,Config D: Light AE Standalone,Q99,Exploits,True,EVALUATED,5208,0.0,4992.0,216.0,0.0,0.041475,0.0,280.0,5208.0,0.053763,0.0,0.0,0.0,0.053763,0.0,0.053763
+4,client_04,Config D,Config D: Light AE Standalone,Q99,Fuzzers,True,EVALUATED,3855,0.0,3659.0,196.0,0.0,0.050843,0.0,182.0,3855.0,0.047211,0.0,0.0,0.0,0.047211,0.0,0.047211
+4,client_04,Config D,Config D: Light AE Standalone,Q99,Generic,True,EVALUATED,2832,0.0,2813.0,19.0,0.0,0.006709,0.0,2015.0,2832.0,0.711511,0.0,0.0,0.0,0.711511,0.0,0.711511
+4,client_04,Config D,Config D: Light AE Standalone,Q99,Reconnaissance,True,EVALUATED,2189,0.0,2168.0,21.0,0.0,0.009593,0.0,41.0,2189.0,0.01873,0.0,0.0,0.0,0.01873,0.0,0.01873
+4,client_04,Config D,Config D: Light AE Standalone,Q99,Shellcode,True,EVALUATED,238,0.0,235.0,3.0,0.0,0.012605,0.0,0.0,238.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4,client_04,Config D,Config D: Light AE Standalone,Q99,Worms,True,EVALUATED,29,0.0,29.0,0.0,0.0,0.0,0.0,2.0,29.0,0.068966,0.0,0.0,0.0,0.068966,0.0,0.068966
+4,client_04,Config D,Config D: Light AE Standalone,Q99,Benign,False,EVALUATED,3761,0.0,3735.0,26.0,0.0,0.006913,0.0,0.0,3761.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4,client_04,Config D,Config D: Light AE Standalone,Q95,Analysis,True,EVALUATED,476,0.0,437.0,39.0,0.0,0.081933,0.0,397.0,476.0,0.834034,0.0,0.0,0.0,0.834034,0.0,0.834034
+4,client_04,Config D,Config D: Light AE Standalone,Q95,Backdoor,True,EVALUATED,329,0.0,291.0,38.0,0.0,0.115502,0.0,261.0,329.0,0.793313,0.0,0.0,0.0,0.793313,0.0,0.793313
+4,client_04,Config D,Config D: Light AE Standalone,Q95,DoS,True,EVALUATED,1083,0.0,898.0,185.0,0.0,0.170822,0.0,548.0,1083.0,0.506002,0.0,0.0,0.0,0.506002,0.0,0.506002
+4,client_04,Config D,Config D: Light AE Standalone,Q95,Exploits,True,EVALUATED,5208,0.0,4535.0,673.0,0.0,0.129224,0.0,1191.0,5208.0,0.228687,0.0,0.0,0.0,0.228687,0.0,0.228687
+4,client_04,Config D,Config D: Light AE Standalone,Q95,Fuzzers,True,EVALUATED,3855,0.0,3360.0,495.0,0.0,0.128405,0.0,1071.0,3855.0,0.277821,0.0,0.0,0.0,0.277821,0.0,0.277821
+4,client_04,Config D,Config D: Light AE Standalone,Q95,Generic,True,EVALUATED,2832,0.0,2700.0,132.0,0.0,0.04661,0.0,2404.0,2832.0,0.84887,0.0,0.0,0.0,0.84887,0.0,0.84887
+4,client_04,Config D,Config D: Light AE Standalone,Q95,Reconnaissance,True,EVALUATED,2189,0.0,2052.0,137.0,0.0,0.062586,0.0,1059.0,2189.0,0.483783,0.0,0.0,0.0,0.483783,0.0,0.483783
+4,client_04,Config D,Config D: Light AE Standalone,Q95,Shellcode,True,EVALUATED,238,0.0,227.0,11.0,0.0,0.046218,0.0,84.0,238.0,0.352941,0.0,0.0,0.0,0.352941,0.0,0.352941
+4,client_04,Config D,Config D: Light AE Standalone,Q95,Worms,True,EVALUATED,29,0.0,27.0,2.0,0.0,0.068966,0.0,11.0,29.0,0.37931,0.0,0.0,0.0,0.37931,0.0,0.37931
+4,client_04,Config D,Config D: Light AE Standalone,Q95,Benign,False,EVALUATED,3761,0.0,3589.0,172.0,0.0,0.045733,0.0,0.0,3761.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+5,client_05,Config A,Config A: HeavyGRU FedAvg,Q99,Analysis,True,EVALUATED,7,0.0,4.0,0.0,3.0,0.428571,0.428571,0.0,4.0,0.0,3.0,3.0,1.0,0.0,0.428571,0.428571
+5,client_05,Config A,Config A: HeavyGRU FedAvg,Q99,Backdoor,True,EVALUATED,12,0.0,7.0,0.0,5.0,0.416667,0.416667,6.0,7.0,0.857143,5.0,5.0,1.0,0.5,0.416667,0.916667
+5,client_05,Config A,Config A: HeavyGRU FedAvg,Q99,DoS,True,EVALUATED,22,0.0,19.0,0.0,3.0,0.136364,0.136364,9.0,19.0,0.473684,3.0,3.0,1.0,0.409091,0.136364,0.545455
+5,client_05,Config A,Config A: HeavyGRU FedAvg,Q99,Exploits,True,EVALUATED,175,0.0,164.0,0.0,11.0,0.062857,0.062857,22.0,164.0,0.134146,11.0,11.0,1.0,0.125714,0.062857,0.188571
+5,client_05,Config A,Config A: HeavyGRU FedAvg,Q99,Fuzzers,True,EVALUATED,104,0.0,104.0,0.0,0.0,0.0,0.0,15.0,104.0,0.144231,0.0,0.0,0.0,0.144231,0.0,0.144231
+5,client_05,Config A,Config A: HeavyGRU FedAvg,Q99,Generic,True,EVALUATED,78,0.0,78.0,0.0,0.0,0.0,0.0,68.0,78.0,0.871795,0.0,0.0,0.0,0.871795,0.0,0.871795
+5,client_05,Config A,Config A: HeavyGRU FedAvg,Q99,Reconnaissance,True,EVALUATED,104,0.0,103.0,0.0,1.0,0.009615,0.009615,35.0,103.0,0.339806,1.0,1.0,1.0,0.336538,0.009615,0.346154
+5,client_05,Config A,Config A: HeavyGRU FedAvg,Q99,Shellcode,True,EVALUATED,11,0.0,11.0,0.0,0.0,0.0,0.0,6.0,11.0,0.545455,0.0,0.0,0.0,0.545455,0.0,0.545455
+5,client_05,Config A,Config A: HeavyGRU FedAvg,Q99,Worms,True,ZERO_SAMPLES,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,
+5,client_05,Config A,Config A: HeavyGRU FedAvg,Q99,Benign,False,EVALUATED,19487,0.0,19294.0,0.0,193.0,0.009904,0.009904,0.0,19294.0,0.0,0.0,193.0,0.0,0.0,0.0,0.0
+5,client_05,Config A,Config A: HeavyGRU FedAvg,Q95,Analysis,True,EVALUATED,7,0.0,0.0,0.0,7.0,1.0,1.0,0.0,0.0,0.0,7.0,7.0,1.0,0.0,1.0,1.0
+5,client_05,Config A,Config A: HeavyGRU FedAvg,Q95,Backdoor,True,EVALUATED,12,0.0,1.0,0.0,11.0,0.916667,0.916667,0.0,1.0,0.0,11.0,11.0,1.0,0.0,0.916667,0.916667
+5,client_05,Config A,Config A: HeavyGRU FedAvg,Q95,DoS,True,EVALUATED,22,0.0,7.0,0.0,15.0,0.681818,0.681818,7.0,7.0,1.0,12.0,15.0,0.8,0.318182,0.545455,0.863636
+5,client_05,Config A,Config A: HeavyGRU FedAvg,Q95,Exploits,True,EVALUATED,175,0.0,50.0,0.0,125.0,0.714286,0.714286,37.0,50.0,0.74,125.0,125.0,1.0,0.211429,0.714286,0.925714
+5,client_05,Config A,Config A: HeavyGRU FedAvg,Q95,Fuzzers,True,EVALUATED,104,0.0,65.0,0.0,39.0,0.375,0.375,58.0,65.0,0.892308,39.0,39.0,1.0,0.557692,0.375,0.932692
+5,client_05,Config A,Config A: HeavyGRU FedAvg,Q95,Generic,True,EVALUATED,78,0.0,61.0,0.0,17.0,0.217949,0.217949,61.0,61.0,1.0,17.0,17.0,1.0,0.782051,0.217949,1.0
+5,client_05,Config A,Config A: HeavyGRU FedAvg,Q95,Reconnaissance,True,EVALUATED,104,0.0,43.0,0.0,61.0,0.586538,0.586538,43.0,43.0,1.0,61.0,61.0,1.0,0.413462,0.586538,1.0
+5,client_05,Config A,Config A: HeavyGRU FedAvg,Q95,Shellcode,True,EVALUATED,11,0.0,5.0,0.0,6.0,0.545455,0.545455,5.0,5.0,1.0,6.0,6.0,1.0,0.454545,0.545455,1.0
+5,client_05,Config A,Config A: HeavyGRU FedAvg,Q95,Worms,True,ZERO_SAMPLES,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,
+5,client_05,Config A,Config A: HeavyGRU FedAvg,Q95,Benign,False,EVALUATED,19487,0.0,18547.0,0.0,940.0,0.048237,0.048237,0.0,18547.0,0.0,0.0,940.0,0.0,0.0,0.0,0.0
+5,client_05,Config B,Config B: DenseMLP FedPer,Q99,Analysis,True,EVALUATED,7,0.0,4.0,0.0,3.0,0.428571,0.428571,0.0,4.0,0.0,0.0,3.0,0.0,0.0,0.0,0.0
+5,client_05,Config B,Config B: DenseMLP FedPer,Q99,Backdoor,True,EVALUATED,12,0.0,7.0,0.0,5.0,0.416667,0.416667,6.0,7.0,0.857143,5.0,5.0,1.0,0.5,0.416667,0.916667
+5,client_05,Config B,Config B: DenseMLP FedPer,Q99,DoS,True,EVALUATED,22,0.0,19.0,0.0,3.0,0.136364,0.136364,9.0,19.0,0.473684,3.0,3.0,1.0,0.409091,0.136364,0.545455
+5,client_05,Config B,Config B: DenseMLP FedPer,Q99,Exploits,True,EVALUATED,175,0.0,164.0,0.0,11.0,0.062857,0.062857,22.0,164.0,0.134146,11.0,11.0,1.0,0.125714,0.062857,0.188571
+5,client_05,Config B,Config B: DenseMLP FedPer,Q99,Fuzzers,True,EVALUATED,104,0.0,104.0,0.0,0.0,0.0,0.0,15.0,104.0,0.144231,0.0,0.0,0.0,0.144231,0.0,0.144231
+5,client_05,Config B,Config B: DenseMLP FedPer,Q99,Generic,True,EVALUATED,78,0.0,78.0,0.0,0.0,0.0,0.0,68.0,78.0,0.871795,0.0,0.0,0.0,0.871795,0.0,0.871795
+5,client_05,Config B,Config B: DenseMLP FedPer,Q99,Reconnaissance,True,EVALUATED,104,0.0,103.0,0.0,1.0,0.009615,0.009615,35.0,103.0,0.339806,1.0,1.0,1.0,0.336538,0.009615,0.346154
+5,client_05,Config B,Config B: DenseMLP FedPer,Q99,Shellcode,True,EVALUATED,11,0.0,11.0,0.0,0.0,0.0,0.0,6.0,11.0,0.545455,0.0,0.0,0.0,0.545455,0.0,0.545455
+5,client_05,Config B,Config B: DenseMLP FedPer,Q99,Worms,True,ZERO_SAMPLES,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,
+5,client_05,Config B,Config B: DenseMLP FedPer,Q99,Benign,False,EVALUATED,19487,0.0,19294.0,0.0,193.0,0.009904,0.009904,0.0,19294.0,0.0,0.0,193.0,0.0,0.0,0.0,0.0
+5,client_05,Config B,Config B: DenseMLP FedPer,Q95,Analysis,True,NOT AVAILABLE,7,,,,,,,,,,,,,,,
+5,client_05,Config B,Config B: DenseMLP FedPer,Q95,Backdoor,True,NOT AVAILABLE,12,,,,,,,,,,,,,,,
+5,client_05,Config B,Config B: DenseMLP FedPer,Q95,DoS,True,NOT AVAILABLE,22,,,,,,,,,,,,,,,
+5,client_05,Config B,Config B: DenseMLP FedPer,Q95,Exploits,True,NOT AVAILABLE,175,,,,,,,,,,,,,,,
+5,client_05,Config B,Config B: DenseMLP FedPer,Q95,Fuzzers,True,NOT AVAILABLE,104,,,,,,,,,,,,,,,
+5,client_05,Config B,Config B: DenseMLP FedPer,Q95,Generic,True,NOT AVAILABLE,78,,,,,,,,,,,,,,,
+5,client_05,Config B,Config B: DenseMLP FedPer,Q95,Reconnaissance,True,NOT AVAILABLE,104,,,,,,,,,,,,,,,
+5,client_05,Config B,Config B: DenseMLP FedPer,Q95,Shellcode,True,NOT AVAILABLE,11,,,,,,,,,,,,,,,
+5,client_05,Config B,Config B: DenseMLP FedPer,Q95,Worms,True,NOT AVAILABLE,0,,,,,,,,,,,,,,,
+5,client_05,Config B,Config B: DenseMLP FedPer,Q95,Benign,False,NOT AVAILABLE,19487,,,,,,,,,,,,,,,
+5,client_05,Config C,Config C: DenseMLP FedAvg,Q99,Analysis,True,EVALUATED,7,0.0,4.0,0.0,3.0,0.428571,0.428571,0.0,4.0,0.0,3.0,3.0,1.0,0.0,0.428571,0.428571
+5,client_05,Config C,Config C: DenseMLP FedAvg,Q99,Backdoor,True,EVALUATED,12,0.0,7.0,0.0,5.0,0.416667,0.416667,6.0,7.0,0.857143,5.0,5.0,1.0,0.5,0.416667,0.916667
+5,client_05,Config C,Config C: DenseMLP FedAvg,Q99,DoS,True,EVALUATED,22,0.0,19.0,0.0,3.0,0.136364,0.136364,9.0,19.0,0.473684,3.0,3.0,1.0,0.409091,0.136364,0.545455
+5,client_05,Config C,Config C: DenseMLP FedAvg,Q99,Exploits,True,EVALUATED,175,0.0,164.0,0.0,11.0,0.062857,0.062857,22.0,164.0,0.134146,11.0,11.0,1.0,0.125714,0.062857,0.188571
+5,client_05,Config C,Config C: DenseMLP FedAvg,Q99,Fuzzers,True,EVALUATED,104,0.0,104.0,0.0,0.0,0.0,0.0,15.0,104.0,0.144231,0.0,0.0,0.0,0.144231,0.0,0.144231
+5,client_05,Config C,Config C: DenseMLP FedAvg,Q99,Generic,True,EVALUATED,78,0.0,78.0,0.0,0.0,0.0,0.0,68.0,78.0,0.871795,0.0,0.0,0.0,0.871795,0.0,0.871795
+5,client_05,Config C,Config C: DenseMLP FedAvg,Q99,Reconnaissance,True,EVALUATED,104,0.0,103.0,0.0,1.0,0.009615,0.009615,35.0,103.0,0.339806,1.0,1.0,1.0,0.336538,0.009615,0.346154
+5,client_05,Config C,Config C: DenseMLP FedAvg,Q99,Shellcode,True,EVALUATED,11,0.0,11.0,0.0,0.0,0.0,0.0,6.0,11.0,0.545455,0.0,0.0,0.0,0.545455,0.0,0.545455
+5,client_05,Config C,Config C: DenseMLP FedAvg,Q99,Worms,True,ZERO_SAMPLES,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,
+5,client_05,Config C,Config C: DenseMLP FedAvg,Q99,Benign,False,EVALUATED,19487,0.0,19294.0,0.0,193.0,0.009904,0.009904,0.0,19294.0,0.0,0.0,193.0,0.0,0.0,0.0,0.0
+5,client_05,Config C,Config C: DenseMLP FedAvg,Q95,Analysis,True,EVALUATED,7,0.0,0.0,0.0,7.0,1.0,1.0,0.0,0.0,0.0,7.0,7.0,1.0,0.0,1.0,1.0
+5,client_05,Config C,Config C: DenseMLP FedAvg,Q95,Backdoor,True,EVALUATED,12,0.0,1.0,0.0,11.0,0.916667,0.916667,0.0,1.0,0.0,11.0,11.0,1.0,0.0,0.916667,0.916667
+5,client_05,Config C,Config C: DenseMLP FedAvg,Q95,DoS,True,EVALUATED,22,0.0,7.0,0.0,15.0,0.681818,0.681818,7.0,7.0,1.0,12.0,15.0,0.8,0.318182,0.545455,0.863636
+5,client_05,Config C,Config C: DenseMLP FedAvg,Q95,Exploits,True,EVALUATED,175,0.0,50.0,0.0,125.0,0.714286,0.714286,37.0,50.0,0.74,125.0,125.0,1.0,0.211429,0.714286,0.925714
+5,client_05,Config C,Config C: DenseMLP FedAvg,Q95,Fuzzers,True,EVALUATED,104,0.0,65.0,0.0,39.0,0.375,0.375,58.0,65.0,0.892308,39.0,39.0,1.0,0.557692,0.375,0.932692
+5,client_05,Config C,Config C: DenseMLP FedAvg,Q95,Generic,True,EVALUATED,78,0.0,61.0,0.0,17.0,0.217949,0.217949,61.0,61.0,1.0,17.0,17.0,1.0,0.782051,0.217949,1.0
+5,client_05,Config C,Config C: DenseMLP FedAvg,Q95,Reconnaissance,True,EVALUATED,104,0.0,43.0,0.0,61.0,0.586538,0.586538,43.0,43.0,1.0,61.0,61.0,1.0,0.413462,0.586538,1.0
+5,client_05,Config C,Config C: DenseMLP FedAvg,Q95,Shellcode,True,EVALUATED,11,0.0,5.0,0.0,6.0,0.545455,0.545455,5.0,5.0,1.0,6.0,6.0,1.0,0.454545,0.545455,1.0
+5,client_05,Config C,Config C: DenseMLP FedAvg,Q95,Worms,True,ZERO_SAMPLES,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,
+5,client_05,Config C,Config C: DenseMLP FedAvg,Q95,Benign,False,EVALUATED,19487,0.0,18547.0,0.0,940.0,0.048237,0.048237,0.0,18547.0,0.0,0.0,940.0,0.0,0.0,0.0,0.0
+5,client_05,Config D,Config D: Light AE Standalone,Q99,Analysis,True,EVALUATED,7,0.0,4.0,3.0,0.0,0.428571,0.0,3.0,7.0,0.428571,0.0,0.0,0.0,0.428571,0.0,0.428571
+5,client_05,Config D,Config D: Light AE Standalone,Q99,Backdoor,True,EVALUATED,12,0.0,7.0,5.0,0.0,0.416667,0.0,8.0,12.0,0.666667,0.0,0.0,0.0,0.666667,0.0,0.666667
+5,client_05,Config D,Config D: Light AE Standalone,Q99,DoS,True,EVALUATED,22,0.0,19.0,3.0,0.0,0.136364,0.0,12.0,22.0,0.545455,0.0,0.0,0.0,0.545455,0.0,0.545455
+5,client_05,Config D,Config D: Light AE Standalone,Q99,Exploits,True,EVALUATED,175,0.0,164.0,11.0,0.0,0.062857,0.0,29.0,175.0,0.165714,0.0,0.0,0.0,0.165714,0.0,0.165714
+5,client_05,Config D,Config D: Light AE Standalone,Q99,Fuzzers,True,EVALUATED,104,0.0,104.0,0.0,0.0,0.0,0.0,15.0,104.0,0.144231,0.0,0.0,0.0,0.144231,0.0,0.144231
+5,client_05,Config D,Config D: Light AE Standalone,Q99,Generic,True,EVALUATED,78,0.0,78.0,0.0,0.0,0.0,0.0,68.0,78.0,0.871795,0.0,0.0,0.0,0.871795,0.0,0.871795
+5,client_05,Config D,Config D: Light AE Standalone,Q99,Reconnaissance,True,EVALUATED,104,0.0,103.0,1.0,0.0,0.009615,0.0,36.0,104.0,0.346154,0.0,0.0,0.0,0.346154,0.0,0.346154
+5,client_05,Config D,Config D: Light AE Standalone,Q99,Shellcode,True,EVALUATED,11,0.0,11.0,0.0,0.0,0.0,0.0,6.0,11.0,0.545455,0.0,0.0,0.0,0.545455,0.0,0.545455
+5,client_05,Config D,Config D: Light AE Standalone,Q99,Worms,True,ZERO_SAMPLES,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,
+5,client_05,Config D,Config D: Light AE Standalone,Q99,Benign,False,EVALUATED,19487,0.0,19294.0,193.0,0.0,0.009904,0.0,0.0,19487.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+5,client_05,Config D,Config D: Light AE Standalone,Q95,Analysis,True,EVALUATED,7,0.0,0.0,7.0,0.0,1.0,0.0,7.0,7.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+5,client_05,Config D,Config D: Light AE Standalone,Q95,Backdoor,True,EVALUATED,12,0.0,1.0,11.0,0.0,0.916667,0.0,11.0,12.0,0.916667,0.0,0.0,0.0,0.916667,0.0,0.916667
+5,client_05,Config D,Config D: Light AE Standalone,Q95,DoS,True,EVALUATED,22,0.0,7.0,15.0,0.0,0.681818,0.0,22.0,22.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+5,client_05,Config D,Config D: Light AE Standalone,Q95,Exploits,True,EVALUATED,175,0.0,50.0,125.0,0.0,0.714286,0.0,162.0,175.0,0.925714,0.0,0.0,0.0,0.925714,0.0,0.925714
+5,client_05,Config D,Config D: Light AE Standalone,Q95,Fuzzers,True,EVALUATED,104,0.0,65.0,39.0,0.0,0.375,0.0,97.0,104.0,0.932692,0.0,0.0,0.0,0.932692,0.0,0.932692
+5,client_05,Config D,Config D: Light AE Standalone,Q95,Generic,True,EVALUATED,78,0.0,61.0,17.0,0.0,0.217949,0.0,78.0,78.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+5,client_05,Config D,Config D: Light AE Standalone,Q95,Reconnaissance,True,EVALUATED,104,0.0,43.0,61.0,0.0,0.586538,0.0,104.0,104.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+5,client_05,Config D,Config D: Light AE Standalone,Q95,Shellcode,True,EVALUATED,11,0.0,5.0,6.0,0.0,0.545455,0.0,11.0,11.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+5,client_05,Config D,Config D: Light AE Standalone,Q95,Worms,True,ZERO_SAMPLES,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,
+5,client_05,Config D,Config D: Light AE Standalone,Q95,Benign,False,EVALUATED,19487,0.0,18547.0,940.0,0.0,0.048237,0.0,0.0,19487.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6,client_06,Config A,Config A: HeavyGRU FedAvg,Q99,Analysis,True,EVALUATED,5,0.0,4.0,0.0,1.0,0.2,0.2,2.0,4.0,0.5,1.0,1.0,1.0,0.4,0.2,0.6
+6,client_06,Config A,Config A: HeavyGRU FedAvg,Q99,Backdoor,True,EVALUATED,17,0.0,17.0,0.0,0.0,0.0,0.0,17.0,17.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+6,client_06,Config A,Config A: HeavyGRU FedAvg,Q99,DoS,True,EVALUATED,31,0.0,29.0,0.0,2.0,0.064516,0.064516,14.0,29.0,0.482759,2.0,2.0,1.0,0.451613,0.064516,0.516129
+6,client_06,Config A,Config A: HeavyGRU FedAvg,Q99,Exploits,True,EVALUATED,189,0.0,182.0,0.0,7.0,0.037037,0.037037,17.0,182.0,0.093407,6.0,7.0,0.857143,0.089947,0.031746,0.121693
+6,client_06,Config A,Config A: HeavyGRU FedAvg,Q99,Fuzzers,True,EVALUATED,167,0.0,160.0,0.0,7.0,0.041916,0.041916,45.0,160.0,0.28125,7.0,7.0,1.0,0.269461,0.041916,0.311377
+6,client_06,Config A,Config A: HeavyGRU FedAvg,Q99,Generic,True,EVALUATED,101,0.0,97.0,0.0,4.0,0.039604,0.039604,75.0,97.0,0.773196,4.0,4.0,1.0,0.742574,0.039604,0.782178
+6,client_06,Config A,Config A: HeavyGRU FedAvg,Q99,Reconnaissance,True,EVALUATED,101,0.0,96.0,0.0,5.0,0.049505,0.049505,47.0,96.0,0.489583,5.0,5.0,1.0,0.465347,0.049505,0.514851
+6,client_06,Config A,Config A: HeavyGRU FedAvg,Q99,Shellcode,True,EVALUATED,8,0.0,8.0,0.0,0.0,0.0,0.0,3.0,8.0,0.375,0.0,0.0,0.0,0.375,0.0,0.375
+6,client_06,Config A,Config A: HeavyGRU FedAvg,Q99,Worms,True,EVALUATED,1,0.0,1.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+6,client_06,Config A,Config A: HeavyGRU FedAvg,Q99,Benign,False,EVALUATED,19380,0.0,19142.0,0.0,238.0,0.012281,0.012281,0.0,19142.0,0.0,0.0,238.0,0.0,0.0,0.0,0.0
+6,client_06,Config A,Config A: HeavyGRU FedAvg,Q95,Analysis,True,EVALUATED,5,0.0,0.0,0.0,5.0,1.0,1.0,0.0,0.0,0.0,5.0,5.0,1.0,0.0,1.0,1.0
+6,client_06,Config A,Config A: HeavyGRU FedAvg,Q95,Backdoor,True,EVALUATED,17,0.0,0.0,0.0,17.0,1.0,1.0,0.0,0.0,0.0,17.0,17.0,1.0,0.0,1.0,1.0
+6,client_06,Config A,Config A: HeavyGRU FedAvg,Q95,DoS,True,EVALUATED,31,0.0,6.0,0.0,25.0,0.806452,0.806452,6.0,6.0,1.0,24.0,25.0,0.96,0.193548,0.774194,0.967742
+6,client_06,Config A,Config A: HeavyGRU FedAvg,Q95,Exploits,True,EVALUATED,189,0.0,68.0,0.0,121.0,0.640212,0.640212,37.0,68.0,0.544118,120.0,121.0,0.991736,0.195767,0.634921,0.830688
+6,client_06,Config A,Config A: HeavyGRU FedAvg,Q95,Fuzzers,True,EVALUATED,167,0.0,49.0,0.0,118.0,0.706587,0.706587,36.0,49.0,0.734694,118.0,118.0,1.0,0.215569,0.706587,0.922156
+6,client_06,Config A,Config A: HeavyGRU FedAvg,Q95,Generic,True,EVALUATED,101,0.0,62.0,0.0,39.0,0.386139,0.386139,62.0,62.0,1.0,39.0,39.0,1.0,0.613861,0.386139,1.0
+6,client_06,Config A,Config A: HeavyGRU FedAvg,Q95,Reconnaissance,True,EVALUATED,101,0.0,27.0,0.0,74.0,0.732673,0.732673,27.0,27.0,1.0,74.0,74.0,1.0,0.267327,0.732673,1.0
+6,client_06,Config A,Config A: HeavyGRU FedAvg,Q95,Shellcode,True,EVALUATED,8,0.0,4.0,0.0,4.0,0.5,0.5,4.0,4.0,1.0,4.0,4.0,1.0,0.5,0.5,1.0
+6,client_06,Config A,Config A: HeavyGRU FedAvg,Q95,Worms,True,EVALUATED,1,0.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,1.0,0.0,1.0,1.0
+6,client_06,Config A,Config A: HeavyGRU FedAvg,Q95,Benign,False,EVALUATED,19380,0.0,18432.0,0.0,948.0,0.048916,0.048916,0.0,18432.0,0.0,0.0,948.0,0.0,0.0,0.0,0.0
+6,client_06,Config B,Config B: DenseMLP FedPer,Q99,Analysis,True,EVALUATED,5,0.0,4.0,0.0,1.0,0.2,0.2,2.0,4.0,0.5,1.0,1.0,1.0,0.4,0.2,0.6
+6,client_06,Config B,Config B: DenseMLP FedPer,Q99,Backdoor,True,EVALUATED,17,0.0,17.0,0.0,0.0,0.0,0.0,17.0,17.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+6,client_06,Config B,Config B: DenseMLP FedPer,Q99,DoS,True,EVALUATED,31,0.0,29.0,0.0,2.0,0.064516,0.064516,14.0,29.0,0.482759,2.0,2.0,1.0,0.451613,0.064516,0.516129
+6,client_06,Config B,Config B: DenseMLP FedPer,Q99,Exploits,True,EVALUATED,189,0.0,182.0,0.0,7.0,0.037037,0.037037,17.0,182.0,0.093407,6.0,7.0,0.857143,0.089947,0.031746,0.121693
+6,client_06,Config B,Config B: DenseMLP FedPer,Q99,Fuzzers,True,EVALUATED,167,0.0,160.0,0.0,7.0,0.041916,0.041916,45.0,160.0,0.28125,7.0,7.0,1.0,0.269461,0.041916,0.311377
+6,client_06,Config B,Config B: DenseMLP FedPer,Q99,Generic,True,EVALUATED,101,0.0,97.0,0.0,4.0,0.039604,0.039604,75.0,97.0,0.773196,4.0,4.0,1.0,0.742574,0.039604,0.782178
+6,client_06,Config B,Config B: DenseMLP FedPer,Q99,Reconnaissance,True,EVALUATED,101,0.0,96.0,0.0,5.0,0.049505,0.049505,47.0,96.0,0.489583,5.0,5.0,1.0,0.465347,0.049505,0.514851
+6,client_06,Config B,Config B: DenseMLP FedPer,Q99,Shellcode,True,EVALUATED,8,0.0,8.0,0.0,0.0,0.0,0.0,3.0,8.0,0.375,0.0,0.0,0.0,0.375,0.0,0.375
+6,client_06,Config B,Config B: DenseMLP FedPer,Q99,Worms,True,EVALUATED,1,0.0,1.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+6,client_06,Config B,Config B: DenseMLP FedPer,Q99,Benign,False,EVALUATED,19380,0.0,19142.0,0.0,238.0,0.012281,0.012281,0.0,19142.0,0.0,0.0,238.0,0.0,0.0,0.0,0.0
+6,client_06,Config B,Config B: DenseMLP FedPer,Q95,Analysis,True,NOT AVAILABLE,5,,,,,,,,,,,,,,,
+6,client_06,Config B,Config B: DenseMLP FedPer,Q95,Backdoor,True,NOT AVAILABLE,17,,,,,,,,,,,,,,,
+6,client_06,Config B,Config B: DenseMLP FedPer,Q95,DoS,True,NOT AVAILABLE,31,,,,,,,,,,,,,,,
+6,client_06,Config B,Config B: DenseMLP FedPer,Q95,Exploits,True,NOT AVAILABLE,189,,,,,,,,,,,,,,,
+6,client_06,Config B,Config B: DenseMLP FedPer,Q95,Fuzzers,True,NOT AVAILABLE,167,,,,,,,,,,,,,,,
+6,client_06,Config B,Config B: DenseMLP FedPer,Q95,Generic,True,NOT AVAILABLE,101,,,,,,,,,,,,,,,
+6,client_06,Config B,Config B: DenseMLP FedPer,Q95,Reconnaissance,True,NOT AVAILABLE,101,,,,,,,,,,,,,,,
+6,client_06,Config B,Config B: DenseMLP FedPer,Q95,Shellcode,True,NOT AVAILABLE,8,,,,,,,,,,,,,,,
+6,client_06,Config B,Config B: DenseMLP FedPer,Q95,Worms,True,NOT AVAILABLE,1,,,,,,,,,,,,,,,
+6,client_06,Config B,Config B: DenseMLP FedPer,Q95,Benign,False,NOT AVAILABLE,19380,,,,,,,,,,,,,,,
+6,client_06,Config C,Config C: DenseMLP FedAvg,Q99,Analysis,True,EVALUATED,5,0.0,4.0,0.0,1.0,0.2,0.2,2.0,4.0,0.5,1.0,1.0,1.0,0.4,0.2,0.6
+6,client_06,Config C,Config C: DenseMLP FedAvg,Q99,Backdoor,True,EVALUATED,17,0.0,17.0,0.0,0.0,0.0,0.0,17.0,17.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+6,client_06,Config C,Config C: DenseMLP FedAvg,Q99,DoS,True,EVALUATED,31,0.0,29.0,0.0,2.0,0.064516,0.064516,14.0,29.0,0.482759,2.0,2.0,1.0,0.451613,0.064516,0.516129
+6,client_06,Config C,Config C: DenseMLP FedAvg,Q99,Exploits,True,EVALUATED,189,0.0,182.0,0.0,7.0,0.037037,0.037037,17.0,182.0,0.093407,6.0,7.0,0.857143,0.089947,0.031746,0.121693
+6,client_06,Config C,Config C: DenseMLP FedAvg,Q99,Fuzzers,True,EVALUATED,167,0.0,160.0,0.0,7.0,0.041916,0.041916,45.0,160.0,0.28125,7.0,7.0,1.0,0.269461,0.041916,0.311377
+6,client_06,Config C,Config C: DenseMLP FedAvg,Q99,Generic,True,EVALUATED,101,0.0,97.0,0.0,4.0,0.039604,0.039604,75.0,97.0,0.773196,4.0,4.0,1.0,0.742574,0.039604,0.782178
+6,client_06,Config C,Config C: DenseMLP FedAvg,Q99,Reconnaissance,True,EVALUATED,101,0.0,96.0,0.0,5.0,0.049505,0.049505,47.0,96.0,0.489583,5.0,5.0,1.0,0.465347,0.049505,0.514851
+6,client_06,Config C,Config C: DenseMLP FedAvg,Q99,Shellcode,True,EVALUATED,8,0.0,8.0,0.0,0.0,0.0,0.0,3.0,8.0,0.375,0.0,0.0,0.0,0.375,0.0,0.375
+6,client_06,Config C,Config C: DenseMLP FedAvg,Q99,Worms,True,EVALUATED,1,0.0,1.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+6,client_06,Config C,Config C: DenseMLP FedAvg,Q99,Benign,False,EVALUATED,19380,0.0,19142.0,0.0,238.0,0.012281,0.012281,0.0,19142.0,0.0,0.0,238.0,0.0,0.0,0.0,0.0
+6,client_06,Config C,Config C: DenseMLP FedAvg,Q95,Analysis,True,EVALUATED,5,0.0,0.0,0.0,5.0,1.0,1.0,0.0,0.0,0.0,5.0,5.0,1.0,0.0,1.0,1.0
+6,client_06,Config C,Config C: DenseMLP FedAvg,Q95,Backdoor,True,EVALUATED,17,0.0,0.0,0.0,17.0,1.0,1.0,0.0,0.0,0.0,17.0,17.0,1.0,0.0,1.0,1.0
+6,client_06,Config C,Config C: DenseMLP FedAvg,Q95,DoS,True,EVALUATED,31,0.0,6.0,0.0,25.0,0.806452,0.806452,6.0,6.0,1.0,24.0,25.0,0.96,0.193548,0.774194,0.967742
+6,client_06,Config C,Config C: DenseMLP FedAvg,Q95,Exploits,True,EVALUATED,189,0.0,68.0,0.0,121.0,0.640212,0.640212,37.0,68.0,0.544118,120.0,121.0,0.991736,0.195767,0.634921,0.830688
+6,client_06,Config C,Config C: DenseMLP FedAvg,Q95,Fuzzers,True,EVALUATED,167,0.0,49.0,0.0,118.0,0.706587,0.706587,36.0,49.0,0.734694,118.0,118.0,1.0,0.215569,0.706587,0.922156
+6,client_06,Config C,Config C: DenseMLP FedAvg,Q95,Generic,True,EVALUATED,101,0.0,62.0,0.0,39.0,0.386139,0.386139,62.0,62.0,1.0,39.0,39.0,1.0,0.613861,0.386139,1.0
+6,client_06,Config C,Config C: DenseMLP FedAvg,Q95,Reconnaissance,True,EVALUATED,101,0.0,27.0,0.0,74.0,0.732673,0.732673,27.0,27.0,1.0,74.0,74.0,1.0,0.267327,0.732673,1.0
+6,client_06,Config C,Config C: DenseMLP FedAvg,Q95,Shellcode,True,EVALUATED,8,0.0,4.0,0.0,4.0,0.5,0.5,4.0,4.0,1.0,4.0,4.0,1.0,0.5,0.5,1.0
+6,client_06,Config C,Config C: DenseMLP FedAvg,Q95,Worms,True,EVALUATED,1,0.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,1.0,0.0,1.0,1.0
+6,client_06,Config C,Config C: DenseMLP FedAvg,Q95,Benign,False,EVALUATED,19380,0.0,18432.0,0.0,948.0,0.048916,0.048916,0.0,18432.0,0.0,0.0,948.0,0.0,0.0,0.0,0.0
+6,client_06,Config D,Config D: Light AE Standalone,Q99,Analysis,True,EVALUATED,5,0.0,4.0,1.0,0.0,0.2,0.0,3.0,5.0,0.6,0.0,0.0,0.0,0.6,0.0,0.6
+6,client_06,Config D,Config D: Light AE Standalone,Q99,Backdoor,True,EVALUATED,17,0.0,17.0,0.0,0.0,0.0,0.0,17.0,17.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+6,client_06,Config D,Config D: Light AE Standalone,Q99,DoS,True,EVALUATED,31,0.0,29.0,2.0,0.0,0.064516,0.0,15.0,31.0,0.483871,0.0,0.0,0.0,0.483871,0.0,0.483871
+6,client_06,Config D,Config D: Light AE Standalone,Q99,Exploits,True,EVALUATED,189,0.0,182.0,7.0,0.0,0.037037,0.0,20.0,189.0,0.10582,0.0,0.0,0.0,0.10582,0.0,0.10582
+6,client_06,Config D,Config D: Light AE Standalone,Q99,Fuzzers,True,EVALUATED,167,0.0,160.0,7.0,0.0,0.041916,0.0,49.0,167.0,0.293413,0.0,0.0,0.0,0.293413,0.0,0.293413
+6,client_06,Config D,Config D: Light AE Standalone,Q99,Generic,True,EVALUATED,101,0.0,97.0,4.0,0.0,0.039604,0.0,79.0,101.0,0.782178,0.0,0.0,0.0,0.782178,0.0,0.782178
+6,client_06,Config D,Config D: Light AE Standalone,Q99,Reconnaissance,True,EVALUATED,101,0.0,96.0,5.0,0.0,0.049505,0.0,52.0,101.0,0.514851,0.0,0.0,0.0,0.514851,0.0,0.514851
+6,client_06,Config D,Config D: Light AE Standalone,Q99,Shellcode,True,EVALUATED,8,0.0,8.0,0.0,0.0,0.0,0.0,3.0,8.0,0.375,0.0,0.0,0.0,0.375,0.0,0.375
+6,client_06,Config D,Config D: Light AE Standalone,Q99,Worms,True,EVALUATED,1,0.0,1.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+6,client_06,Config D,Config D: Light AE Standalone,Q99,Benign,False,EVALUATED,19380,0.0,19142.0,238.0,0.0,0.012281,0.0,0.0,19380.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6,client_06,Config D,Config D: Light AE Standalone,Q95,Analysis,True,EVALUATED,5,0.0,0.0,5.0,0.0,1.0,0.0,5.0,5.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+6,client_06,Config D,Config D: Light AE Standalone,Q95,Backdoor,True,EVALUATED,17,0.0,0.0,17.0,0.0,1.0,0.0,17.0,17.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+6,client_06,Config D,Config D: Light AE Standalone,Q95,DoS,True,EVALUATED,31,0.0,6.0,25.0,0.0,0.806452,0.0,31.0,31.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+6,client_06,Config D,Config D: Light AE Standalone,Q95,Exploits,True,EVALUATED,189,0.0,68.0,121.0,0.0,0.640212,0.0,158.0,189.0,0.835979,0.0,0.0,0.0,0.835979,0.0,0.835979
+6,client_06,Config D,Config D: Light AE Standalone,Q95,Fuzzers,True,EVALUATED,167,0.0,49.0,118.0,0.0,0.706587,0.0,154.0,167.0,0.922156,0.0,0.0,0.0,0.922156,0.0,0.922156
+6,client_06,Config D,Config D: Light AE Standalone,Q95,Generic,True,EVALUATED,101,0.0,62.0,39.0,0.0,0.386139,0.0,101.0,101.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+6,client_06,Config D,Config D: Light AE Standalone,Q95,Reconnaissance,True,EVALUATED,101,0.0,27.0,74.0,0.0,0.732673,0.0,101.0,101.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+6,client_06,Config D,Config D: Light AE Standalone,Q95,Shellcode,True,EVALUATED,8,0.0,4.0,4.0,0.0,0.5,0.0,8.0,8.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+6,client_06,Config D,Config D: Light AE Standalone,Q95,Worms,True,EVALUATED,1,0.0,0.0,1.0,0.0,1.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+6,client_06,Config D,Config D: Light AE Standalone,Q95,Benign,False,EVALUATED,19380,0.0,18432.0,948.0,0.0,0.048916,0.0,0.0,19380.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+7,client_07,Config A,Config A: HeavyGRU FedAvg,Q99,Analysis,True,ZERO_SAMPLES,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,
+7,client_07,Config A,Config A: HeavyGRU FedAvg,Q99,Backdoor,True,EVALUATED,3,0.0,3.0,0.0,0.0,0.0,0.0,3.0,3.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+7,client_07,Config A,Config A: HeavyGRU FedAvg,Q99,DoS,True,EVALUATED,4,0.0,4.0,0.0,0.0,0.0,0.0,4.0,4.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+7,client_07,Config A,Config A: HeavyGRU FedAvg,Q99,Exploits,True,EVALUATED,69,0.0,51.0,0.0,18.0,0.26087,0.26087,12.0,51.0,0.235294,18.0,18.0,1.0,0.173913,0.26087,0.434783
+7,client_07,Config A,Config A: HeavyGRU FedAvg,Q99,Fuzzers,True,EVALUATED,38,0.0,35.0,0.0,3.0,0.078947,0.078947,14.0,35.0,0.4,3.0,3.0,1.0,0.368421,0.078947,0.447368
+7,client_07,Config A,Config A: HeavyGRU FedAvg,Q99,Generic,True,EVALUATED,37,0.0,36.0,0.0,1.0,0.027027,0.027027,24.0,36.0,0.666667,1.0,1.0,1.0,0.648649,0.027027,0.675676
+7,client_07,Config A,Config A: HeavyGRU FedAvg,Q99,Reconnaissance,True,EVALUATED,17,0.0,16.0,0.0,1.0,0.058824,0.058824,11.0,16.0,0.6875,1.0,1.0,1.0,0.647059,0.058824,0.705882
+7,client_07,Config A,Config A: HeavyGRU FedAvg,Q99,Shellcode,True,EVALUATED,4,0.0,4.0,0.0,0.0,0.0,0.0,1.0,4.0,0.25,0.0,0.0,0.0,0.25,0.0,0.25
+7,client_07,Config A,Config A: HeavyGRU FedAvg,Q99,Worms,True,EVALUATED,2,0.0,2.0,0.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+7,client_07,Config A,Config A: HeavyGRU FedAvg,Q99,Benign,False,EVALUATED,19826,0.0,19598.0,0.0,228.0,0.0115,0.0115,0.0,19598.0,0.0,0.0,228.0,0.0,0.0,0.0,0.0
+7,client_07,Config A,Config A: HeavyGRU FedAvg,Q95,Analysis,True,ZERO_SAMPLES,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,
+7,client_07,Config A,Config A: HeavyGRU FedAvg,Q95,Backdoor,True,EVALUATED,3,0.0,0.0,0.0,3.0,1.0,1.0,0.0,0.0,0.0,3.0,3.0,1.0,0.0,1.0,1.0
+7,client_07,Config A,Config A: HeavyGRU FedAvg,Q95,DoS,True,EVALUATED,4,0.0,0.0,0.0,4.0,1.0,1.0,0.0,0.0,0.0,4.0,4.0,1.0,0.0,1.0,1.0
+7,client_07,Config A,Config A: HeavyGRU FedAvg,Q95,Exploits,True,EVALUATED,69,0.0,5.0,0.0,64.0,0.927536,0.927536,5.0,5.0,1.0,64.0,64.0,1.0,0.072464,0.927536,1.0
+7,client_07,Config A,Config A: HeavyGRU FedAvg,Q95,Fuzzers,True,EVALUATED,38,0.0,11.0,0.0,27.0,0.710526,0.710526,11.0,11.0,1.0,27.0,27.0,1.0,0.289474,0.710526,1.0
+7,client_07,Config A,Config A: HeavyGRU FedAvg,Q95,Generic,True,EVALUATED,37,0.0,21.0,0.0,16.0,0.432432,0.432432,21.0,21.0,1.0,16.0,16.0,1.0,0.567568,0.432432,1.0
+7,client_07,Config A,Config A: HeavyGRU FedAvg,Q95,Reconnaissance,True,EVALUATED,17,0.0,5.0,0.0,12.0,0.705882,0.705882,5.0,5.0,1.0,12.0,12.0,1.0,0.294118,0.705882,1.0
+7,client_07,Config A,Config A: HeavyGRU FedAvg,Q95,Shellcode,True,EVALUATED,4,0.0,1.0,0.0,3.0,0.75,0.75,1.0,1.0,1.0,3.0,3.0,1.0,0.25,0.75,1.0
+7,client_07,Config A,Config A: HeavyGRU FedAvg,Q95,Worms,True,EVALUATED,2,0.0,0.0,0.0,2.0,1.0,1.0,0.0,0.0,0.0,2.0,2.0,1.0,0.0,1.0,1.0
+7,client_07,Config A,Config A: HeavyGRU FedAvg,Q95,Benign,False,EVALUATED,19826,0.0,18794.0,0.0,1032.0,0.052053,0.052053,0.0,18794.0,0.0,0.0,1032.0,0.0,0.0,0.0,0.0
+7,client_07,Config B,Config B: DenseMLP FedPer,Q99,Analysis,True,ZERO_SAMPLES,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,
+7,client_07,Config B,Config B: DenseMLP FedPer,Q99,Backdoor,True,EVALUATED,3,0.0,3.0,0.0,0.0,0.0,0.0,3.0,3.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+7,client_07,Config B,Config B: DenseMLP FedPer,Q99,DoS,True,EVALUATED,4,0.0,4.0,0.0,0.0,0.0,0.0,4.0,4.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+7,client_07,Config B,Config B: DenseMLP FedPer,Q99,Exploits,True,EVALUATED,69,0.0,51.0,0.0,18.0,0.26087,0.26087,12.0,51.0,0.235294,18.0,18.0,1.0,0.173913,0.26087,0.434783
+7,client_07,Config B,Config B: DenseMLP FedPer,Q99,Fuzzers,True,EVALUATED,38,0.0,35.0,0.0,3.0,0.078947,0.078947,14.0,35.0,0.4,3.0,3.0,1.0,0.368421,0.078947,0.447368
+7,client_07,Config B,Config B: DenseMLP FedPer,Q99,Generic,True,EVALUATED,37,0.0,36.0,0.0,1.0,0.027027,0.027027,24.0,36.0,0.666667,1.0,1.0,1.0,0.648649,0.027027,0.675676
+7,client_07,Config B,Config B: DenseMLP FedPer,Q99,Reconnaissance,True,EVALUATED,17,0.0,16.0,0.0,1.0,0.058824,0.058824,11.0,16.0,0.6875,1.0,1.0,1.0,0.647059,0.058824,0.705882
+7,client_07,Config B,Config B: DenseMLP FedPer,Q99,Shellcode,True,EVALUATED,4,0.0,4.0,0.0,0.0,0.0,0.0,1.0,4.0,0.25,0.0,0.0,0.0,0.25,0.0,0.25
+7,client_07,Config B,Config B: DenseMLP FedPer,Q99,Worms,True,EVALUATED,2,0.0,2.0,0.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+7,client_07,Config B,Config B: DenseMLP FedPer,Q99,Benign,False,EVALUATED,19826,0.0,19598.0,0.0,228.0,0.0115,0.0115,0.0,19598.0,0.0,0.0,228.0,0.0,0.0,0.0,0.0
+7,client_07,Config B,Config B: DenseMLP FedPer,Q95,Analysis,True,NOT AVAILABLE,0,,,,,,,,,,,,,,,
+7,client_07,Config B,Config B: DenseMLP FedPer,Q95,Backdoor,True,NOT AVAILABLE,3,,,,,,,,,,,,,,,
+7,client_07,Config B,Config B: DenseMLP FedPer,Q95,DoS,True,NOT AVAILABLE,4,,,,,,,,,,,,,,,
+7,client_07,Config B,Config B: DenseMLP FedPer,Q95,Exploits,True,NOT AVAILABLE,69,,,,,,,,,,,,,,,
+7,client_07,Config B,Config B: DenseMLP FedPer,Q95,Fuzzers,True,NOT AVAILABLE,38,,,,,,,,,,,,,,,
+7,client_07,Config B,Config B: DenseMLP FedPer,Q95,Generic,True,NOT AVAILABLE,37,,,,,,,,,,,,,,,
+7,client_07,Config B,Config B: DenseMLP FedPer,Q95,Reconnaissance,True,NOT AVAILABLE,17,,,,,,,,,,,,,,,
+7,client_07,Config B,Config B: DenseMLP FedPer,Q95,Shellcode,True,NOT AVAILABLE,4,,,,,,,,,,,,,,,
+7,client_07,Config B,Config B: DenseMLP FedPer,Q95,Worms,True,NOT AVAILABLE,2,,,,,,,,,,,,,,,
+7,client_07,Config B,Config B: DenseMLP FedPer,Q95,Benign,False,NOT AVAILABLE,19826,,,,,,,,,,,,,,,
+7,client_07,Config C,Config C: DenseMLP FedAvg,Q99,Analysis,True,ZERO_SAMPLES,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,
+7,client_07,Config C,Config C: DenseMLP FedAvg,Q99,Backdoor,True,EVALUATED,3,0.0,3.0,0.0,0.0,0.0,0.0,3.0,3.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+7,client_07,Config C,Config C: DenseMLP FedAvg,Q99,DoS,True,EVALUATED,4,0.0,4.0,0.0,0.0,0.0,0.0,4.0,4.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+7,client_07,Config C,Config C: DenseMLP FedAvg,Q99,Exploits,True,EVALUATED,69,0.0,51.0,0.0,18.0,0.26087,0.26087,12.0,51.0,0.235294,18.0,18.0,1.0,0.173913,0.26087,0.434783
+7,client_07,Config C,Config C: DenseMLP FedAvg,Q99,Fuzzers,True,EVALUATED,38,0.0,35.0,0.0,3.0,0.078947,0.078947,14.0,35.0,0.4,3.0,3.0,1.0,0.368421,0.078947,0.447368
+7,client_07,Config C,Config C: DenseMLP FedAvg,Q99,Generic,True,EVALUATED,37,0.0,36.0,0.0,1.0,0.027027,0.027027,24.0,36.0,0.666667,1.0,1.0,1.0,0.648649,0.027027,0.675676
+7,client_07,Config C,Config C: DenseMLP FedAvg,Q99,Reconnaissance,True,EVALUATED,17,0.0,16.0,0.0,1.0,0.058824,0.058824,11.0,16.0,0.6875,1.0,1.0,1.0,0.647059,0.058824,0.705882
+7,client_07,Config C,Config C: DenseMLP FedAvg,Q99,Shellcode,True,EVALUATED,4,0.0,4.0,0.0,0.0,0.0,0.0,1.0,4.0,0.25,0.0,0.0,0.0,0.25,0.0,0.25
+7,client_07,Config C,Config C: DenseMLP FedAvg,Q99,Worms,True,EVALUATED,2,0.0,2.0,0.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+7,client_07,Config C,Config C: DenseMLP FedAvg,Q99,Benign,False,EVALUATED,19826,0.0,19598.0,0.0,228.0,0.0115,0.0115,0.0,19598.0,0.0,0.0,228.0,0.0,0.0,0.0,0.0
+7,client_07,Config C,Config C: DenseMLP FedAvg,Q95,Analysis,True,ZERO_SAMPLES,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,
+7,client_07,Config C,Config C: DenseMLP FedAvg,Q95,Backdoor,True,EVALUATED,3,0.0,0.0,0.0,3.0,1.0,1.0,0.0,0.0,0.0,3.0,3.0,1.0,0.0,1.0,1.0
+7,client_07,Config C,Config C: DenseMLP FedAvg,Q95,DoS,True,EVALUATED,4,0.0,0.0,0.0,4.0,1.0,1.0,0.0,0.0,0.0,4.0,4.0,1.0,0.0,1.0,1.0
+7,client_07,Config C,Config C: DenseMLP FedAvg,Q95,Exploits,True,EVALUATED,69,0.0,5.0,0.0,64.0,0.927536,0.927536,5.0,5.0,1.0,64.0,64.0,1.0,0.072464,0.927536,1.0
+7,client_07,Config C,Config C: DenseMLP FedAvg,Q95,Fuzzers,True,EVALUATED,38,0.0,11.0,0.0,27.0,0.710526,0.710526,11.0,11.0,1.0,27.0,27.0,1.0,0.289474,0.710526,1.0
+7,client_07,Config C,Config C: DenseMLP FedAvg,Q95,Generic,True,EVALUATED,37,0.0,21.0,0.0,16.0,0.432432,0.432432,21.0,21.0,1.0,16.0,16.0,1.0,0.567568,0.432432,1.0
+7,client_07,Config C,Config C: DenseMLP FedAvg,Q95,Reconnaissance,True,EVALUATED,17,0.0,5.0,0.0,12.0,0.705882,0.705882,5.0,5.0,1.0,12.0,12.0,1.0,0.294118,0.705882,1.0
+7,client_07,Config C,Config C: DenseMLP FedAvg,Q95,Shellcode,True,EVALUATED,4,0.0,1.0,0.0,3.0,0.75,0.75,1.0,1.0,1.0,3.0,3.0,1.0,0.25,0.75,1.0
+7,client_07,Config C,Config C: DenseMLP FedAvg,Q95,Worms,True,EVALUATED,2,0.0,0.0,0.0,2.0,1.0,1.0,0.0,0.0,0.0,2.0,2.0,1.0,0.0,1.0,1.0
+7,client_07,Config C,Config C: DenseMLP FedAvg,Q95,Benign,False,EVALUATED,19826,0.0,18794.0,0.0,1032.0,0.052053,0.052053,0.0,18794.0,0.0,0.0,1032.0,0.0,0.0,0.0,0.0
+7,client_07,Config D,Config D: Light AE Standalone,Q99,Analysis,True,ZERO_SAMPLES,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,
+7,client_07,Config D,Config D: Light AE Standalone,Q99,Backdoor,True,EVALUATED,3,0.0,3.0,0.0,0.0,0.0,0.0,3.0,3.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+7,client_07,Config D,Config D: Light AE Standalone,Q99,DoS,True,EVALUATED,4,0.0,4.0,0.0,0.0,0.0,0.0,4.0,4.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+7,client_07,Config D,Config D: Light AE Standalone,Q99,Exploits,True,EVALUATED,69,0.0,51.0,18.0,0.0,0.26087,0.0,25.0,69.0,0.362319,0.0,0.0,0.0,0.362319,0.0,0.362319
+7,client_07,Config D,Config D: Light AE Standalone,Q99,Fuzzers,True,EVALUATED,38,0.0,35.0,3.0,0.0,0.078947,0.0,17.0,38.0,0.447368,0.0,0.0,0.0,0.447368,0.0,0.447368
+7,client_07,Config D,Config D: Light AE Standalone,Q99,Generic,True,EVALUATED,37,0.0,36.0,1.0,0.0,0.027027,0.0,25.0,37.0,0.675676,0.0,0.0,0.0,0.675676,0.0,0.675676
+7,client_07,Config D,Config D: Light AE Standalone,Q99,Reconnaissance,True,EVALUATED,17,0.0,16.0,1.0,0.0,0.058824,0.0,12.0,17.0,0.705882,0.0,0.0,0.0,0.705882,0.0,0.705882
+7,client_07,Config D,Config D: Light AE Standalone,Q99,Shellcode,True,EVALUATED,4,0.0,4.0,0.0,0.0,0.0,0.0,1.0,4.0,0.25,0.0,0.0,0.0,0.25,0.0,0.25
+7,client_07,Config D,Config D: Light AE Standalone,Q99,Worms,True,EVALUATED,2,0.0,2.0,0.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+7,client_07,Config D,Config D: Light AE Standalone,Q99,Benign,False,EVALUATED,19826,0.0,19598.0,228.0,0.0,0.0115,0.0,0.0,19826.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+7,client_07,Config D,Config D: Light AE Standalone,Q95,Analysis,True,ZERO_SAMPLES,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,,0.0,0.0,
+7,client_07,Config D,Config D: Light AE Standalone,Q95,Backdoor,True,EVALUATED,3,0.0,0.0,3.0,0.0,1.0,0.0,3.0,3.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+7,client_07,Config D,Config D: Light AE Standalone,Q95,DoS,True,EVALUATED,4,0.0,0.0,4.0,0.0,1.0,0.0,4.0,4.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+7,client_07,Config D,Config D: Light AE Standalone,Q95,Exploits,True,EVALUATED,69,0.0,5.0,64.0,0.0,0.927536,0.0,69.0,69.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+7,client_07,Config D,Config D: Light AE Standalone,Q95,Fuzzers,True,EVALUATED,38,0.0,11.0,27.0,0.0,0.710526,0.0,38.0,38.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+7,client_07,Config D,Config D: Light AE Standalone,Q95,Generic,True,EVALUATED,37,0.0,21.0,16.0,0.0,0.432432,0.0,37.0,37.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+7,client_07,Config D,Config D: Light AE Standalone,Q95,Reconnaissance,True,EVALUATED,17,0.0,5.0,12.0,0.0,0.705882,0.0,17.0,17.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+7,client_07,Config D,Config D: Light AE Standalone,Q95,Shellcode,True,EVALUATED,4,0.0,1.0,3.0,0.0,0.75,0.0,4.0,4.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+7,client_07,Config D,Config D: Light AE Standalone,Q95,Worms,True,EVALUATED,2,0.0,0.0,2.0,0.0,1.0,0.0,2.0,2.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+7,client_07,Config D,Config D: Light AE Standalone,Q95,Benign,False,EVALUATED,19826,0.0,18794.0,1032.0,0.0,0.052053,0.0,0.0,19826.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+8,client_08,Config A,Config A: HeavyGRU FedAvg,Q99,Analysis,True,EVALUATED,9,0.0,5.0,0.0,4.0,0.444444,0.444444,5.0,5.0,1.0,4.0,4.0,1.0,0.555556,0.444444,1.0
+8,client_08,Config A,Config A: HeavyGRU FedAvg,Q99,Backdoor,True,EVALUATED,8,0.0,7.0,0.0,1.0,0.125,0.125,7.0,7.0,1.0,1.0,1.0,1.0,0.875,0.125,1.0
+8,client_08,Config A,Config A: HeavyGRU FedAvg,Q99,DoS,True,EVALUATED,42,0.0,39.0,0.0,3.0,0.071429,0.071429,15.0,39.0,0.384615,3.0,3.0,1.0,0.357143,0.071429,0.428571
+8,client_08,Config A,Config A: HeavyGRU FedAvg,Q99,Exploits,True,EVALUATED,165,0.0,146.0,0.0,19.0,0.115152,0.115152,23.0,146.0,0.157534,19.0,19.0,1.0,0.139394,0.115152,0.254545
+8,client_08,Config A,Config A: HeavyGRU FedAvg,Q99,Fuzzers,True,EVALUATED,116,0.0,100.0,0.0,16.0,0.137931,0.137931,23.0,100.0,0.23,16.0,16.0,1.0,0.198276,0.137931,0.336207
+8,client_08,Config A,Config A: HeavyGRU FedAvg,Q99,Generic,True,EVALUATED,81,0.0,74.0,0.0,7.0,0.08642,0.08642,60.0,74.0,0.810811,7.0,7.0,1.0,0.740741,0.08642,0.82716
+8,client_08,Config A,Config A: HeavyGRU FedAvg,Q99,Reconnaissance,True,EVALUATED,64,0.0,61.0,0.0,3.0,0.046875,0.046875,24.0,61.0,0.393443,3.0,3.0,1.0,0.375,0.046875,0.421875
+8,client_08,Config A,Config A: HeavyGRU FedAvg,Q99,Shellcode,True,EVALUATED,5,0.0,5.0,0.0,0.0,0.0,0.0,2.0,5.0,0.4,0.0,0.0,0.0,0.4,0.0,0.4
+8,client_08,Config A,Config A: HeavyGRU FedAvg,Q99,Worms,True,EVALUATED,1,0.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,1.0,0.0,1.0,1.0
+8,client_08,Config A,Config A: HeavyGRU FedAvg,Q99,Benign,False,EVALUATED,19509,0.0,19286.0,0.0,223.0,0.011431,0.011431,0.0,19286.0,0.0,0.0,223.0,0.0,0.0,0.0,0.0
+8,client_08,Config A,Config A: HeavyGRU FedAvg,Q95,Analysis,True,EVALUATED,9,0.0,0.0,0.0,9.0,1.0,1.0,0.0,0.0,0.0,9.0,9.0,1.0,0.0,1.0,1.0
+8,client_08,Config A,Config A: HeavyGRU FedAvg,Q95,Backdoor,True,EVALUATED,8,0.0,0.0,0.0,8.0,1.0,1.0,0.0,0.0,0.0,8.0,8.0,1.0,0.0,1.0,1.0
+8,client_08,Config A,Config A: HeavyGRU FedAvg,Q95,DoS,True,EVALUATED,42,0.0,7.0,0.0,35.0,0.833333,0.833333,6.0,7.0,0.857143,34.0,35.0,0.971429,0.142857,0.809524,0.952381
+8,client_08,Config A,Config A: HeavyGRU FedAvg,Q95,Exploits,True,EVALUATED,165,0.0,30.0,0.0,135.0,0.818182,0.818182,19.0,30.0,0.633333,135.0,135.0,1.0,0.115152,0.818182,0.933333
+8,client_08,Config A,Config A: HeavyGRU FedAvg,Q95,Fuzzers,True,EVALUATED,116,0.0,23.0,0.0,93.0,0.801724,0.801724,14.0,23.0,0.608696,93.0,93.0,1.0,0.12069,0.801724,0.922414
+8,client_08,Config A,Config A: HeavyGRU FedAvg,Q95,Generic,True,EVALUATED,81,0.0,50.0,0.0,31.0,0.382716,0.382716,50.0,50.0,1.0,31.0,31.0,1.0,0.617284,0.382716,1.0
+8,client_08,Config A,Config A: HeavyGRU FedAvg,Q95,Reconnaissance,True,EVALUATED,64,0.0,0.0,0.0,64.0,1.0,1.0,0.0,0.0,0.0,64.0,64.0,1.0,0.0,1.0,1.0
+8,client_08,Config A,Config A: HeavyGRU FedAvg,Q95,Shellcode,True,EVALUATED,5,0.0,1.0,0.0,4.0,0.8,0.8,1.0,1.0,1.0,3.0,4.0,0.75,0.2,0.6,0.8
+8,client_08,Config A,Config A: HeavyGRU FedAvg,Q95,Worms,True,EVALUATED,1,0.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,1.0,0.0,1.0,1.0
+8,client_08,Config A,Config A: HeavyGRU FedAvg,Q95,Benign,False,EVALUATED,19509,0.0,18561.0,0.0,948.0,0.048593,0.048593,0.0,18561.0,0.0,0.0,948.0,0.0,0.0,0.0,0.0
+8,client_08,Config B,Config B: DenseMLP FedPer,Q99,Analysis,True,EVALUATED,9,0.0,5.0,0.0,4.0,0.444444,0.444444,5.0,5.0,1.0,4.0,4.0,1.0,0.555556,0.444444,1.0
+8,client_08,Config B,Config B: DenseMLP FedPer,Q99,Backdoor,True,EVALUATED,8,0.0,7.0,0.0,1.0,0.125,0.125,7.0,7.0,1.0,1.0,1.0,1.0,0.875,0.125,1.0
+8,client_08,Config B,Config B: DenseMLP FedPer,Q99,DoS,True,EVALUATED,42,0.0,39.0,0.0,3.0,0.071429,0.071429,15.0,39.0,0.384615,3.0,3.0,1.0,0.357143,0.071429,0.428571
+8,client_08,Config B,Config B: DenseMLP FedPer,Q99,Exploits,True,EVALUATED,165,0.0,146.0,0.0,19.0,0.115152,0.115152,23.0,146.0,0.157534,19.0,19.0,1.0,0.139394,0.115152,0.254545
+8,client_08,Config B,Config B: DenseMLP FedPer,Q99,Fuzzers,True,EVALUATED,116,0.0,100.0,0.0,16.0,0.137931,0.137931,23.0,100.0,0.23,16.0,16.0,1.0,0.198276,0.137931,0.336207
+8,client_08,Config B,Config B: DenseMLP FedPer,Q99,Generic,True,EVALUATED,81,0.0,74.0,0.0,7.0,0.08642,0.08642,60.0,74.0,0.810811,7.0,7.0,1.0,0.740741,0.08642,0.82716
+8,client_08,Config B,Config B: DenseMLP FedPer,Q99,Reconnaissance,True,EVALUATED,64,0.0,61.0,0.0,3.0,0.046875,0.046875,24.0,61.0,0.393443,3.0,3.0,1.0,0.375,0.046875,0.421875
+8,client_08,Config B,Config B: DenseMLP FedPer,Q99,Shellcode,True,EVALUATED,5,0.0,5.0,0.0,0.0,0.0,0.0,2.0,5.0,0.4,0.0,0.0,0.0,0.4,0.0,0.4
+8,client_08,Config B,Config B: DenseMLP FedPer,Q99,Worms,True,EVALUATED,1,0.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,1.0,0.0,1.0,1.0
+8,client_08,Config B,Config B: DenseMLP FedPer,Q99,Benign,False,EVALUATED,19509,0.0,19286.0,0.0,223.0,0.011431,0.011431,0.0,19286.0,0.0,0.0,223.0,0.0,0.0,0.0,0.0
+8,client_08,Config B,Config B: DenseMLP FedPer,Q95,Analysis,True,NOT AVAILABLE,9,,,,,,,,,,,,,,,
+8,client_08,Config B,Config B: DenseMLP FedPer,Q95,Backdoor,True,NOT AVAILABLE,8,,,,,,,,,,,,,,,
+8,client_08,Config B,Config B: DenseMLP FedPer,Q95,DoS,True,NOT AVAILABLE,42,,,,,,,,,,,,,,,
+8,client_08,Config B,Config B: DenseMLP FedPer,Q95,Exploits,True,NOT AVAILABLE,165,,,,,,,,,,,,,,,
+8,client_08,Config B,Config B: DenseMLP FedPer,Q95,Fuzzers,True,NOT AVAILABLE,116,,,,,,,,,,,,,,,
+8,client_08,Config B,Config B: DenseMLP FedPer,Q95,Generic,True,NOT AVAILABLE,81,,,,,,,,,,,,,,,
+8,client_08,Config B,Config B: DenseMLP FedPer,Q95,Reconnaissance,True,NOT AVAILABLE,64,,,,,,,,,,,,,,,
+8,client_08,Config B,Config B: DenseMLP FedPer,Q95,Shellcode,True,NOT AVAILABLE,5,,,,,,,,,,,,,,,
+8,client_08,Config B,Config B: DenseMLP FedPer,Q95,Worms,True,NOT AVAILABLE,1,,,,,,,,,,,,,,,
+8,client_08,Config B,Config B: DenseMLP FedPer,Q95,Benign,False,NOT AVAILABLE,19509,,,,,,,,,,,,,,,
+8,client_08,Config C,Config C: DenseMLP FedAvg,Q99,Analysis,True,EVALUATED,9,0.0,5.0,0.0,4.0,0.444444,0.444444,5.0,5.0,1.0,4.0,4.0,1.0,0.555556,0.444444,1.0
+8,client_08,Config C,Config C: DenseMLP FedAvg,Q99,Backdoor,True,EVALUATED,8,0.0,7.0,0.0,1.0,0.125,0.125,7.0,7.0,1.0,1.0,1.0,1.0,0.875,0.125,1.0
+8,client_08,Config C,Config C: DenseMLP FedAvg,Q99,DoS,True,EVALUATED,42,0.0,39.0,0.0,3.0,0.071429,0.071429,15.0,39.0,0.384615,3.0,3.0,1.0,0.357143,0.071429,0.428571
+8,client_08,Config C,Config C: DenseMLP FedAvg,Q99,Exploits,True,EVALUATED,165,0.0,146.0,0.0,19.0,0.115152,0.115152,23.0,146.0,0.157534,19.0,19.0,1.0,0.139394,0.115152,0.254545
+8,client_08,Config C,Config C: DenseMLP FedAvg,Q99,Fuzzers,True,EVALUATED,116,0.0,100.0,0.0,16.0,0.137931,0.137931,23.0,100.0,0.23,16.0,16.0,1.0,0.198276,0.137931,0.336207
+8,client_08,Config C,Config C: DenseMLP FedAvg,Q99,Generic,True,EVALUATED,81,0.0,74.0,0.0,7.0,0.08642,0.08642,60.0,74.0,0.810811,7.0,7.0,1.0,0.740741,0.08642,0.82716
+8,client_08,Config C,Config C: DenseMLP FedAvg,Q99,Reconnaissance,True,EVALUATED,64,0.0,61.0,0.0,3.0,0.046875,0.046875,24.0,61.0,0.393443,3.0,3.0,1.0,0.375,0.046875,0.421875
+8,client_08,Config C,Config C: DenseMLP FedAvg,Q99,Shellcode,True,EVALUATED,5,0.0,5.0,0.0,0.0,0.0,0.0,2.0,5.0,0.4,0.0,0.0,0.0,0.4,0.0,0.4
+8,client_08,Config C,Config C: DenseMLP FedAvg,Q99,Worms,True,EVALUATED,1,0.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,1.0,0.0,1.0,1.0
+8,client_08,Config C,Config C: DenseMLP FedAvg,Q99,Benign,False,EVALUATED,19509,0.0,19286.0,0.0,223.0,0.011431,0.011431,0.0,19286.0,0.0,0.0,223.0,0.0,0.0,0.0,0.0
+8,client_08,Config C,Config C: DenseMLP FedAvg,Q95,Analysis,True,EVALUATED,9,0.0,0.0,0.0,9.0,1.0,1.0,0.0,0.0,0.0,9.0,9.0,1.0,0.0,1.0,1.0
+8,client_08,Config C,Config C: DenseMLP FedAvg,Q95,Backdoor,True,EVALUATED,8,0.0,0.0,0.0,8.0,1.0,1.0,0.0,0.0,0.0,8.0,8.0,1.0,0.0,1.0,1.0
+8,client_08,Config C,Config C: DenseMLP FedAvg,Q95,DoS,True,EVALUATED,42,0.0,7.0,0.0,35.0,0.833333,0.833333,6.0,7.0,0.857143,34.0,35.0,0.971429,0.142857,0.809524,0.952381
+8,client_08,Config C,Config C: DenseMLP FedAvg,Q95,Exploits,True,EVALUATED,165,0.0,30.0,0.0,135.0,0.818182,0.818182,19.0,30.0,0.633333,135.0,135.0,1.0,0.115152,0.818182,0.933333
+8,client_08,Config C,Config C: DenseMLP FedAvg,Q95,Fuzzers,True,EVALUATED,116,0.0,23.0,0.0,93.0,0.801724,0.801724,14.0,23.0,0.608696,93.0,93.0,1.0,0.12069,0.801724,0.922414
+8,client_08,Config C,Config C: DenseMLP FedAvg,Q95,Generic,True,EVALUATED,81,0.0,50.0,0.0,31.0,0.382716,0.382716,50.0,50.0,1.0,31.0,31.0,1.0,0.617284,0.382716,1.0
+8,client_08,Config C,Config C: DenseMLP FedAvg,Q95,Reconnaissance,True,EVALUATED,64,0.0,0.0,0.0,64.0,1.0,1.0,0.0,0.0,0.0,64.0,64.0,1.0,0.0,1.0,1.0
+8,client_08,Config C,Config C: DenseMLP FedAvg,Q95,Shellcode,True,EVALUATED,5,0.0,1.0,0.0,4.0,0.8,0.8,1.0,1.0,1.0,3.0,4.0,0.75,0.2,0.6,0.8
+8,client_08,Config C,Config C: DenseMLP FedAvg,Q95,Worms,True,EVALUATED,1,0.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,1.0,0.0,1.0,1.0
+8,client_08,Config C,Config C: DenseMLP FedAvg,Q95,Benign,False,EVALUATED,19509,0.0,18561.0,0.0,948.0,0.048593,0.048593,0.0,18561.0,0.0,0.0,948.0,0.0,0.0,0.0,0.0
+8,client_08,Config D,Config D: Light AE Standalone,Q99,Analysis,True,EVALUATED,9,0.0,5.0,4.0,0.0,0.444444,0.0,9.0,9.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+8,client_08,Config D,Config D: Light AE Standalone,Q99,Backdoor,True,EVALUATED,8,0.0,7.0,1.0,0.0,0.125,0.0,8.0,8.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+8,client_08,Config D,Config D: Light AE Standalone,Q99,DoS,True,EVALUATED,42,0.0,39.0,3.0,0.0,0.071429,0.0,15.0,42.0,0.357143,0.0,0.0,0.0,0.357143,0.0,0.357143
+8,client_08,Config D,Config D: Light AE Standalone,Q99,Exploits,True,EVALUATED,165,0.0,146.0,19.0,0.0,0.115152,0.0,31.0,165.0,0.187879,0.0,0.0,0.0,0.187879,0.0,0.187879
+8,client_08,Config D,Config D: Light AE Standalone,Q99,Fuzzers,True,EVALUATED,116,0.0,100.0,16.0,0.0,0.137931,0.0,38.0,116.0,0.327586,0.0,0.0,0.0,0.327586,0.0,0.327586
+8,client_08,Config D,Config D: Light AE Standalone,Q99,Generic,True,EVALUATED,81,0.0,74.0,7.0,0.0,0.08642,0.0,64.0,81.0,0.790123,0.0,0.0,0.0,0.790123,0.0,0.790123
+8,client_08,Config D,Config D: Light AE Standalone,Q99,Reconnaissance,True,EVALUATED,64,0.0,61.0,3.0,0.0,0.046875,0.0,27.0,64.0,0.421875,0.0,0.0,0.0,0.421875,0.0,0.421875
+8,client_08,Config D,Config D: Light AE Standalone,Q99,Shellcode,True,EVALUATED,5,0.0,5.0,0.0,0.0,0.0,0.0,2.0,5.0,0.4,0.0,0.0,0.0,0.4,0.0,0.4
+8,client_08,Config D,Config D: Light AE Standalone,Q99,Worms,True,EVALUATED,1,0.0,0.0,1.0,0.0,1.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+8,client_08,Config D,Config D: Light AE Standalone,Q99,Benign,False,EVALUATED,19509,0.0,19286.0,223.0,0.0,0.011431,0.0,0.0,19509.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+8,client_08,Config D,Config D: Light AE Standalone,Q95,Analysis,True,EVALUATED,9,0.0,0.0,9.0,0.0,1.0,0.0,9.0,9.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+8,client_08,Config D,Config D: Light AE Standalone,Q95,Backdoor,True,EVALUATED,8,0.0,0.0,8.0,0.0,1.0,0.0,8.0,8.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+8,client_08,Config D,Config D: Light AE Standalone,Q95,DoS,True,EVALUATED,42,0.0,7.0,35.0,0.0,0.833333,0.0,41.0,42.0,0.97619,0.0,0.0,0.0,0.97619,0.0,0.97619
+8,client_08,Config D,Config D: Light AE Standalone,Q95,Exploits,True,EVALUATED,165,0.0,30.0,135.0,0.0,0.818182,0.0,154.0,165.0,0.933333,0.0,0.0,0.0,0.933333,0.0,0.933333
+8,client_08,Config D,Config D: Light AE Standalone,Q95,Fuzzers,True,EVALUATED,116,0.0,23.0,93.0,0.0,0.801724,0.0,107.0,116.0,0.922414,0.0,0.0,0.0,0.922414,0.0,0.922414
+8,client_08,Config D,Config D: Light AE Standalone,Q95,Generic,True,EVALUATED,81,0.0,50.0,31.0,0.0,0.382716,0.0,81.0,81.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+8,client_08,Config D,Config D: Light AE Standalone,Q95,Reconnaissance,True,EVALUATED,64,0.0,0.0,64.0,0.0,1.0,0.0,64.0,64.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+8,client_08,Config D,Config D: Light AE Standalone,Q95,Shellcode,True,EVALUATED,5,0.0,1.0,4.0,0.0,0.8,0.0,5.0,5.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+8,client_08,Config D,Config D: Light AE Standalone,Q95,Worms,True,EVALUATED,1,0.0,0.0,1.0,0.0,1.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+8,client_08,Config D,Config D: Light AE Standalone,Q95,Benign,False,EVALUATED,19509,0.0,18561.0,948.0,0.0,0.048593,0.0,0.0,19509.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+9,client_09,Config A,Config A: HeavyGRU FedAvg,Q99,Analysis,True,EVALUATED,14,0.0,14.0,0.0,0.0,0.0,0.0,11.0,14.0,0.785714,0.0,0.0,0.0,0.785714,0.0,0.785714
+9,client_09,Config A,Config A: HeavyGRU FedAvg,Q99,Backdoor,True,EVALUATED,9,0.0,8.0,0.0,1.0,0.111111,0.111111,7.0,8.0,0.875,1.0,1.0,1.0,0.777778,0.111111,0.888889
+9,client_09,Config A,Config A: HeavyGRU FedAvg,Q99,DoS,True,EVALUATED,17,0.0,13.0,0.0,4.0,0.235294,0.235294,3.0,13.0,0.230769,4.0,4.0,1.0,0.176471,0.235294,0.411765
+9,client_09,Config A,Config A: HeavyGRU FedAvg,Q99,Exploits,True,EVALUATED,132,0.0,118.0,0.0,14.0,0.106061,0.106061,15.0,118.0,0.127119,14.0,14.0,1.0,0.113636,0.106061,0.219697
+9,client_09,Config A,Config A: HeavyGRU FedAvg,Q99,Fuzzers,True,EVALUATED,76,0.0,72.0,0.0,4.0,0.052632,0.052632,21.0,72.0,0.291667,4.0,4.0,1.0,0.276316,0.052632,0.328947
+9,client_09,Config A,Config A: HeavyGRU FedAvg,Q99,Generic,True,EVALUATED,63,0.0,62.0,0.0,1.0,0.015873,0.015873,54.0,62.0,0.870968,1.0,1.0,1.0,0.857143,0.015873,0.873016
+9,client_09,Config A,Config A: HeavyGRU FedAvg,Q99,Reconnaissance,True,EVALUATED,41,0.0,41.0,0.0,0.0,0.0,0.0,14.0,41.0,0.341463,0.0,0.0,0.0,0.341463,0.0,0.341463
+9,client_09,Config A,Config A: HeavyGRU FedAvg,Q99,Shellcode,True,EVALUATED,11,0.0,11.0,0.0,0.0,0.0,0.0,5.0,11.0,0.454545,0.0,0.0,0.0,0.454545,0.0,0.454545
+9,client_09,Config A,Config A: HeavyGRU FedAvg,Q99,Worms,True,EVALUATED,2,0.0,2.0,0.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+9,client_09,Config A,Config A: HeavyGRU FedAvg,Q99,Benign,False,EVALUATED,19635,0.0,19438.0,0.0,197.0,0.010033,0.010033,0.0,19438.0,0.0,0.0,197.0,0.0,0.0,0.0,0.0
+9,client_09,Config A,Config A: HeavyGRU FedAvg,Q95,Analysis,True,EVALUATED,14,0.0,0.0,0.0,14.0,1.0,1.0,0.0,0.0,0.0,14.0,14.0,1.0,0.0,1.0,1.0
+9,client_09,Config A,Config A: HeavyGRU FedAvg,Q95,Backdoor,True,EVALUATED,9,0.0,0.0,0.0,9.0,1.0,1.0,0.0,0.0,0.0,8.0,9.0,0.888889,0.0,0.888889,0.888889
+9,client_09,Config A,Config A: HeavyGRU FedAvg,Q95,DoS,True,EVALUATED,17,0.0,3.0,0.0,14.0,0.823529,0.823529,3.0,3.0,1.0,14.0,14.0,1.0,0.176471,0.823529,1.0
+9,client_09,Config A,Config A: HeavyGRU FedAvg,Q95,Exploits,True,EVALUATED,132,0.0,47.0,0.0,85.0,0.643939,0.643939,33.0,47.0,0.702128,84.0,85.0,0.988235,0.25,0.636364,0.886364
+9,client_09,Config A,Config A: HeavyGRU FedAvg,Q95,Fuzzers,True,EVALUATED,76,0.0,43.0,0.0,33.0,0.434211,0.434211,10.0,43.0,0.232558,33.0,33.0,1.0,0.131579,0.434211,0.565789
+9,client_09,Config A,Config A: HeavyGRU FedAvg,Q95,Generic,True,EVALUATED,63,0.0,48.0,0.0,15.0,0.238095,0.238095,46.0,48.0,0.958333,15.0,15.0,1.0,0.730159,0.238095,0.968254
+9,client_09,Config A,Config A: HeavyGRU FedAvg,Q95,Reconnaissance,True,EVALUATED,41,0.0,25.0,0.0,16.0,0.390244,0.390244,10.0,25.0,0.4,16.0,16.0,1.0,0.243902,0.390244,0.634146
+9,client_09,Config A,Config A: HeavyGRU FedAvg,Q95,Shellcode,True,EVALUATED,11,0.0,6.0,0.0,5.0,0.454545,0.454545,2.0,6.0,0.333333,5.0,5.0,1.0,0.181818,0.454545,0.636364
+9,client_09,Config A,Config A: HeavyGRU FedAvg,Q95,Worms,True,EVALUATED,2,0.0,2.0,0.0,0.0,0.0,0.0,2.0,2.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+9,client_09,Config A,Config A: HeavyGRU FedAvg,Q95,Benign,False,EVALUATED,19635,0.0,18627.0,0.0,1008.0,0.051337,0.051337,0.0,18627.0,0.0,0.0,1008.0,0.0,0.0,0.0,0.0
+9,client_09,Config B,Config B: DenseMLP FedPer,Q99,Analysis,True,EVALUATED,14,0.0,14.0,0.0,0.0,0.0,0.0,11.0,14.0,0.785714,0.0,0.0,0.0,0.785714,0.0,0.785714
+9,client_09,Config B,Config B: DenseMLP FedPer,Q99,Backdoor,True,EVALUATED,9,0.0,8.0,0.0,1.0,0.111111,0.111111,7.0,8.0,0.875,1.0,1.0,1.0,0.777778,0.111111,0.888889
+9,client_09,Config B,Config B: DenseMLP FedPer,Q99,DoS,True,EVALUATED,17,0.0,13.0,0.0,4.0,0.235294,0.235294,3.0,13.0,0.230769,4.0,4.0,1.0,0.176471,0.235294,0.411765
+9,client_09,Config B,Config B: DenseMLP FedPer,Q99,Exploits,True,EVALUATED,132,0.0,118.0,0.0,14.0,0.106061,0.106061,15.0,118.0,0.127119,14.0,14.0,1.0,0.113636,0.106061,0.219697
+9,client_09,Config B,Config B: DenseMLP FedPer,Q99,Fuzzers,True,EVALUATED,76,0.0,72.0,0.0,4.0,0.052632,0.052632,21.0,72.0,0.291667,4.0,4.0,1.0,0.276316,0.052632,0.328947
+9,client_09,Config B,Config B: DenseMLP FedPer,Q99,Generic,True,EVALUATED,63,0.0,62.0,0.0,1.0,0.015873,0.015873,54.0,62.0,0.870968,1.0,1.0,1.0,0.857143,0.015873,0.873016
+9,client_09,Config B,Config B: DenseMLP FedPer,Q99,Reconnaissance,True,EVALUATED,41,0.0,41.0,0.0,0.0,0.0,0.0,14.0,41.0,0.341463,0.0,0.0,0.0,0.341463,0.0,0.341463
+9,client_09,Config B,Config B: DenseMLP FedPer,Q99,Shellcode,True,EVALUATED,11,0.0,11.0,0.0,0.0,0.0,0.0,5.0,11.0,0.454545,0.0,0.0,0.0,0.454545,0.0,0.454545
+9,client_09,Config B,Config B: DenseMLP FedPer,Q99,Worms,True,EVALUATED,2,0.0,2.0,0.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+9,client_09,Config B,Config B: DenseMLP FedPer,Q99,Benign,False,EVALUATED,19635,0.0,19438.0,0.0,197.0,0.010033,0.010033,0.0,19438.0,0.0,0.0,197.0,0.0,0.0,0.0,0.0
+9,client_09,Config B,Config B: DenseMLP FedPer,Q95,Analysis,True,NOT AVAILABLE,14,,,,,,,,,,,,,,,
+9,client_09,Config B,Config B: DenseMLP FedPer,Q95,Backdoor,True,NOT AVAILABLE,9,,,,,,,,,,,,,,,
+9,client_09,Config B,Config B: DenseMLP FedPer,Q95,DoS,True,NOT AVAILABLE,17,,,,,,,,,,,,,,,
+9,client_09,Config B,Config B: DenseMLP FedPer,Q95,Exploits,True,NOT AVAILABLE,132,,,,,,,,,,,,,,,
+9,client_09,Config B,Config B: DenseMLP FedPer,Q95,Fuzzers,True,NOT AVAILABLE,76,,,,,,,,,,,,,,,
+9,client_09,Config B,Config B: DenseMLP FedPer,Q95,Generic,True,NOT AVAILABLE,63,,,,,,,,,,,,,,,
+9,client_09,Config B,Config B: DenseMLP FedPer,Q95,Reconnaissance,True,NOT AVAILABLE,41,,,,,,,,,,,,,,,
+9,client_09,Config B,Config B: DenseMLP FedPer,Q95,Shellcode,True,NOT AVAILABLE,11,,,,,,,,,,,,,,,
+9,client_09,Config B,Config B: DenseMLP FedPer,Q95,Worms,True,NOT AVAILABLE,2,,,,,,,,,,,,,,,
+9,client_09,Config B,Config B: DenseMLP FedPer,Q95,Benign,False,NOT AVAILABLE,19635,,,,,,,,,,,,,,,
+9,client_09,Config C,Config C: DenseMLP FedAvg,Q99,Analysis,True,EVALUATED,14,0.0,14.0,0.0,0.0,0.0,0.0,11.0,14.0,0.785714,0.0,0.0,0.0,0.785714,0.0,0.785714
+9,client_09,Config C,Config C: DenseMLP FedAvg,Q99,Backdoor,True,EVALUATED,9,0.0,8.0,0.0,1.0,0.111111,0.111111,7.0,8.0,0.875,1.0,1.0,1.0,0.777778,0.111111,0.888889
+9,client_09,Config C,Config C: DenseMLP FedAvg,Q99,DoS,True,EVALUATED,17,0.0,13.0,0.0,4.0,0.235294,0.235294,3.0,13.0,0.230769,4.0,4.0,1.0,0.176471,0.235294,0.411765
+9,client_09,Config C,Config C: DenseMLP FedAvg,Q99,Exploits,True,EVALUATED,132,0.0,118.0,0.0,14.0,0.106061,0.106061,15.0,118.0,0.127119,14.0,14.0,1.0,0.113636,0.106061,0.219697
+9,client_09,Config C,Config C: DenseMLP FedAvg,Q99,Fuzzers,True,EVALUATED,76,0.0,72.0,0.0,4.0,0.052632,0.052632,21.0,72.0,0.291667,4.0,4.0,1.0,0.276316,0.052632,0.328947
+9,client_09,Config C,Config C: DenseMLP FedAvg,Q99,Generic,True,EVALUATED,63,0.0,62.0,0.0,1.0,0.015873,0.015873,54.0,62.0,0.870968,1.0,1.0,1.0,0.857143,0.015873,0.873016
+9,client_09,Config C,Config C: DenseMLP FedAvg,Q99,Reconnaissance,True,EVALUATED,41,0.0,41.0,0.0,0.0,0.0,0.0,14.0,41.0,0.341463,0.0,0.0,0.0,0.341463,0.0,0.341463
+9,client_09,Config C,Config C: DenseMLP FedAvg,Q99,Shellcode,True,EVALUATED,11,0.0,11.0,0.0,0.0,0.0,0.0,5.0,11.0,0.454545,0.0,0.0,0.0,0.454545,0.0,0.454545
+9,client_09,Config C,Config C: DenseMLP FedAvg,Q99,Worms,True,EVALUATED,2,0.0,2.0,0.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+9,client_09,Config C,Config C: DenseMLP FedAvg,Q99,Benign,False,EVALUATED,19635,0.0,19438.0,0.0,197.0,0.010033,0.010033,0.0,19438.0,0.0,0.0,197.0,0.0,0.0,0.0,0.0
+9,client_09,Config C,Config C: DenseMLP FedAvg,Q95,Analysis,True,EVALUATED,14,0.0,0.0,0.0,14.0,1.0,1.0,0.0,0.0,0.0,14.0,14.0,1.0,0.0,1.0,1.0
+9,client_09,Config C,Config C: DenseMLP FedAvg,Q95,Backdoor,True,EVALUATED,9,0.0,0.0,0.0,9.0,1.0,1.0,0.0,0.0,0.0,8.0,9.0,0.888889,0.0,0.888889,0.888889
+9,client_09,Config C,Config C: DenseMLP FedAvg,Q95,DoS,True,EVALUATED,17,0.0,3.0,0.0,14.0,0.823529,0.823529,3.0,3.0,1.0,14.0,14.0,1.0,0.176471,0.823529,1.0
+9,client_09,Config C,Config C: DenseMLP FedAvg,Q95,Exploits,True,EVALUATED,132,0.0,47.0,0.0,85.0,0.643939,0.643939,33.0,47.0,0.702128,84.0,85.0,0.988235,0.25,0.636364,0.886364
+9,client_09,Config C,Config C: DenseMLP FedAvg,Q95,Fuzzers,True,EVALUATED,76,0.0,43.0,0.0,33.0,0.434211,0.434211,10.0,43.0,0.232558,33.0,33.0,1.0,0.131579,0.434211,0.565789
+9,client_09,Config C,Config C: DenseMLP FedAvg,Q95,Generic,True,EVALUATED,63,0.0,48.0,0.0,15.0,0.238095,0.238095,46.0,48.0,0.958333,15.0,15.0,1.0,0.730159,0.238095,0.968254
+9,client_09,Config C,Config C: DenseMLP FedAvg,Q95,Reconnaissance,True,EVALUATED,41,0.0,25.0,0.0,16.0,0.390244,0.390244,10.0,25.0,0.4,16.0,16.0,1.0,0.243902,0.390244,0.634146
+9,client_09,Config C,Config C: DenseMLP FedAvg,Q95,Shellcode,True,EVALUATED,11,0.0,6.0,0.0,5.0,0.454545,0.454545,2.0,6.0,0.333333,5.0,5.0,1.0,0.181818,0.454545,0.636364
+9,client_09,Config C,Config C: DenseMLP FedAvg,Q95,Worms,True,EVALUATED,2,0.0,2.0,0.0,0.0,0.0,0.0,2.0,2.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+9,client_09,Config C,Config C: DenseMLP FedAvg,Q95,Benign,False,EVALUATED,19635,0.0,18627.0,0.0,1008.0,0.051337,0.051337,0.0,18627.0,0.0,0.0,1008.0,0.0,0.0,0.0,0.0
+9,client_09,Config D,Config D: Light AE Standalone,Q99,Analysis,True,EVALUATED,14,0.0,14.0,0.0,0.0,0.0,0.0,11.0,14.0,0.785714,0.0,0.0,0.0,0.785714,0.0,0.785714
+9,client_09,Config D,Config D: Light AE Standalone,Q99,Backdoor,True,EVALUATED,9,0.0,8.0,1.0,0.0,0.111111,0.0,8.0,9.0,0.888889,0.0,0.0,0.0,0.888889,0.0,0.888889
+9,client_09,Config D,Config D: Light AE Standalone,Q99,DoS,True,EVALUATED,17,0.0,13.0,4.0,0.0,0.235294,0.0,5.0,17.0,0.294118,0.0,0.0,0.0,0.294118,0.0,0.294118
+9,client_09,Config D,Config D: Light AE Standalone,Q99,Exploits,True,EVALUATED,132,0.0,118.0,14.0,0.0,0.106061,0.0,23.0,132.0,0.174242,0.0,0.0,0.0,0.174242,0.0,0.174242
+9,client_09,Config D,Config D: Light AE Standalone,Q99,Fuzzers,True,EVALUATED,76,0.0,72.0,4.0,0.0,0.052632,0.0,25.0,76.0,0.328947,0.0,0.0,0.0,0.328947,0.0,0.328947
+9,client_09,Config D,Config D: Light AE Standalone,Q99,Generic,True,EVALUATED,63,0.0,62.0,1.0,0.0,0.015873,0.0,55.0,63.0,0.873016,0.0,0.0,0.0,0.873016,0.0,0.873016
+9,client_09,Config D,Config D: Light AE Standalone,Q99,Reconnaissance,True,EVALUATED,41,0.0,41.0,0.0,0.0,0.0,0.0,14.0,41.0,0.341463,0.0,0.0,0.0,0.341463,0.0,0.341463
+9,client_09,Config D,Config D: Light AE Standalone,Q99,Shellcode,True,EVALUATED,11,0.0,11.0,0.0,0.0,0.0,0.0,5.0,11.0,0.454545,0.0,0.0,0.0,0.454545,0.0,0.454545
+9,client_09,Config D,Config D: Light AE Standalone,Q99,Worms,True,EVALUATED,2,0.0,2.0,0.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+9,client_09,Config D,Config D: Light AE Standalone,Q99,Benign,False,EVALUATED,19635,0.0,19438.0,197.0,0.0,0.010033,0.0,0.0,19635.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+9,client_09,Config D,Config D: Light AE Standalone,Q95,Analysis,True,EVALUATED,14,0.0,0.0,14.0,0.0,1.0,0.0,14.0,14.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+9,client_09,Config D,Config D: Light AE Standalone,Q95,Backdoor,True,EVALUATED,9,0.0,0.0,9.0,0.0,1.0,0.0,8.0,9.0,0.888889,0.0,0.0,0.0,0.888889,0.0,0.888889
+9,client_09,Config D,Config D: Light AE Standalone,Q95,DoS,True,EVALUATED,17,0.0,3.0,14.0,0.0,0.823529,0.0,17.0,17.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+9,client_09,Config D,Config D: Light AE Standalone,Q95,Exploits,True,EVALUATED,132,0.0,47.0,85.0,0.0,0.643939,0.0,107.0,132.0,0.810606,0.0,0.0,0.0,0.810606,0.0,0.810606
+9,client_09,Config D,Config D: Light AE Standalone,Q95,Fuzzers,True,EVALUATED,76,0.0,43.0,33.0,0.0,0.434211,0.0,40.0,76.0,0.526316,0.0,0.0,0.0,0.526316,0.0,0.526316
+9,client_09,Config D,Config D: Light AE Standalone,Q95,Generic,True,EVALUATED,63,0.0,48.0,15.0,0.0,0.238095,0.0,61.0,63.0,0.968254,0.0,0.0,0.0,0.968254,0.0,0.968254
+9,client_09,Config D,Config D: Light AE Standalone,Q95,Reconnaissance,True,EVALUATED,41,0.0,25.0,16.0,0.0,0.390244,0.0,24.0,41.0,0.585366,0.0,0.0,0.0,0.585366,0.0,0.585366
+9,client_09,Config D,Config D: Light AE Standalone,Q95,Shellcode,True,EVALUATED,11,0.0,6.0,5.0,0.0,0.454545,0.0,7.0,11.0,0.636364,0.0,0.0,0.0,0.636364,0.0,0.636364
+9,client_09,Config D,Config D: Light AE Standalone,Q95,Worms,True,EVALUATED,2,0.0,2.0,0.0,0.0,0.0,0.0,2.0,2.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+9,client_09,Config D,Config D: Light AE Standalone,Q95,Benign,False,EVALUATED,19635,0.0,18627.0,1008.0,0.0,0.051337,0.0,0.0,19635.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0

@@ -1,0 +1,141 @@
+# Stage 4 Configuration: Resource-Adaptive Queue Telemetry Monitor & Dynamic Routing Switch Engine
+# Project: Resource-Adaptive Gated Network Intrusion Detection for Federated IoT Edge Networks
+
+stage: 4
+description: "Queue Telemetry Monitor, Stochastic Arrival Generators, and Dual-Path Dynamic Routing Switch Engine"
+seed: 42
+
+paths:
+  stage2_dir: "data/processed/alpha_0.5_seed_42"
+  stage3_ckpt_dir: "outputs/checkpoints/stage3"
+  stage3_sensitivity_dir: "outputs/experiments/stage3_threshold_sensitivity"
+  metrics_dir: "outputs/metrics/stage4"
+  logs_dir: "outputs/logs"
+  figures_dir: "outputs/figures/stage4"
+
+queue_parameters:
+  # Waiting-buffer capacity B (excluding active worker in single-server model)
+  buffer_capacity_Q_max: 50
+  # Total system capacity K = Q_max + 1 for c = 1 server
+  num_workers: 1
+  # Delay threshold W_shed in seconds for pre-admission load shedding
+  W_shed_seconds: 0.050 # 50 ms default
+  # Hard end-to-end classification deadline for SLA-driven threshold derivation
+  D_max_seconds: 0.100 # 100 ms default
+  use_sla_derived_W_shed: false
+
+front_end_rate_limiter:
+  # CPU collapse safeguard headroom (1 - epsilon_cpu of CPU reserved for Gate/AE triage)
+  epsilon_cpu: 0.15
+  # Token bucket parameters
+  burst_tolerance_tokens: 50
+  # Continuous token replenishment enabled
+  continuous_replenishment: true
+  # Diagnostic EWMA rate estimator parameter (smoothed inter-arrival time)
+  ewma_alpha: 0.05
+
+workload_estimator:
+  # Active-Stall Residual Heuristic: replaces remaining time with mean service time when elapsed > mean
+  use_active_stall_heuristic: true
+  heuristic_name: "Active-Stall Residual Heuristic"
+
+thresholds:
+  # Primary frozen Stage 3 baseline operating point
+  primary_baseline_quantile: "Q99"
+  # Comparative candidate operating point
+  candidate_quantile: "Q95"
+
+stochastic_arrival_processes:
+  poisson:
+    rates_lambda: [50.0, 100.0, 200.0, 500.0] # flows/second
+  mmpp2:
+    state1_lambda: 30.0   # Normal state rate (flows/s)
+    state2_lambda: 300.0  # Burst state rate (flows/s)
+    transition_r12: 0.1   # Rate from state 1 -> 2 (/s)
+    transition_r21: 0.5   # Rate from state 2 -> 1 (/s)
+  pareto:
+    shape_alpha: 1.4      # Heavy-tailed Pareto shape (1 < alpha < 2 for finite mean, infinite variance)
+    mean_inter_arrival: 0.010 # 10 ms mean (100 flows/s mean)
+
+proxy_benchmark:
+  gru_stub:
+    input_dim: 38
+    hidden_dim: 64
+    num_layers: 2
+    sequence_length: 10
+    is_proxy_benchmark: true
+  profiling:
+    warmup_iterations: 1000
+    timed_iterations: 10000
+    batch_sizes: [1, 8, 32, 64]
+
+security_accounting:
+  # Explicitly decouple routing flow conservation from end-to-end security metrics
+  track_effective_passage_recall: true
+  track_ae_fallback_recall: true
+  track_ideal_routing_yield: true
+  # Actual end-to-end classification is deferred to Stage 5
+  defer_e2e_classification_to_stage5: true
+
+scenarios:
+  S1:
+    name: "Nominal Operating Baseline"
+    arrival_process: "poisson"
+    lambda_arrival: 50.0
+    duration_seconds: 60.0
+    quantile: "Q99"
+    Q_max: 50
+    W_shed: 0.050
+
+  S2:
+    name: "Near-Saturation Load"
+    arrival_process: "poisson"
+    lambda_arrival: 100.0
+    duration_seconds: 60.0
+    quantile: "Q99"
+    Q_max: 50
+    W_shed: 0.050
+
+  S3:
+    name: "Overload and Flash Crowd Burst"
+    arrival_process: "poisson"
+    lambda_arrival: 400.0
+    duration_seconds: 60.0
+    quantile: "Q99"
+    Q_max: 50
+    W_shed: 0.050
+
+  S4:
+    name: "Bursty Traffic - MMPP(2)"
+    arrival_process: "mmpp2"
+    duration_seconds: 60.0
+    quantile: "Q99"
+    Q_max: 50
+    W_shed: 0.050
+
+  S5:
+    name: "Heavy-Tailed Traffic - Pareto"
+    arrival_process: "pareto"
+    duration_seconds: 60.0
+    quantile: "Q99"
+    Q_max: 50
+    W_shed: 0.050
+
+  S6:
+    name: "Threshold Trade-off Comparison (Q99 vs Q95)"
+    arrival_process: "poisson"
+    lambda_arrival: 100.0
+    duration_seconds: 60.0
+    compare_quantiles: ["Q99", "Q95"]
+    Q_max: 50
+    W_shed: 0.050
+
+  S7:
+    name: "Extreme Non-IID Edge Stress Test (Clients 02 and 04)"
+    target_clients: ["client_02", "client_04"]
+    arrival_process: "mmpp2"
+    duration_seconds: 60.0
+    compare_quantiles: ["Q99", "Q95"]
+    Q_max: 50
+    W_shed: 0.050
+

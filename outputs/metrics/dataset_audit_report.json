@@ -1,0 +1,886 @@
+{
+  "audit_metadata": {
+    "dataset_file": "/Users/abhayrajawat/Downloads/resource-adaptive-nids/data/raw/NF-UNSW-NB15-v2.csv",
+    "packages_used": {
+      "pandas": "3.1.0",
+      "numpy": "2.5.4"
+    },
+    "chunk_size_rows": 200000,
+    "correlation_sample_rows": 100000
+  },
+  "file_metadata": {
+    "file_path": "/Users/abhayrajawat/Downloads/resource-adaptive-nids/data/raw/NF-UNSW-NB15-v2.csv",
+    "file_size_bytes": 441867785,
+    "file_size_mb": 421.4,
+    "total_rows": 2390275,
+    "total_columns": 45,
+    "column_names": [
+      "IPV4_SRC_ADDR",
+      "L4_SRC_PORT",
+      "IPV4_DST_ADDR",
+      "L4_DST_PORT",
+      "PROTOCOL",
+      "L7_PROTO",
+      "IN_BYTES",
+      "IN_PKTS",
+      "OUT_BYTES",
+      "OUT_PKTS",
+      "TCP_FLAGS",
+      "CLIENT_TCP_FLAGS",
+      "SERVER_TCP_FLAGS",
+      "FLOW_DURATION_MILLISECONDS",
+      "DURATION_IN",
+      "DURATION_OUT",
+      "MIN_TTL",
+      "MAX_TTL",
+      "LONGEST_FLOW_PKT",
+      "SHORTEST_FLOW_PKT",
+      "MIN_IP_PKT_LEN",
+      "MAX_IP_PKT_LEN",
+      "SRC_TO_DST_SECOND_BYTES",
+      "DST_TO_SRC_SECOND_BYTES",
+      "RETRANSMITTED_IN_BYTES",
+      "RETRANSMITTED_IN_PKTS",
+      "RETRANSMITTED_OUT_BYTES",
+      "RETRANSMITTED_OUT_PKTS",
+      "SRC_TO_DST_AVG_THROUGHPUT",
+      "DST_TO_SRC_AVG_THROUGHPUT",
+      "NUM_PKTS_UP_TO_128_BYTES",
+      "NUM_PKTS_128_TO_256_BYTES",
+      "NUM_PKTS_256_TO_512_BYTES",
+      "NUM_PKTS_512_TO_1024_BYTES",
+      "NUM_PKTS_1024_TO_1514_BYTES",
+      "TCP_WIN_MAX_IN",
+      "TCP_WIN_MAX_OUT",
+      "ICMP_TYPE",
+      "ICMP_IPV4_TYPE",
+      "DNS_QUERY_ID",
+      "DNS_QUERY_TYPE",
+      "DNS_TTL_ANSWER",
+      "FTP_COMMAND_RET_CODE",
+      "Label",
+      "Attack"
+    ],
+    "column_dtypes": {
+      "IPV4_SRC_ADDR": "str",
+      "L4_SRC_PORT": "int64",
+      "IPV4_DST_ADDR": "str",
+      "L4_DST_PORT": "int64",
+      "PROTOCOL": "int64",
+      "L7_PROTO": "float64",
+      "IN_BYTES": "int64",
+      "IN_PKTS": "int64",
+      "OUT_BYTES": "int64",
+      "OUT_PKTS": "int64",
+      "TCP_FLAGS": "int64",
+      "CLIENT_TCP_FLAGS": "int64",
+      "SERVER_TCP_FLAGS": "int64",
+      "FLOW_DURATION_MILLISECONDS": "int64",
+      "DURATION_IN": "int64",
+      "DURATION_OUT": "int64",
+      "MIN_TTL": "int64",
+      "MAX_TTL": "int64",
+      "LONGEST_FLOW_PKT": "int64",
+      "SHORTEST_FLOW_PKT": "int64",
+      "MIN_IP_PKT_LEN": "int64",
+      "MAX_IP_PKT_LEN": "int64",
+      "SRC_TO_DST_SECOND_BYTES": "float64",
+      "DST_TO_SRC_SECOND_BYTES": "float64",
+      "RETRANSMITTED_IN_BYTES": "int64",
+      "RETRANSMITTED_IN_PKTS": "int64",
+      "RETRANSMITTED_OUT_BYTES": "int64",
+      "RETRANSMITTED_OUT_PKTS": "int64",
+      "SRC_TO_DST_AVG_THROUGHPUT": "int64",
+      "DST_TO_SRC_AVG_THROUGHPUT": "int64",
+      "NUM_PKTS_UP_TO_128_BYTES": "int64",
+      "NUM_PKTS_128_TO_256_BYTES": "int64",
+      "NUM_PKTS_256_TO_512_BYTES": "int64",
+      "NUM_PKTS_512_TO_1024_BYTES": "int64",
+      "NUM_PKTS_1024_TO_1514_BYTES": "int64",
+      "TCP_WIN_MAX_IN": "int64",
+      "TCP_WIN_MAX_OUT": "int64",
+      "ICMP_TYPE": "int64",
+      "ICMP_IPV4_TYPE": "int64",
+      "DNS_QUERY_ID": "int64",
+      "DNS_QUERY_TYPE": "int64",
+      "DNS_TTL_ANSWER": "int64",
+      "FTP_COMMAND_RET_CODE": "float64",
+      "Label": "int64",
+      "Attack": "str"
+    }
+  },
+  "missing_and_infinite": {
+    "total_rows_scanned": 2390275,
+    "columns_with_missing_values": {},
+    "total_missing_cells": 0,
+    "columns_with_infinite_values": {},
+    "total_infinite_cells": 0,
+    "missing_value_free": true,
+    "infinite_value_free": true
+  },
+  "duplicates": {
+    "total_rows": 2390275,
+    "duplicate_rows": 0,
+    "unique_rows": 2390275,
+    "duplicate_percentage": 0.0
+  },
+  "constant_features": {
+    "constant_features": [],
+    "near_constant_features": [],
+    "num_constant_features": 0
+  },
+  "numerical_distributions": {
+    "feature_statistics": {
+      "L4_SRC_PORT": {
+        "count": 2390275,
+        "mean": 32549.614165,
+        "std": 19162.119166,
+        "min": 0.0,
+        "max": 65535.0,
+        "zero_count": 14722,
+        "zero_percentage": 0.6159
+      },
+      "L4_DST_PORT": {
+        "count": 2390275,
+        "mean": 11423.090522,
+        "std": 18539.142315,
+        "min": 0.0,
+        "max": 65535.0,
+        "zero_count": 14722,
+        "zero_percentage": 0.6159
+      },
+      "PROTOCOL": {
+        "count": 2390275,
+        "mean": 9.151913,
+        "std": 11.018649,
+        "min": 0.0,
+        "max": 255.0,
+        "zero_count": 46,
+        "zero_percentage": 0.0019
+      },
+      "L7_PROTO": {
+        "count": 2390275,
+        "mean": 3.038721,
+        "std": 13.588758,
+        "min": 0.0,
+        "max": 248.0,
+        "zero_count": 1519309,
+        "zero_percentage": 63.5621
+      },
+      "IN_BYTES": {
+        "count": 2390275,
+        "mean": 4621.663588,
+        "std": 70214.078951,
+        "min": 1.0,
+        "max": 30241410.0,
+        "zero_count": 0,
+        "zero_percentage": 0.0
+      },
+      "IN_PKTS": {
+        "count": 2390275,
+        "mean": 36.036862,
+        "std": 79.956799,
+        "min": 1.0,
+        "max": 22894.0,
+        "zero_count": 0,
+        "zero_percentage": 0.0
+      },
+      "OUT_BYTES": {
+        "count": 2390275,
+        "mean": 35265.651262,
+        "std": 156515.455734,
+        "min": 0.0,
+        "max": 14658518.0,
+        "zero_count": 53080,
+        "zero_percentage": 2.2207
+      },
+      "OUT_PKTS": {
+        "count": 2390275,
+        "mean": 45.703629,
+        "std": 117.449473,
+        "min": 0.0,
+        "max": 11078.0,
+        "zero_count": 53080,
+        "zero_percentage": 2.2207
+      },
+      "TCP_FLAGS": {
+        "count": 2390275,
+        "mean": 19.899689,
+        "std": 11.133805,
+        "min": 0.0,
+        "max": 31.0,
+        "zero_count": 559310,
+        "zero_percentage": 23.3994
+      },
+      "CLIENT_TCP_FLAGS": {
+        "count": 2390275,
+        "mean": 19.611489,
+        "std": 11.05082,
+        "min": 0.0,
+        "max": 31.0,
+        "zero_count": 559366,
+        "zero_percentage": 23.4017
+      },
+      "SERVER_TCP_FLAGS": {
+        "count": 2390275,
+        "mean": 19.502607,
+        "std": 11.084597,
+        "min": 0.0,
+        "max": 31.0,
+        "zero_count": 563966,
+        "zero_percentage": 23.5942
+      },
+      "FLOW_DURATION_MILLISECONDS": {
+        "count": 2390275,
+        "mean": 259111.719338,
+        "std": 1022610.252941,
+        "min": 0.0,
+        "max": 4294965.0,
+        "zero_count": 2246071,
+        "zero_percentage": 93.9671
+      },
+      "DURATION_IN": {
+        "count": 2390275,
+        "mean": 1.303822,
+        "std": 9.848068,
+        "min": 0.0,
+        "max": 1047.0,
+        "zero_count": 2248448,
+        "zero_percentage": 94.0665
+      },
+      "DURATION_OUT": {
+        "count": 2390275,
+        "mean": 1.153244,
+        "std": 6.716741,
+        "min": 0.0,
+        "max": 875.0,
+        "zero_count": 2251011,
+        "zero_percentage": 94.1737
+      },
+      "MIN_TTL": {
+        "count": 2390275,
+        "mean": 38.988919,
+        "std": 41.027962,
+        "min": 0.0,
+        "max": 255.0,
+        "zero_count": 12125,
+        "zero_percentage": 0.5073
+      },
+      "MAX_TTL": {
+        "count": 2390275,
+        "mean": 39.822345,
+        "std": 40.980441,
+        "min": 0.0,
+        "max": 255.0,
+        "zero_count": 12125,
+        "zero_percentage": 0.5073
+      },
+      "LONGEST_FLOW_PKT": {
+        "count": 2390275,
+        "mean": 723.78483,
+        "std": 616.14315,
+        "min": 28.0,
+        "max": 1508.0,
+        "zero_count": 0,
+        "zero_percentage": 0.0
+      },
+      "SHORTEST_FLOW_PKT": {
+        "count": 2390275,
+        "mean": 57.496549,
+        "std": 37.487399,
+        "min": 28.0,
+        "max": 1508.0,
+        "zero_count": 0,
+        "zero_percentage": 0.0
+      },
+      "MIN_IP_PKT_LEN": {
+        "count": 2390275,
+        "mean": 54.059298,
+        "std": 11.916712,
+        "min": 0.0,
+        "max": 680.0,
+        "zero_count": 53078,
+        "zero_percentage": 2.2206
+      },
+      "MAX_IP_PKT_LEN": {
+        "count": 2390275,
+        "mean": 723.78483,
+        "std": 616.14315,
+        "min": 28.0,
+        "max": 1508.0,
+        "zero_count": 0,
+        "zero_percentage": 0.0
+      },
+      "SRC_TO_DST_SECOND_BYTES": {
+        "count": 2390275,
+        "mean": 1075639825.175375,
+        "std": 1050246919663.5841,
+        "min": 52.0,
+        "max": 1572819414509520.0,
+        "zero_count": 0,
+        "zero_percentage": 0.0
+      },
+      "DST_TO_SRC_SECOND_BYTES": {
+        "count": 2390275,
+        "mean": 491527325.440257,
+        "std": 210882449030.08267,
+        "min": 0.0,
+        "max": 261705812041460.0,
+        "zero_count": 53078,
+        "zero_percentage": 2.2206
+      },
+      "RETRANSMITTED_IN_BYTES": {
+        "count": 2390275,
+        "mean": 1638.585509,
+        "std": 35075.296139,
+        "min": 0.0,
+        "max": 15120489.0,
+        "zero_count": 697086,
+        "zero_percentage": 29.1634
+      },
+      "RETRANSMITTED_IN_PKTS": {
+        "count": 2390275,
+        "mean": 5.386843,
+        "std": 27.262052,
+        "min": 0.0,
+        "max": 11442.0,
+        "zero_count": 697086,
+        "zero_percentage": 29.1634
+      },
+      "RETRANSMITTED_OUT_BYTES": {
+        "count": 2390275,
+        "mean": 17259.721414,
+        "std": 78092.380824,
+        "min": 0.0,
+        "max": 7329139.0,
+        "zero_count": 682920,
+        "zero_percentage": 28.5708
+      },
+      "RETRANSMITTED_OUT_PKTS": {
+        "count": 2390275,
+        "mean": 16.21882,
+        "std": 54.917844,
+        "min": 0.0,
+        "max": 5536.0,
+        "zero_count": 682920,
+        "zero_percentage": 28.5708
+      },
+      "SRC_TO_DST_AVG_THROUGHPUT": {
+        "count": 2390275,
+        "mean": 26972220.239482,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 4277408000.0,
+        "zero_count": 40,
+        "zero_percentage": 0.0017
+      },
+      "DST_TO_SRC_AVG_THROUGHPUT": {
+        "count": 2390275,
+        "mean": 98101356.440637,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 4293904000.0,
+        "zero_count": 53087,
+        "zero_percentage": 2.221
+      },
+      "NUM_PKTS_UP_TO_128_BYTES": {
+        "count": 2390275,
+        "mean": 55.413415,
+        "std": 78.691281,
+        "min": 0.0,
+        "max": 4824.0,
+        "zero_count": 17307,
+        "zero_percentage": 0.7241
+      },
+      "NUM_PKTS_128_TO_256_BYTES": {
+        "count": 2390275,
+        "mean": 1.681239,
+        "std": 5.364422,
+        "min": 0.0,
+        "max": 298.0,
+        "zero_count": 1772765,
+        "zero_percentage": 74.1657
+      },
+      "NUM_PKTS_256_TO_512_BYTES": {
+        "count": 2390275,
+        "mean": 1.473658,
+        "std": 8.451811,
+        "min": 0.0,
+        "max": 3928.0,
+        "zero_count": 1641679,
+        "zero_percentage": 68.6816
+      },
+      "NUM_PKTS_512_TO_1024_BYTES": {
+        "count": 2390275,
+        "mean": 1.525501,
+        "std": 7.028043,
+        "min": 0.0,
+        "max": 800.0,
+        "zero_count": 1910445,
+        "zero_percentage": 79.9257
+      },
+      "NUM_PKTS_1024_TO_1514_BYTES": {
+        "count": 2390275,
+        "mean": 23.824676,
+        "std": 111.478791,
+        "min": 0.0,
+        "max": 19676.0,
+        "zero_count": 1386331,
+        "zero_percentage": 57.9988
+      },
+      "TCP_WIN_MAX_IN": {
+        "count": 2390275,
+        "mean": 17387.629115,
+        "std": 16930.169653,
+        "min": 0.0,
+        "max": 65533.0,
+        "zero_count": 603554,
+        "zero_percentage": 25.2504
+      },
+      "TCP_WIN_MAX_OUT": {
+        "count": 2390275,
+        "mean": 12221.601619,
+        "std": 10975.916352,
+        "min": 0.0,
+        "max": 65531.0,
+        "zero_count": 562102,
+        "zero_percentage": 23.5162
+      },
+      "ICMP_TYPE": {
+        "count": 2390275,
+        "mean": 18944.4306,
+        "std": 20371.196013,
+        "min": 0.0,
+        "max": 65317.0,
+        "zero_count": 696846,
+        "zero_percentage": 29.1534
+      },
+      "ICMP_IPV4_TYPE": {
+        "count": 2390275,
+        "mean": 74.001376,
+        "std": 79.574751,
+        "min": 0.0,
+        "max": 255.0,
+        "zero_count": 696854,
+        "zero_percentage": 29.1537
+      },
+      "DNS_QUERY_ID": {
+        "count": 2390275,
+        "mean": 4949.700586,
+        "std": 13780.880388,
+        "min": 0.0,
+        "max": 65535.0,
+        "zero_count": 2019889,
+        "zero_percentage": 84.5045
+      },
+      "DNS_QUERY_TYPE": {
+        "count": 2390275,
+        "mean": 2.970099,
+        "std": 124.033993,
+        "min": 0.0,
+        "max": 55937.0,
+        "zero_count": 2019915,
+        "zero_percentage": 84.5055
+      },
+      "DNS_TTL_ANSWER": {
+        "count": 2390275,
+        "mean": 27256.367811,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 4283358309.0,
+        "zero_count": 2031761,
+        "zero_percentage": 85.0011
+      },
+      "FTP_COMMAND_RET_CODE": {
+        "count": 2390275,
+        "mean": 37.653509,
+        "std": 84.302932,
+        "min": 0.0,
+        "max": 501.0,
+        "zero_count": 1957522,
+        "zero_percentage": 81.8953
+      },
+      "Label": {
+        "count": 2390275,
+        "mean": 0.039767,
+        "std": 0.19541,
+        "min": 0.0,
+        "max": 1.0,
+        "zero_count": 2295222,
+        "zero_percentage": 96.0233
+      }
+    }
+  },
+  "extreme_values": {
+    "extreme_value_features": {
+      "PROTOCOL": {
+        "max": 255.0,
+        "mean": 9.151913,
+        "std": 11.018649,
+        "upper_fence_5sigma": 64.245158,
+        "max_to_mean_ratio": 27.863
+      },
+      "L7_PROTO": {
+        "max": 248.0,
+        "mean": 3.038721,
+        "std": 13.588758,
+        "upper_fence_5sigma": 70.982511,
+        "max_to_mean_ratio": 81.6133
+      },
+      "IN_BYTES": {
+        "max": 30241410.0,
+        "mean": 4621.663588,
+        "std": 70214.078951,
+        "upper_fence_5sigma": 355692.058343,
+        "max_to_mean_ratio": 6543.4036
+      },
+      "IN_PKTS": {
+        "max": 22894.0,
+        "mean": 36.036862,
+        "std": 79.956799,
+        "upper_fence_5sigma": 435.820857,
+        "max_to_mean_ratio": 635.2939
+      },
+      "OUT_BYTES": {
+        "max": 14658518.0,
+        "mean": 35265.651262,
+        "std": 156515.455734,
+        "upper_fence_5sigma": 817842.929932,
+        "max_to_mean_ratio": 415.6599
+      },
+      "OUT_PKTS": {
+        "max": 11078.0,
+        "mean": 45.703629,
+        "std": 117.449473,
+        "upper_fence_5sigma": 632.950994,
+        "max_to_mean_ratio": 242.3878
+      },
+      "DURATION_IN": {
+        "max": 1047.0,
+        "mean": 1.303822,
+        "std": 9.848068,
+        "upper_fence_5sigma": 50.544162,
+        "max_to_mean_ratio": 803.0237
+      },
+      "DURATION_OUT": {
+        "max": 875.0,
+        "mean": 1.153244,
+        "std": 6.716741,
+        "upper_fence_5sigma": 34.736949,
+        "max_to_mean_ratio": 758.7293
+      },
+      "MIN_TTL": {
+        "max": 255.0,
+        "mean": 38.988919,
+        "std": 41.027962,
+        "upper_fence_5sigma": 244.128729,
+        "max_to_mean_ratio": 6.5403
+      },
+      "MAX_TTL": {
+        "max": 255.0,
+        "mean": 39.822345,
+        "std": 40.980441,
+        "upper_fence_5sigma": 244.72455,
+        "max_to_mean_ratio": 6.4034
+      },
+      "SHORTEST_FLOW_PKT": {
+        "max": 1508.0,
+        "mean": 57.496549,
+        "std": 37.487399,
+        "upper_fence_5sigma": 244.933544,
+        "max_to_mean_ratio": 26.2277
+      },
+      "MIN_IP_PKT_LEN": {
+        "max": 680.0,
+        "mean": 54.059298,
+        "std": 11.916712,
+        "upper_fence_5sigma": 113.642858,
+        "max_to_mean_ratio": 12.5788
+      },
+      "SRC_TO_DST_SECOND_BYTES": {
+        "max": 1572819414509520.0,
+        "mean": 1075639825.175375,
+        "std": 1050246919663.5841,
+        "upper_fence_5sigma": 5252310238143.097,
+        "max_to_mean_ratio": 1462217.5357
+      },
+      "DST_TO_SRC_SECOND_BYTES": {
+        "max": 261705812041460.0,
+        "mean": 491527325.440257,
+        "std": 210882449030.08267,
+        "upper_fence_5sigma": 1054903772475.8536,
+        "max_to_mean_ratio": 532433.9024
+      },
+      "RETRANSMITTED_IN_BYTES": {
+        "max": 15120489.0,
+        "mean": 1638.585509,
+        "std": 35075.296139,
+        "upper_fence_5sigma": 177015.066204,
+        "max_to_mean_ratio": 9227.7693
+      },
+      "RETRANSMITTED_IN_PKTS": {
+        "max": 11442.0,
+        "mean": 5.386843,
+        "std": 27.262052,
+        "upper_fence_5sigma": 141.697103,
+        "max_to_mean_ratio": 2124.0641
+      },
+      "RETRANSMITTED_OUT_BYTES": {
+        "max": 7329139.0,
+        "mean": 17259.721414,
+        "std": 78092.380824,
+        "upper_fence_5sigma": 407721.625534,
+        "max_to_mean_ratio": 424.6383
+      },
+      "RETRANSMITTED_OUT_PKTS": {
+        "max": 5536.0,
+        "mean": 16.21882,
+        "std": 54.917844,
+        "upper_fence_5sigma": 290.80804,
+        "max_to_mean_ratio": 341.3319
+      },
+      "NUM_PKTS_UP_TO_128_BYTES": {
+        "max": 4824.0,
+        "mean": 55.413415,
+        "std": 78.691281,
+        "upper_fence_5sigma": 448.86982,
+        "max_to_mean_ratio": 87.0547
+      },
+      "NUM_PKTS_128_TO_256_BYTES": {
+        "max": 298.0,
+        "mean": 1.681239,
+        "std": 5.364422,
+        "upper_fence_5sigma": 28.503349,
+        "max_to_mean_ratio": 177.2502
+      },
+      "NUM_PKTS_256_TO_512_BYTES": {
+        "max": 3928.0,
+        "mean": 1.473658,
+        "std": 8.451811,
+        "upper_fence_5sigma": 43.732713,
+        "max_to_mean_ratio": 2665.476
+      },
+      "NUM_PKTS_512_TO_1024_BYTES": {
+        "max": 800.0,
+        "mean": 1.525501,
+        "std": 7.028043,
+        "upper_fence_5sigma": 36.665716,
+        "max_to_mean_ratio": 524.4179
+      },
+      "NUM_PKTS_1024_TO_1514_BYTES": {
+        "max": 19676.0,
+        "mean": 23.824676,
+        "std": 111.478791,
+        "upper_fence_5sigma": 581.218631,
+        "max_to_mean_ratio": 825.8664
+      },
+      "DNS_QUERY_TYPE": {
+        "max": 55937.0,
+        "mean": 2.970099,
+        "std": 124.033993,
+        "upper_fence_5sigma": 623.140064,
+        "max_to_mean_ratio": 18833.379
+      },
+      "FTP_COMMAND_RET_CODE": {
+        "max": 501.0,
+        "mean": 37.653509,
+        "std": 84.302932,
+        "upper_fence_5sigma": 459.168169,
+        "max_to_mean_ratio": 13.3055
+      }
+    },
+    "num_extreme_features": 25
+  },
+  "correlations": {
+    "correlation_threshold": 0.95,
+    "sample_size_used": 100000,
+    "high_correlation_pairs": [
+      {
+        "feature_a": "LONGEST_FLOW_PKT",
+        "feature_b": "MAX_IP_PKT_LEN",
+        "pearson_r": 1.0
+      },
+      {
+        "feature_a": "ICMP_TYPE",
+        "feature_b": "ICMP_IPV4_TYPE",
+        "pearson_r": 1.0
+      },
+      {
+        "feature_a": "OUT_BYTES",
+        "feature_b": "RETRANSMITTED_OUT_BYTES",
+        "pearson_r": 0.999972
+      },
+      {
+        "feature_a": "MIN_TTL",
+        "feature_b": "MAX_TTL",
+        "pearson_r": 0.999935
+      },
+      {
+        "feature_a": "IN_BYTES",
+        "feature_b": "RETRANSMITTED_IN_BYTES",
+        "pearson_r": 0.99962
+      },
+      {
+        "feature_a": "OUT_BYTES",
+        "feature_b": "RETRANSMITTED_OUT_PKTS",
+        "pearson_r": 0.991963
+      },
+      {
+        "feature_a": "RETRANSMITTED_OUT_BYTES",
+        "feature_b": "RETRANSMITTED_OUT_PKTS",
+        "pearson_r": 0.991474
+      },
+      {
+        "feature_a": "TCP_FLAGS",
+        "feature_b": "CLIENT_TCP_FLAGS",
+        "pearson_r": 0.990683
+      },
+      {
+        "feature_a": "OUT_PKTS",
+        "feature_b": "RETRANSMITTED_OUT_PKTS",
+        "pearson_r": 0.986729
+      },
+      {
+        "feature_a": "TCP_FLAGS",
+        "feature_b": "SERVER_TCP_FLAGS",
+        "pearson_r": 0.985894
+      },
+      {
+        "feature_a": "IN_BYTES",
+        "feature_b": "RETRANSMITTED_IN_PKTS",
+        "pearson_r": 0.978537
+      },
+      {
+        "feature_a": "RETRANSMITTED_IN_BYTES",
+        "feature_b": "RETRANSMITTED_IN_PKTS",
+        "pearson_r": 0.976129
+      },
+      {
+        "feature_a": "CLIENT_TCP_FLAGS",
+        "feature_b": "SERVER_TCP_FLAGS",
+        "pearson_r": 0.975498
+      },
+      {
+        "feature_a": "OUT_BYTES",
+        "feature_b": "OUT_PKTS",
+        "pearson_r": 0.966686
+      },
+      {
+        "feature_a": "OUT_PKTS",
+        "feature_b": "RETRANSMITTED_OUT_BYTES",
+        "pearson_r": 0.965265
+      }
+    ],
+    "num_high_correlation_pairs": 15
+  },
+  "label_semantics": {
+    "total_rows": 2390275,
+    "label_column": {
+      "unique_values": 2,
+      "distribution": {
+        "0": 2295222,
+        "1": 95053
+      }
+    },
+    "attack_column": {
+      "unique_values": 10,
+      "distribution": {
+        "Benign": 2295222,
+        "Fuzzers": 22310,
+        "Exploits": 31551,
+        "Reconnaissance": 12779,
+        "Generic": 16560,
+        "DoS": 5794,
+        "Shellcode": 1427,
+        "Backdoor": 2169,
+        "Worms": 164,
+        "Analysis": 2299
+      }
+    },
+    "inferred_binary_column": "Label",
+    "inferred_multiclass_column": "Attack",
+    "label_attack_cross_tab": {
+      "0": {
+        "Benign": 2295222
+      },
+      "1": {
+        "Analysis": 2299,
+        "Backdoor": 2169,
+        "DoS": 5794,
+        "Exploits": 31551,
+        "Fuzzers": 22310,
+        "Generic": 16560,
+        "Reconnaissance": 12779,
+        "Shellcode": 1427,
+        "Worms": 164
+      }
+    },
+    "inconsistency_notes": []
+  },
+  "temporal_provenance": {
+    "explicit_temporal_columns_found": [],
+    "partial_name_matches": [],
+    "temporal_ordering_established": false,
+    "notes": "No explicit timestamp or flow-time column was identified in the dataset header. Temporal ordering of rows cannot be verified from available data alone. Row index MUST NOT be treated as a chronological proxy without external evidence. This has direct implications for the GRU sequential model: sliding windows formed from raw row order may not reflect true temporal sequences."
+  },
+  "expected_features": {
+    "expected_num_features": 39,
+    "observed_num_features": 39,
+    "feature_count_matches": true,
+    "feature_columns": [
+      "PROTOCOL",
+      "L7_PROTO",
+      "IN_BYTES",
+      "IN_PKTS",
+      "OUT_BYTES",
+      "OUT_PKTS",
+      "TCP_FLAGS",
+      "CLIENT_TCP_FLAGS",
+      "SERVER_TCP_FLAGS",
+      "FLOW_DURATION_MILLISECONDS",
+      "DURATION_IN",
+      "DURATION_OUT",
+      "MIN_TTL",
+      "MAX_TTL",
+      "LONGEST_FLOW_PKT",
+      "SHORTEST_FLOW_PKT",
+      "MIN_IP_PKT_LEN",
+      "MAX_IP_PKT_LEN",
+      "SRC_TO_DST_SECOND_BYTES",
+      "DST_TO_SRC_SECOND_BYTES",
+      "RETRANSMITTED_IN_BYTES",
+      "RETRANSMITTED_IN_PKTS",
+      "RETRANSMITTED_OUT_BYTES",
+      "RETRANSMITTED_OUT_PKTS",
+      "SRC_TO_DST_AVG_THROUGHPUT",
+      "DST_TO_SRC_AVG_THROUGHPUT",
+      "NUM_PKTS_UP_TO_128_BYTES",
+      "NUM_PKTS_128_TO_256_BYTES",
+      "NUM_PKTS_256_TO_512_BYTES",
+      "NUM_PKTS_512_TO_1024_BYTES",
+      "NUM_PKTS_1024_TO_1514_BYTES",
+      "TCP_WIN_MAX_IN",
+      "TCP_WIN_MAX_OUT",
+      "ICMP_TYPE",
+      "ICMP_IPV4_TYPE",
+      "DNS_QUERY_ID",
+      "DNS_QUERY_TYPE",
+      "DNS_TTL_ANSWER",
+      "FTP_COMMAND_RET_CODE"
+    ],
+    "found_identifier_columns": [
+      "IPV4_SRC_ADDR",
+      "IPV4_DST_ADDR",
+      "L4_SRC_PORT",
+      "L4_DST_PORT"
+    ],
+    "missing_identifier_columns": [],
+    "found_label_columns": [
+      "Label",
+      "Attack"
+    ],
+    "missing_label_columns": [],
+    "extra_feature_count": 0,
+    "deficit_feature_count": 0
+  }
+}

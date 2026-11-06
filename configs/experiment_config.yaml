@@ -1,0 +1,61 @@
+# Experiment Configuration
+
+project:
+  name: "resource-adaptive-nids"
+  seed: 42
+  device: "auto" # "auto", "cpu", "cuda", or "mps"
+
+paths:
+  raw_data_dir: "data/raw"
+  raw_csv_filename: "NF-UNSW-NB15-v2.csv"
+  processed_data_dir: "data/processed"
+  models_dir: "outputs/models"
+  metrics_dir: "outputs/metrics"
+  figures_dir: "outputs/figures"
+
+dataset:
+  identifier_cols:
+    - "IPV4_SRC_ADDR"
+    - "IPV4_DST_ADDR"
+    - "L4_SRC_PORT"
+    - "L4_DST_PORT"
+  label_cols:
+    - "Label"
+    - "Attack"
+  num_features: 39
+
+federated:
+  num_clients: 10
+  alpha_dirichlet: 0.5 # Non-IID skew parameter
+  rounds: 20
+  clients_per_round: 10
+  aggregation: "FedAvg"
+
+models:
+  autoencoder:
+    latent_dim: 16
+    hidden_dims: [32, 24]
+    learning_rate: 0.001
+    batch_size: 256
+    epochs: 10
+  
+  gate:
+    hidden_dims: [64, 32]
+    learning_rate: 0.001
+    batch_size: 256
+    epochs: 10
+
+  gru:
+    hidden_dim: 64
+    num_layers: 2
+    sequence_length: 10
+    learning_rate: 0.001
+    batch_size: 128
+    epochs: 5
+
+simulation:
+  arrival_rate_lambda: 100.0 # Packets/flows per second
+  service_rate_mu_ae: 500.0
+  service_rate_mu_gru: 80.0
+  max_queue_delay_ms: 50.0
+

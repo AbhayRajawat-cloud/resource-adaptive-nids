@@ -1,0 +1,52 @@
+{
+  "client_00": {
+    "data.npz": "47ce83a768f7383dd6ac48a80fac985aa06dc81cf253c70d1fc46b86ff55aeeb",
+    "scaler_params.json": "b6672ee2adb3c6af033eaf76594e8b6b0aa45853cb3a067247e5e0d7710bff74",
+    "client_stats.json": "d466b20346463a9077752859f8f48fa792534f686b1d9b1211d0c3bf4306c4a0"
+  },
+  "client_01": {
+    "data.npz": "84db86d3df11e928203e637f68b20225240979abecbfc1cd2cd2c65089ea3c98",
+    "scaler_params.json": "5691de3500ead7ba36434be1fa90e2c0487e8079f7d974848087e13f1412a45b",
+    "client_stats.json": "80be43c4797d155d320a66d32ef1a8edf8f8c175f128df5ae8078106d76c7d6c"
+  },
+  "client_02": {
+    "data.npz": "12ac19590a6424873633153e22cd56af4c96d38a398cf7d183bdeae68244ee10",
+    "scaler_params.json": "d42bd69415f29b261d64030fe2723219757bd378cc3a05cdb7b77604f9b91388",
+    "client_stats.json": "df1993c7f1cddc71bf38a327ae9ba121aeb55fb11d205fb837676918b3645bca"
+  },
+  "client_03": {
+    "data.npz": "6e048522d756877c328a42ce4cf6716c50301add24ec5f40311837e42708addf",
+    "scaler_params.json": "2bdf3317d49d90429a07a280d1ade18e4ae940aa7e48cdeee1e2b632ccd449b7",
+    "client_stats.json": "c87b32a333a1ada9ac71a02f7ba3ba791ce03f6996b348dfecab4a14915cca9a"
+  },
+  "client_04": {
+    "data.npz": "de85593a198aef58e143514fbdb022390a5b2f38fb7ed387c09564d0d81fce5b",
+    "scaler_params.json": "6d12932f3f2abcb5e0e44aa0684aafacba9c594339e45f5f40b8e117fd0597de",
+    "client_stats.json": "4d1172ae10af68ab4e2d319d34a373416611305c069fc1054e00afd74c8fe33d"
+  },
+  "client_05": {
+    "data.npz": "7160207b5e29982658e97a6f530701d81d9fa89b11a6b3e55c804717983ae0ad",
+    "scaler_params.json": "c25576badd79521a0a7932e8a7f1f28e2a16f89fb531fae3117ea4d6aba36a2b",
+    "client_stats.json": "d1851e982280137ffafb9ba5d81a7f12e34442e65aaadc9c31b52833e9221c6e"
+  },
+  "client_06": {
+    "data.npz": "1a290dc2bc82d94b0cfa9d5101acc3d4eaa09347958c796b6baaad19601e3d1f",
+    "scaler_params.json": "9e7dff2df4bd4ebe8579bdac1232db26a536f456562cc67b3a9071a2f10d874d",
+    "client_stats.json": "ee3ca328fb96d2bd5303925ff6422bb11d4df34a1ab2ad7869e87c90b3d20fc8"
+  },
+  "client_07": {
+    "data.npz": "43a6edf0191083d245908e8a65f2021ed5b9a6178c0b39c3b35f3c60a503714e",
+    "scaler_params.json": "6ecd290ddc3bdbf0326b4971a065d120cbe1a3791215d38640c3f3b50025b9d6",
+    "client_stats.json": "faadfa2a27f8a9e88de37c4c8593a7d8119641e0989ae495eedced95a56d647f"
+  },
+  "client_08": {
+    "data.npz": "45a14143cd69921270c3a504175fef5039969391da5171951959028e0bcae1f7",
+    "scaler_params.json": "27d5b65a91cb4ce77484ee3295f3c027a3f79fe88ed371be1736d4f54139d905",
+    "client_stats.json": "8f149360d80d5f31bc9070a9b70feb998117f3ff0e6cf6f9d95b08b3a87d8e37"
+  },
+  "client_09": {
+    "data.npz": "75c866640def45db7923a4ca148469bf9f148d0b025fb5c15fc60ce9e60767ce",
+    "scaler_params.json": "6bf05c4192c52714d7734e75ca6c27a87fc2a128df5ce81e426128fc855e4f50",
+    "client_stats.json": "81e8b5baf659a679639bc6c04f65de473f38b31be08df57666914a10992e46c5"
+  }
+}
